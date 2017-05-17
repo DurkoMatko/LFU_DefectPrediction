@@ -1,0 +1,4 @@
+pdflatex seminarpaper
+bibtex seminarpaper
+pdflatex seminarpaper
+pdflatex seminarpaper
