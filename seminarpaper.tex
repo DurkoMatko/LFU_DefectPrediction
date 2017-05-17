@@ -1,0 +1,33 @@
+\documentclass[a4paper,11pt,pdftex,halfparskip,cleardoubleempty]{scrbook}
+
+\usepackage{wrapfig}
+\usepackage[pdftex]{graphicx}
+\usepackage{eso-pic}
+
+\graphicspath{{img/}}
+\newcommand*{\xchapter}{\stepcounter{chapter}\setcounter{section}{0}\addchap}
+\renewcommand*{\thesection}{\arabic{section}}
+
+% define medatata
+\def\MTitle{Comparison of Defect Prediction Models}
+\def\MAuthor{Martin Durcek, Alberte Thegler}
+\def\MKeywords{Keyword 1 \sep Keyword 2\sep Keyword 3\sep Keyword 4}
+\def\MOrg{Universit{\"a}t Innsbruck}
+\def\MDate{\today}
+\def\MInstitution{Department of Computer Science}
+\def\MSupervisor{Ass.-Prof. Dr. Michael Felderer}
+\def\MGroup{Research Group Quality Engineering}
+
+
+\begin{document}
+\input{titlepage}
+\pagenumbering{arabic}
+\pagestyle{plain} 
+
+\section{Introduction}
+\label{sec:introduction}
+\input{introduction}
+
+\bibliography{seminarpaper}
+\bibliographystyle{plain}
+\end{document}

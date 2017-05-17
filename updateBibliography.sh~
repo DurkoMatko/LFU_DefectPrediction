@@ -1,0 +1,4 @@
+pdflatex Paper
+bibtex Paper
+pdflatex Paper
+pdflatex Paper
