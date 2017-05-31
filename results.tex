@@ -3,10 +3,12 @@ To compare the decision trees performance, we used the CM1 NASA dataset
 
 CM1 is a spacecraft instrument used for data collection and processing written in C. We obtained from PROMISE repository and it contains 38 metrics including static code metrics like McCabe or Halstead metrics.
 
-After cross-validating 7 different decision trees, we obtained the results which can be seen in table.
+After cross-validating 7 different decision trees, we obtained the results which can be seen in table \ref{table:DT_allMetrics}.
 
 \definecolor{myRed}{RGB}{219, 48, 122}
-\begin{center}
+
+\begin{table}[h!]
+\centering
 \begin{tabular}{ |c|c|c|c|c|c| } 
  \hline
  \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{Recall} & \textbf{Precision} & \textbf{F-Measure} & \textbf{AUC}  \\ 
@@ -26,14 +28,17 @@ After cross-validating 7 different decision trees, we obtained the results which
  REP tree  & 86.8502 & .869 & .759 & .810 & .554   \\ 
  \hline
 \end{tabular}
-\end{center}
+\caption{Decision trees performance using all code metrics}
+\label{table:DT_allMetrics}
+\end{table}
 
 
 At this point, we've restricted the dataset only on chosen metrics and observed the changes  in classifiers' performance.
 
-Chosen code metric - McCabe's cyclomatic complexity / Lines of code (LOC).
+Results for chosen code metric - McCabe's cyclomatic complexity / Lines of code (LOC) can be seen in tables \ref{table:DT_complexity} and \ref{table:DT_LOC} respectively.
 
-\begin{center}
+\begin{table}[h!]
+\centering
 \begin{tabular}{ |c|c|c|c|c|c| } 
  \hline
  \textbf{Algorithm} & \textbf{Correct [\%]} &  \textbf{Recall} & \textbf{Precision} & \textbf{F-Measure} & \textbf{AUC}  \\ 
@@ -53,10 +58,13 @@ Chosen code metric - McCabe's cyclomatic complexity / Lines of code (LOC).
  REP tree  & \textcolor{myRed}{87.156} & \textcolor{myRed}{.872} & .760 & .812 & .477 \\ 
  \hline
 \end{tabular}
-\end{center}
+\caption{Decision trees performance using cyclomatic complexity only}
+\label{table:DT_complexity}
+\end{table}
 
 
-\begin{center}
+\begin{table}[h!]
+\centering
 \begin{tabular}{ |c|c|c|c|c|c| } 
  \hline
  \textbf{Algorithm} & \textbf{Correct [\%]} &  \textbf{Recall} & \textbf{Precision} & \textbf{F-Measure} & \textbf{AUC}  \\ 
@@ -75,6 +83,8 @@ Chosen code metric - McCabe's cyclomatic complexity / Lines of code (LOC).
  \hline
  REP tree  & \textcolor{myRed}{87.156} & \textcolor{myRed}{.872} & .760 & .812 & .477 \\ 
  \hline
-\caption{Table to test captions and labels} 
+
 \end{tabular}
-\end{center}
+\caption{Decision trees performance using LOC only}
+\label{table:DT_LOC}
+\end{table}
