@@ -1,0 +1,8 @@
+@incollection{pan1995h,
+  title={H∞-control of Markovian jump systems and solutions to associated piecewise-deterministic differential games},
+  author={Pan, Zigang and Ba{\c{s}}ar, Tamer},
+  booktitle={New trends in dynamic games and applications},
+  pages={61--94},
+  year={1995},
+  publisher={Springer}
+}
