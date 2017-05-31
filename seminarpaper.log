@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.10.28)  17 MAY 2017 13:14
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.10.28)  31 MAY 2017 14:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -307,32 +307,29 @@ Package pdftex.def Info: img/UniWatermark.pdf used on input line 37.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./img/UniWatermark.pdf> <.
 /img/uni-logo-4c.pdf>]) (./abstract.tex)
-(./introduction.tex) (./seminarpaper.bbl [1] [2
+(./introduction.tex) (./selection.tex [1]) (./experiment.tex)
+(./seminarpaper.bbl [2] [3] [4
 
 
-]
-Missing character: There is no â in font cmr10!
-Missing character: There is no ˆ in font cmr10!
-Missing character: There is no ž in font cmr10!
-) [3] (./seminarpaper.aux) ) 
+]) [5] (./seminarpaper.aux) ) 
 Here is how much of TeX's memory you used:
- 3538 strings out of 494985
- 53764 string characters out of 6180355
- 161217 words of memory out of 5000000
- 6723 multiletter control sequences out of 15000+600000
- 7299 words of font info for 26 fonts, out of 8000000 for 9000
+ 3553 strings out of 494985
+ 54003 string characters out of 6180355
+ 162233 words of memory out of 5000000
+ 6732 multiletter control sequences out of 15000+600000
+ 7593 words of font info for 27 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 47i,14n,63p,1077b,306s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on seminarpaper.pdf (4 pages, 209675 bytes).
+ 47i,14n,63p,1081b,306s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on seminarpaper.pdf (6 pages, 221178 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 32 compressed objects within 1 object stream
+ 58 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,12 @@
+In this section we describe the reasons behind choosing specific code metrics, classifiers as well as datasets to work with. Since we don't possess any deep previous knowledge on this particular topic, we mostly refer to other paper and studies - mainly the article \textit{Systematic Review of Machine Learning Techniques for Software Fault Prediction}\cite{malhotra2015systematic} from Ruchika Malhotra.
+
+\subsection{Metrics}
+There are several metric groups and metrics itself used to describe software repositories and code itself. Besides traditional McCabe and Halstead static metrics, there are also Object-oriented metrics(cohesion, coupling and inheritance count), miscellaneous metrics(change and requirement metrics, code churn) or even hybrid metrics combining various metrics from previous groups. In her extensive research, Malhotra found that in more than 50\% of 64 considered papers and articles on fault prediction, traditional procedural metrics had been used. Object-oriented metrics had also been used a lot - particularly coupling between objects(CBO) and response for class(RFC) emerged as highly useful. On the other side,  number of children(NOC) and depth of inheritance tree(DIT) didn't seem as
+good metrics for SFP purposes\cite[p.~15]{malhotra2015systematic}.
+
+\subsection{Classifier}
+Choosing the right classifier is also not a straightforward process since there are many statistics and machine learning methods to be used and combined. During last ten years, many papers and articles have been published on the topic of classifier performance in SFP field. According to Malhotra in her paper, most widely used classifiers are decision trees and Bayesian learners followed by neural networks and support vector machines\cite[p.~11]{malhotra2015systematic}.
+
+\subsection{Datasets}
+Several dataset options are available for SFP studies, but NASA Metrics Data Program data sets are definitely most widely used. In her research, Malhotra claims that they are used in more than 60\% of 64 examined studies. KC1 is the most widely used (both module and class level) which is applied in 43\% of studies and
+has 15.4\% faulty modules and 40.6\% faulty classes. Similarly, PC1 data set is used in 40\% of studies and contains only 6.8\% of faulty modules.\cite[p.~17]{malhotra2015systematic}.
