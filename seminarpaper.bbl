@@ -1,5 +1,10 @@
 \begin{thebibliography}{1}
 
+\bibitem{japkowicz2011evaluating}
+Nathalie Japkowicz and Mohak Shah.
+\newblock {\em Evaluating learning algorithms: a classification perspective}.
+\newblock Cambridge University Press, 2011.
+
 \bibitem{malhotra2015systematic}
 Ruchika Malhotra.
 \newblock A systematic review of machine learning techniques for software fault
