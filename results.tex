@@ -1,0 +1,80 @@
+\subsection{Decision Trees}
+To compare the decision trees performance, we used the CM1 NASA dataset
+
+CM1 is a spacecraft instrument used for data collection and processing written in C. We obtained from PROMISE repository and it contains 38 metrics including static code metrics like McCabe or Halstead metrics.
+
+After cross-validating 7 different decision trees, we obtained the results which can be seen in table.
+
+\definecolor{myRed}{RGB}{219, 48, 122}
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c| } 
+ \hline
+ \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{Recall} & \textbf{Precision} & \textbf{F-Measure} & \textbf{AUC}  \\ 
+ \hline
+ Decision Stump & \textcolor{myRed}{87.156} & \textcolor{myRed}{.872} & .760 & .812 & .713   \\ 
+ \hline
+ HoeffDing Tree & \textcolor{myRed}{87.156} & \textcolor{myRed}{.872} & .760 & .812 & .477   \\ 
+ \hline
+  J48 & 83.792 & .838 & \textcolor{myRed}{.822} & \textcolor{myRed}{.829} & .622   \\ 
+ \hline
+  LMT & 86.8502 & .869 & .815 & .821 & .714    \\ 
+ \hline
+  Random Forest & 85.6269 & .856 & .790 & .814 & \textcolor{myRed}{.770}   \\ 
+ \hline
+  Random Tree & 79.5107 & .795 & .813 & .803 & .588   \\ 
+ \hline
+ REP tree  & 86.8502 & .869 & .759 & .810 & .554   \\ 
+ \hline
+\end{tabular}
+\end{center}
+
+
+At this point, we've restricted the dataset only on chosen metrics and observed the changes  in classifiers' performance.
+
+Chosen code metric - McCabe's cyclomatic complexity / Lines of code (LOC).
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c| } 
+ \hline
+ \textbf{Algorithm} & \textbf{Correct [\%]} &  \textbf{Recall} & \textbf{Precision} & \textbf{F-Measure} & \textbf{AUC}  \\ 
+ \hline
+ Decision Stump & \textcolor{myRed}{87.156} & \textcolor{myRed}{.872} & .760 & .812 & .513    \\ 
+ \hline
+ HoeffDing Tree & 86.8502 & .869 & \textcolor{myRed}{.804} & \textcolor{myRed}{.816} & .490   \\ 
+ \hline
+  J48 & \textcolor{myRed}{87.156} & \textcolor{myRed}{.872} & .760 & .812 & .480\\ 
+ \hline
+  LMT & 86.8502 & .869 & .759 & .810 & \textcolor{myRed}{.601}  \\ 
+ \hline
+  Random Forest & 85.0153 & .850 & .793 & .814 & .471 \\ 
+ \hline
+  Random Tree & 84.4037 & .844 & .788 & .811 & .486 \\ 
+ \hline
+ REP tree  & \textcolor{myRed}{87.156} & \textcolor{myRed}{.872} & .760 & .812 & .477 \\ 
+ \hline
+\end{tabular}
+\end{center}
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c| } 
+ \hline
+ \textbf{Algorithm} & \textbf{Correct [\%]} &  \textbf{Recall} & \textbf{Precision} & \textbf{F-Measure} & \textbf{AUC}  \\ 
+ \hline
+ Decision Stump & \textcolor{myRed}{87.156}& \textcolor{myRed}{.872} & .760 & .812 & .647    \\ 
+ \hline
+ HoeffDing Tree & 86.5443 & .865 & .759 & .809 & .483   \\ 
+ \hline
+  J48 & \textcolor{myRed}{87.156} & \textcolor{myRed}{.872} & .760 & \textcolor{myRed}{.812} & .477\\ 
+ \hline
+  LMT & 86.5443 & .865 & .759 & .809 & \textcolor{myRed}{.669}  \\ 
+ \hline
+  Random Forest & 81.6514 & .817 & \textcolor{myRed}{.787} & .800 & .571 \\ 
+ \hline
+  Random Tree & 78.2875 & .783 & .785 & .784 & .527 \\ 
+ \hline
+ REP tree  & \textcolor{myRed}{87.156} & \textcolor{myRed}{.872} & .760 & .812 & .477 \\ 
+ \hline
+\caption{Table to test captions and labels} 
+\end{tabular}
+\end{center}
