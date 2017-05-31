@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.10.28)  31 MAY 2017 17:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.10.28)  31 MAY 2017 17:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -310,38 +310,27 @@ Package pdftex.def Info: img/UniWatermark.pdf used on input line 37.
 (./introduction.tex) (./selection.tex [1]) (./experiment.tex) [2]
 (./results.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 10.
+(Font)              <10.95> on input line 12.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 10.
+(Font)              <8> on input line 12.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 10.
- [3]
-
-! LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.78 \caption
-             {Table to test captions and labels}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+(Font)              <6> on input line 12.
 
 
-Overfull \hbox (45.17067pt too wide) in paragraph at lines 60--80
- [] 
- []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./seminarpaper.bbl [4]) [5
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./seminarpaper.bbl [3] [4]) [5
 
 
 ] (./seminarpaper.aux) ) 
 Here is how much of TeX's memory you used:
- 3579 strings out of 494985
- 54319 string characters out of 6180355
- 168244 words of memory out of 5000000
- 6749 multiletter control sequences out of 15000+600000
+ 3583 strings out of 494985
+ 54381 string characters out of 6180355
+ 171274 words of memory out of 5000000
+ 6753 multiletter control sequences out of 15000+600000
  10032 words of font info for 35 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  47i,14n,63p,1348b,306s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -351,7 +340,7 @@ nts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on seminarpaper.pdf (6 pages, 230581 bytes).
+Output written on seminarpaper.pdf (6 pages, 230639 bytes).
 PDF statistics:
  58 PDF objects out of 1000 (max. 8388607)
  36 compressed objects within 1 object stream
