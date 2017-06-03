@@ -1,0 +1,70 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.HoeffdingTree -L 2 -S 1 -E 1.0E-7 -H 0.05 -M 0.01 -G 200.0 -N 0.0
+Relation:     JM1-weka.filters.unsupervised.attribute.Remove-R1-4,6-21
+Instances:    9593
+Attributes:   2
+              CYCLOMATIC_COMPLEXITY
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+CYCLOMATIC_COMPLEXITY <= 86.273: 
+|   CYCLOMATIC_COMPLEXITY <= 19.545: 
+|   |   CYCLOMATIC_COMPLEXITY <= 4.273: 
+|   |   |   CYCLOMATIC_COMPLEXITY <= 2.091: 
+|   |   |   |   CYCLOMATIC_COMPLEXITY <= 1.545: N (2389.746)
+|   |   |   |   CYCLOMATIC_COMPLEXITY > 1.545: N (1333.254)
+|   |   |   CYCLOMATIC_COMPLEXITY > 2.091: 
+|   |   |   |   CYCLOMATIC_COMPLEXITY <= 3.636: N (982.177)
+|   |   |   |   CYCLOMATIC_COMPLEXITY > 3.636: N (683.823)
+|   |   CYCLOMATIC_COMPLEXITY > 4.273: 
+|   |   |   CYCLOMATIC_COMPLEXITY <= 11.364: 
+|   |   |   |   CYCLOMATIC_COMPLEXITY <= 8.273: 
+|   |   |   |   |   CYCLOMATIC_COMPLEXITY <= 5.273: N (537.500)
+|   |   |   |   |   CYCLOMATIC_COMPLEXITY > 5.273: 
+|   |   |   |   |   |   CYCLOMATIC_COMPLEXITY <= 7.636: 
+|   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY <= 6.636: N (256.029) NB6 NB adaptive6
+|   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY > 6.636: N (136.971) NB7 NB adaptive7
+|   |   |   |   |   |   CYCLOMATIC_COMPLEXITY > 7.636: N (142.104) NB8 NB adaptive8
+|   |   |   |   CYCLOMATIC_COMPLEXITY > 8.273: 
+|   |   |   |   |   CYCLOMATIC_COMPLEXITY <= 10.455: N (288.008) NB9 NB adaptive9
+|   |   |   |   |   CYCLOMATIC_COMPLEXITY > 10.455: N (115.992) NB10 NB adaptive10
+|   |   |   CYCLOMATIC_COMPLEXITY > 11.364: 
+|   |   |   |   CYCLOMATIC_COMPLEXITY <= 16.455: N (282.323) NB11 NB adaptive11
+|   |   |   |   CYCLOMATIC_COMPLEXITY > 16.455: N (72.677) NB12 NB adaptive12
+|   CYCLOMATIC_COMPLEXITY > 19.545: 
+|   |   CYCLOMATIC_COMPLEXITY <= 43.636: N (183.958) NB13 NB adaptive13
+|   |   CYCLOMATIC_COMPLEXITY > 43.636: Y (31.885) NB14 NB adaptive14
+CYCLOMATIC_COMPLEXITY > 86.273: Y (41.602) NB15 NB adaptive15
+
+Time taken to build model: 0.06 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        7833               81.6533 %
+Incorrectly Classified Instances      1760               18.3467 %
+Kappa statistic                          0.0676
+Mean absolute error                      0.2798
+Root mean squared error                  0.3763
+Relative absolute error                 93.4025 %
+Root relative squared error             97.2334 %
+Total Number of Instances             9593     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.057    0.013    0.498      0.057    0.103      0.119    0.660     0.320     Y
+                 0.987    0.943    0.823      0.987    0.898      0.119    0.660     0.880     N
+Weighted Avg.    0.817    0.772    0.764      0.817    0.752      0.119    0.660     0.778     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  101 1658 |    a = Y
+  102 7732 |    b = N
+
+

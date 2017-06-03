@@ -1,0 +1,104 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.HoeffdingTree -L 2 -S 1 -E 1.0E-7 -H 0.05 -M 0.01 -G 200.0 -N 0.0
+Relation:     JM1-weka.filters.unsupervised.attribute.Remove-R1-20
+Instances:    9593
+Attributes:   2
+              LOC_TOTAL
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+LOC_TOTAL <= 630.727: 
+|   LOC_TOTAL <= 189.000: 
+|   |   LOC_TOTAL <= 97.273: 
+|   |   |   LOC_TOTAL <= 20.727: 
+|   |   |   |   LOC_TOTAL <= 17.091: 
+|   |   |   |   |   LOC_TOTAL <= 11.091: 
+|   |   |   |   |   |   LOC_TOTAL <= 4.636: 
+|   |   |   |   |   |   |   LOC_TOTAL <= 1.273: N (201.000) NB1 NB adaptive1
+|   |   |   |   |   |   |   LOC_TOTAL > 1.273: 
+|   |   |   |   |   |   |   |   LOC_TOTAL <= 3.091: N (102.500) NB2 NB adaptive2
+|   |   |   |   |   |   |   |   LOC_TOTAL > 3.091: N (276.500) NB3 NB adaptive3
+|   |   |   |   |   |   LOC_TOTAL > 4.636: 
+|   |   |   |   |   |   |   LOC_TOTAL <= 5.545: N (368.000)
+|   |   |   |   |   |   |   LOC_TOTAL > 5.545: 
+|   |   |   |   |   |   |   |   LOC_TOTAL <= 6.455: N (212.000) NB5 NB adaptive5
+|   |   |   |   |   |   |   |   LOC_TOTAL > 6.455: 
+|   |   |   |   |   |   |   |   |   LOC_TOTAL <= 7.727: N (149.163) NB6 NB adaptive6
+|   |   |   |   |   |   |   |   |   LOC_TOTAL > 7.727: 
+|   |   |   |   |   |   |   |   |   |   LOC_TOTAL <= 10.182: N (248.648) NB7 NB adaptive7
+|   |   |   |   |   |   |   |   |   |   LOC_TOTAL > 10.182: N (111.352) NB8 NB adaptive8
+|   |   |   |   |   LOC_TOTAL > 11.091: 
+|   |   |   |   |   |   LOC_TOTAL <= 12.909: N (195.306) NB9 NB adaptive9
+|   |   |   |   |   |   LOC_TOTAL > 12.909: 
+|   |   |   |   |   |   |   LOC_TOTAL <= 16.273: 
+|   |   |   |   |   |   |   |   LOC_TOTAL <= 14.091: N (202.130) NB10 NB adaptive10
+|   |   |   |   |   |   |   |   LOC_TOTAL > 14.091: N (247.870) NB11 NB adaptive11
+|   |   |   |   |   |   |   LOC_TOTAL > 16.273: N (158.703) NB12 NB adaptive12
+|   |   |   |   LOC_TOTAL > 17.091: 
+|   |   |   |   |   LOC_TOTAL <= 18.545: N (164.907) NB13 NB adaptive13
+|   |   |   |   |   LOC_TOTAL > 18.545: 
+|   |   |   |   |   |   LOC_TOTAL <= 19.455: N (108.083) NB14 NB adaptive14
+|   |   |   |   |   |   LOC_TOTAL > 19.455: N (102.917) NB15 NB adaptive15
+|   |   |   LOC_TOTAL > 20.727: 
+|   |   |   |   LOC_TOTAL <= 41.727: 
+|   |   |   |   |   LOC_TOTAL <= 35.545: 
+|   |   |   |   |   |   LOC_TOTAL <= 28.636: 
+|   |   |   |   |   |   |   LOC_TOTAL <= 26.091: 
+|   |   |   |   |   |   |   |   LOC_TOTAL <= 22.364: N (188.200) NB16 NB adaptive16
+|   |   |   |   |   |   |   |   LOC_TOTAL > 22.364: 
+|   |   |   |   |   |   |   |   |   LOC_TOTAL <= 24.364: N (111.073) NB17 NB adaptive17
+|   |   |   |   |   |   |   |   |   LOC_TOTAL > 24.364: N (114.927) NB18 NB adaptive18
+|   |   |   |   |   |   |   LOC_TOTAL > 26.091: N (163.472) NB19 NB adaptive19
+|   |   |   |   |   |   LOC_TOTAL > 28.636: 
+|   |   |   |   |   |   |   LOC_TOTAL <= 31.727: N (234.394) NB20 NB adaptive20
+|   |   |   |   |   |   |   LOC_TOTAL > 31.727: N (261.606) NB21 NB adaptive21
+|   |   |   |   |   LOC_TOTAL > 35.545: 
+|   |   |   |   |   |   LOC_TOTAL <= 36.455: N (116.000) NB22 NB adaptive22
+|   |   |   |   |   |   LOC_TOTAL > 36.455: N (191.000) NB23 NB adaptive23
+|   |   |   |   LOC_TOTAL > 41.727: 
+|   |   |   |   |   LOC_TOTAL <= 67.000: 
+|   |   |   |   |   |   LOC_TOTAL <= 60.182: 
+|   |   |   |   |   |   |   LOC_TOTAL <= 51.818: N (256.003) NB24 NB adaptive24
+|   |   |   |   |   |   |   LOC_TOTAL > 51.818: N (176.997) NB25 NB adaptive25
+|   |   |   |   |   |   LOC_TOTAL > 60.182: N (135.214) NB26 NB adaptive26
+|   |   |   |   |   LOC_TOTAL > 67.000: 
+|   |   |   |   |   |   LOC_TOTAL <= 83.818: N (225.142) NB27 NB adaptive27
+|   |   |   |   |   |   LOC_TOTAL > 83.818: N (122.858) NB28 NB adaptive28
+|   |   LOC_TOTAL > 97.273: 
+|   |   |   LOC_TOTAL <= 147.636: N (217.114) NB29 NB adaptive29
+|   |   |   LOC_TOTAL > 147.636: N (63.886) NB30 NB adaptive30
+|   LOC_TOTAL > 189.000: N (104.000) NB31 NB adaptive31
+LOC_TOTAL > 630.727: Y (22.107) NB32 NB adaptive32
+
+Time taken to build model: 0.05 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        7761               80.9027 %
+Incorrectly Classified Instances      1832               19.0973 %
+Kappa statistic                          0.0777
+Mean absolute error                      0.2729
+Root mean squared error                  0.3729
+Relative absolute error                 91.1259 %
+Root relative squared error             96.356  %
+Total Number of Instances             9593     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.081    0.028    0.398      0.081    0.135      0.110    0.698     0.336     Y
+                 0.972    0.919    0.825      0.972    0.893      0.110    0.698     0.901     N
+Weighted Avg.    0.809    0.755    0.747      0.809    0.754      0.110    0.698     0.797     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  143 1616 |    a = Y
+  216 7618 |    b = N
+
+

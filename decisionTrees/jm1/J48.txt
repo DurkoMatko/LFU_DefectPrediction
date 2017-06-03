@@ -1,0 +1,627 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     JM1
+Instances:    9593
+Attributes:   22
+              LOC_BLANK
+              BRANCH_COUNT
+              LOC_CODE_AND_COMMENT
+              LOC_COMMENTS
+              CYCLOMATIC_COMPLEXITY
+              DESIGN_COMPLEXITY
+              ESSENTIAL_COMPLEXITY
+              LOC_EXECUTABLE
+              HALSTEAD_CONTENT
+              HALSTEAD_DIFFICULTY
+              HALSTEAD_EFFORT
+              HALSTEAD_ERROR_EST
+              HALSTEAD_LENGTH
+              HALSTEAD_LEVEL
+              HALSTEAD_PROG_TIME
+              HALSTEAD_VOLUME
+              NUM_OPERANDS
+              NUM_OPERATORS
+              NUM_UNIQUE_OPERANDS
+              NUM_UNIQUE_OPERATORS
+              LOC_TOTAL
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+LOC_TOTAL <= 38
+|   LOC_BLANK <= 1
+|   |   LOC_EXECUTABLE <= 26: N (3423.0/237.0)
+|   |   LOC_EXECUTABLE > 26
+|   |   |   HALSTEAD_ERROR_EST <= 0.16: N (19.0)
+|   |   |   HALSTEAD_ERROR_EST > 0.16
+|   |   |   |   LOC_CODE_AND_COMMENT <= 0
+|   |   |   |   |   NUM_OPERANDS <= 53
+|   |   |   |   |   |   HALSTEAD_LEVEL <= 0.03: N (3.0)
+|   |   |   |   |   |   HALSTEAD_LEVEL > 0.03
+|   |   |   |   |   |   |   LOC_TOTAL <= 31: Y (6.0)
+|   |   |   |   |   |   |   LOC_TOTAL > 31
+|   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY <= 5: N (6.0)
+|   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY > 5
+|   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS <= 20: Y (9.0/2.0)
+|   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS > 20: N (4.0)
+|   |   |   |   |   NUM_OPERANDS > 53: N (13.0)
+|   |   |   |   LOC_CODE_AND_COMMENT > 0: Y (4.0/1.0)
+|   LOC_BLANK > 1
+|   |   NUM_OPERATORS <= 8
+|   |   |   NUM_UNIQUE_OPERANDS <= 5
+|   |   |   |   NUM_UNIQUE_OPERATORS <= 5
+|   |   |   |   |   LOC_BLANK <= 2: N (25.0/8.0)
+|   |   |   |   |   LOC_BLANK > 2
+|   |   |   |   |   |   NUM_OPERANDS <= 3: N (2.0)
+|   |   |   |   |   |   NUM_OPERANDS > 3: Y (5.0)
+|   |   |   |   NUM_UNIQUE_OPERATORS > 5: N (13.0)
+|   |   |   NUM_UNIQUE_OPERANDS > 5
+|   |   |   |   LOC_TOTAL <= 8: Y (9.0)
+|   |   |   |   LOC_TOTAL > 8
+|   |   |   |   |   NUM_OPERATORS <= 7: Y (5.0/1.0)
+|   |   |   |   |   NUM_OPERATORS > 7: N (3.0)
+|   |   NUM_OPERATORS > 8
+|   |   |   CYCLOMATIC_COMPLEXITY <= 1
+|   |   |   |   LOC_CODE_AND_COMMENT <= 0: N (507.0/47.0)
+|   |   |   |   LOC_CODE_AND_COMMENT > 0
+|   |   |   |   |   LOC_COMMENTS <= 0
+|   |   |   |   |   |   NUM_UNIQUE_OPERATORS <= 7
+|   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS <= 6
+|   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT <= 3: N (3.0)
+|   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT > 3: Y (2.0)
+|   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS > 6: Y (2.0)
+|   |   |   |   |   |   NUM_UNIQUE_OPERATORS > 7
+|   |   |   |   |   |   |   HALSTEAD_DIFFICULTY <= 11.19: N (15.0)
+|   |   |   |   |   |   |   HALSTEAD_DIFFICULTY > 11.19: Y (2.0)
+|   |   |   |   |   LOC_COMMENTS > 0: Y (5.0/1.0)
+|   |   |   CYCLOMATIC_COMPLEXITY > 1
+|   |   |   |   LOC_BLANK <= 3
+|   |   |   |   |   LOC_COMMENTS <= 3
+|   |   |   |   |   |   LOC_COMMENTS <= 1
+|   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY <= 1
+|   |   |   |   |   |   |   |   LOC_TOTAL <= 12
+|   |   |   |   |   |   |   |   |   BRANCH_COUNT <= 6
+|   |   |   |   |   |   |   |   |   |   LOC_BLANK <= 2
+|   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT <= 19.98: N (24.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT > 19.98: Y (3.0)
+|   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY > 1: N (64.0/7.0)
+|   |   |   |   |   |   |   |   |   |   LOC_BLANK > 2
+|   |   |   |   |   |   |   |   |   |   |   HALSTEAD_LENGTH <= 17: Y (4.0)
+|   |   |   |   |   |   |   |   |   |   |   HALSTEAD_LENGTH > 17
+|   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS <= 11: N (16.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS > 11: Y (3.0/1.0)
+|   |   |   |   |   |   |   |   |   BRANCH_COUNT > 6
+|   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS <= 11: N (4.0)
+|   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS > 11: Y (14.0)
+|   |   |   |   |   |   |   |   LOC_TOTAL > 12: N (756.0/111.0)
+|   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY > 1
+|   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY <= 6: N (378.0/34.0)
+|   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY > 6
+|   |   |   |   |   |   |   |   |   HALSTEAD_LEVEL <= 0.03
+|   |   |   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT <= 2
+|   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT <= 16
+|   |   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY <= 2: Y (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY > 2: N (2.0)
+|   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT > 16: Y (4.0)
+|   |   |   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT > 2: N (2.0)
+|   |   |   |   |   |   |   |   |   HALSTEAD_LEVEL > 0.03
+|   |   |   |   |   |   |   |   |   |   LOC_BLANK <= 2
+|   |   |   |   |   |   |   |   |   |   |   HALSTEAD_LENGTH <= 62: Y (2.0)
+|   |   |   |   |   |   |   |   |   |   |   HALSTEAD_LENGTH > 62: N (20.0/1.0)
+|   |   |   |   |   |   |   |   |   |   LOC_BLANK > 2
+|   |   |   |   |   |   |   |   |   |   |   LOC_COMMENTS <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY <= 9: N (18.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY > 9: Y (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   LOC_COMMENTS > 0
+|   |   |   |   |   |   |   |   |   |   |   |   LOC_EXECUTABLE <= 23: N (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   LOC_EXECUTABLE > 23: Y (2.0)
+|   |   |   |   |   |   LOC_COMMENTS > 1: N (176.0/14.0)
+|   |   |   |   |   LOC_COMMENTS > 3
+|   |   |   |   |   |   DESIGN_COMPLEXITY <= 1: N (20.0)
+|   |   |   |   |   |   DESIGN_COMPLEXITY > 1
+|   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY <= 7
+|   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT <= 0
+|   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY <= 2
+|   |   |   |   |   |   |   |   |   |   HALSTEAD_ERROR_EST <= 0.05
+|   |   |   |   |   |   |   |   |   |   |   NUM_OPERATORS <= 11: Y (2.0)
+|   |   |   |   |   |   |   |   |   |   |   NUM_OPERATORS > 11: N (12.0)
+|   |   |   |   |   |   |   |   |   |   HALSTEAD_ERROR_EST > 0.05: Y (11.0/1.0)
+|   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY > 2
+|   |   |   |   |   |   |   |   |   |   LOC_BLANK <= 2
+|   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY <= 7
+|   |   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS <= 15: N (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS > 15: Y (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY > 2: N (21.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY > 7: Y (2.0)
+|   |   |   |   |   |   |   |   |   |   LOC_BLANK > 2
+|   |   |   |   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   LOC_COMMENTS <= 8
+|   |   |   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_OPERATORS <= 46: N (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_OPERATORS > 46: Y (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_EFFORT <= 9161.95: Y (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_EFFORT > 9161.95: N (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   LOC_COMMENTS > 8: Y (2.0)
+|   |   |   |   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY > 1: N (17.0/2.0)
+|   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT > 0
+|   |   |   |   |   |   |   |   |   LOC_EXECUTABLE <= 17: Y (6.0/1.0)
+|   |   |   |   |   |   |   |   |   LOC_EXECUTABLE > 17: N (4.0)
+|   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY > 7: N (12.0)
+|   |   |   |   LOC_BLANK > 3
+|   |   |   |   |   LOC_COMMENTS <= 0
+|   |   |   |   |   |   LOC_BLANK <= 6
+|   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY <= 3
+|   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY <= 1
+|   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS <= 9
+|   |   |   |   |   |   |   |   |   |   NUM_OPERATORS <= 21: N (14.0/1.0)
+|   |   |   |   |   |   |   |   |   |   NUM_OPERATORS > 21
+|   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_LEVEL <= 0.07
+|   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_DIFFICULTY <= 27.64: Y (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_DIFFICULTY > 27.64: N (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_LEVEL > 0.07: N (2.0)
+|   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY > 1
+|   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS <= 10: N (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS > 10
+|   |   |   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_ERROR_EST <= 0.04: N (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_ERROR_EST > 0.04: Y (22.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_LEVEL <= 0.11: Y (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_LEVEL > 0.11: N (4.0/1.0)
+|   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS > 9
+|   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY <= 2: N (103.0/25.0)
+|   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY > 2
+|   |   |   |   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   LOC_BLANK <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_ERROR_EST <= 0.07: Y (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_ERROR_EST > 0.07
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS <= 12: Y (8.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS > 12: N (18.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   LOC_BLANK > 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT <= 32.98: N (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT > 32.98: Y (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY > 2: N (71.0/17.0)
+|   |   |   |   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT > 0
+|   |   |   |   |   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS <= 18
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS <= 11: Y (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS > 11: N (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS > 18: Y (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT > 1: N (3.0)
+|   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY > 1
+|   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT <= 23.27: N (15.0)
+|   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT > 23.27
+|   |   |   |   |   |   |   |   |   |   LOC_EXECUTABLE <= 13: Y (3.0)
+|   |   |   |   |   |   |   |   |   |   LOC_EXECUTABLE > 13: N (3.0)
+|   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY > 3
+|   |   |   |   |   |   |   |   LOC_BLANK <= 5
+|   |   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY <= 1
+|   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY <= 3: N (62.0)
+|   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY > 3
+|   |   |   |   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   LOC_EXECUTABLE <= 24: N (31.0)
+|   |   |   |   |   |   |   |   |   |   |   |   LOC_EXECUTABLE > 24
+|   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS <= 11: Y (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS > 11: N (16.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT > 0
+|   |   |   |   |   |   |   |   |   |   |   |   LOC_EXECUTABLE <= 28: Y (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   LOC_EXECUTABLE > 28: N (2.0)
+|   |   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY > 1
+|   |   |   |   |   |   |   |   |   |   LOC_BLANK <= 4: N (86.0/18.0)
+|   |   |   |   |   |   |   |   |   |   LOC_BLANK > 4
+|   |   |   |   |   |   |   |   |   |   |   LOC_TOTAL <= 32
+|   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT <= 10
+|   |   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT <= 8
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_TOTAL <= 23: Y (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_TOTAL > 23: N (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT > 8
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT <= 30.32: Y (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT > 30.32: N (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT > 10: N (21.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   LOC_TOTAL > 32
+|   |   |   |   |   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY <= 3: Y (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS <= 14: Y (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS > 14: N (5.0)
+|   |   |   |   |   |   |   |   LOC_BLANK > 5
+|   |   |   |   |   |   |   |   |   HALSTEAD_LENGTH <= 66: N (8.0)
+|   |   |   |   |   |   |   |   |   HALSTEAD_LENGTH > 66
+|   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS <= 13: Y (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS > 13: N (30.0/10.0)
+|   |   |   |   |   |   LOC_BLANK > 6: N (73.0/10.0)
+|   |   |   |   |   LOC_COMMENTS > 0
+|   |   |   |   |   |   HALSTEAD_LEVEL <= 0.13
+|   |   |   |   |   |   |   LOC_CODE_AND_COMMENT <= 0
+|   |   |   |   |   |   |   |   HALSTEAD_LEVEL <= 0.06: N (139.0/11.0)
+|   |   |   |   |   |   |   |   HALSTEAD_LEVEL > 0.06
+|   |   |   |   |   |   |   |   |   LOC_EXECUTABLE <= 18
+|   |   |   |   |   |   |   |   |   |   HALSTEAD_EFFORT <= 1928.06
+|   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT <= 8
+|   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_LENGTH <= 46: N (30.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_LENGTH > 46: Y (2.0)
+|   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT > 8: Y (2.0)
+|   |   |   |   |   |   |   |   |   |   HALSTEAD_EFFORT > 1928.06: N (97.0/6.0)
+|   |   |   |   |   |   |   |   |   LOC_EXECUTABLE > 18
+|   |   |   |   |   |   |   |   |   |   LOC_BLANK <= 4
+|   |   |   |   |   |   |   |   |   |   |   HALSTEAD_LEVEL <= 0.07: N (15.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   HALSTEAD_LEVEL > 0.07
+|   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_EFFORT <= 5784.24
+|   |   |   |   |   |   |   |   |   |   |   |   |   LOC_EXECUTABLE <= 25: N (20.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   LOC_EXECUTABLE > 25: Y (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_EFFORT > 5784.24: Y (3.0)
+|   |   |   |   |   |   |   |   |   |   LOC_BLANK > 4
+|   |   |   |   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   NUM_OPERANDS <= 34: N (31.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   NUM_OPERANDS > 34
+|   |   |   |   |   |   |   |   |   |   |   |   |   LOC_COMMENTS <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_ERROR_EST <= 0.15: Y (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_ERROR_EST > 0.15: N (16.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   LOC_COMMENTS > 3: Y (8.0)
+|   |   |   |   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY > 1
+|   |   |   |   |   |   |   |   |   |   |   |   NUM_OPERATORS <= 75
+|   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_ERROR_EST <= 0.13: Y (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_ERROR_EST > 0.13: N (17.0)
+|   |   |   |   |   |   |   |   |   |   |   |   NUM_OPERATORS > 75: Y (2.0)
+|   |   |   |   |   |   |   LOC_CODE_AND_COMMENT > 0
+|   |   |   |   |   |   |   |   HALSTEAD_LEVEL <= 0.04
+|   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS <= 14: Y (4.0)
+|   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS > 14
+|   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY <= 2
+|   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY <= 1: N (2.0)
+|   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY > 1: Y (3.0)
+|   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY > 2: N (5.0)
+|   |   |   |   |   |   |   |   HALSTEAD_LEVEL > 0.04
+|   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY <= 1
+|   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS <= 13: Y (2.0)
+|   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS > 13
+|   |   |   |   |   |   |   |   |   |   |   LOC_COMMENTS <= 2: Y (2.0)
+|   |   |   |   |   |   |   |   |   |   |   LOC_COMMENTS > 2: N (3.0)
+|   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY > 1: N (69.0/10.0)
+|   |   |   |   |   |   HALSTEAD_LEVEL > 0.13
+|   |   |   |   |   |   |   LOC_CODE_AND_COMMENT <= 0
+|   |   |   |   |   |   |   |   BRANCH_COUNT <= 8
+|   |   |   |   |   |   |   |   |   LOC_EXECUTABLE <= 9
+|   |   |   |   |   |   |   |   |   |   HALSTEAD_LENGTH <= 29: Y (4.0)
+|   |   |   |   |   |   |   |   |   |   HALSTEAD_LENGTH > 29: N (3.0/1.0)
+|   |   |   |   |   |   |   |   |   LOC_EXECUTABLE > 9
+|   |   |   |   |   |   |   |   |   |   NUM_OPERATORS <= 21: N (10.0)
+|   |   |   |   |   |   |   |   |   |   NUM_OPERATORS > 21
+|   |   |   |   |   |   |   |   |   |   |   LOC_TOTAL <= 19: Y (4.0)
+|   |   |   |   |   |   |   |   |   |   |   LOC_TOTAL > 19
+|   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT <= 4: N (19.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT > 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   NUM_OPERATORS <= 30: Y (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   NUM_OPERATORS > 30
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_EXECUTABLE <= 19: N (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_EXECUTABLE > 19: Y (3.0/1.0)
+|   |   |   |   |   |   |   |   BRANCH_COUNT > 8: Y (5.0/1.0)
+|   |   |   |   |   |   |   LOC_CODE_AND_COMMENT > 0: N (6.0)
+LOC_TOTAL > 38
+|   NUM_UNIQUE_OPERANDS <= 55
+|   |   LOC_COMMENTS <= 17
+|   |   |   NUM_OPERANDS <= 225
+|   |   |   |   NUM_UNIQUE_OPERATORS <= 22
+|   |   |   |   |   HALSTEAD_DIFFICULTY <= 51.89
+|   |   |   |   |   |   CYCLOMATIC_COMPLEXITY <= 20
+|   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY <= 11
+|   |   |   |   |   |   |   |   BRANCH_COUNT <= 24
+|   |   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT <= 3
+|   |   |   |   |   |   |   |   |   |   LOC_BLANK <= 7
+|   |   |   |   |   |   |   |   |   |   |   LOC_EXECUTABLE <= 33
+|   |   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_DIFFICULTY <= 12.44
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT <= 59.55
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT <= 32.07: N (9.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT > 32.07: Y (15.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT > 59.55: N (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_DIFFICULTY > 12.44: N (99.0/12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS <= 32: N (105.0/39.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS > 32: Y (6.0)
+|   |   |   |   |   |   |   |   |   |   |   LOC_EXECUTABLE > 33: N (423.0/73.0)
+|   |   |   |   |   |   |   |   |   |   LOC_BLANK > 7
+|   |   |   |   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY <= 6
+|   |   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_LEVEL <= 0.13: N (137.0/27.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_LEVEL > 0.13
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_TOTAL <= 57: N (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_TOTAL > 57: Y (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_LEVEL <= 0.06
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS <= 17
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY <= 10: N (131.0/28.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY > 10
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT <= 40.49: Y (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT > 40.49
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_COMMENTS <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_EXECUTABLE <= 60: Y (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_EXECUTABLE > 60: N (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_COMMENTS > 4: N (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS > 17
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT <= 8
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS <= 18
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_TOTAL <= 60: N (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_TOTAL > 60: Y (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY > 1: Y (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS > 18: Y (14.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT > 8
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_LEVEL <= 0.03
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_BLANK <= 17
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT <= 20
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_ERROR_EST <= 0.68
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_TOTAL <= 75
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_TOTAL <= 68
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS <= 24: Y (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS > 24: N (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY > 3: N (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_TOTAL > 68: Y (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_TOTAL > 75: N (12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_ERROR_EST > 0.68: Y (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT > 20: N (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_BLANK > 17: N (11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_LEVEL > 0.03
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_EFFORT <= 49731.22
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_LEVEL <= 0.04: N (45.0/17.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_LEVEL > 0.04
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_BLANK <= 13
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS <= 19
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY <= 7: N (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY > 7
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT <= 18: Y (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT > 18: N (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT > 0: Y (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS > 19: N (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_BLANK > 13: Y (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_EFFORT > 49731.22: Y (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_LEVEL <= 0.04
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT <= 19: N (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT > 19: Y (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_LEVEL > 0.04: Y (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT > 2: N (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_LEVEL > 0.06
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT <= 12
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT <= 10
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_EXECUTABLE <= 25: N (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_EXECUTABLE > 25
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_OPERATORS <= 70
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_BLANK <= 12: N (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_BLANK > 12: Y (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY > 3: Y (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_OPERATORS > 70: N (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY > 1: Y (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT > 10: N (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY > 5: Y (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT > 12
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_ERROR_EST <= 0.32: N (14.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_ERROR_EST > 0.32: Y (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY > 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_COMMENTS <= 11: Y (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_COMMENTS > 11: N (2.0)
+|   |   |   |   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY > 6
+|   |   |   |   |   |   |   |   |   |   |   |   LOC_COMMENTS <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY <= 8
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_COMMENTS <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS <= 16: N (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS > 16: Y (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_COMMENTS > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY <= 6: Y (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY > 6: N (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY > 8: N (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   LOC_COMMENTS > 1: N (40.0/2.0)
+|   |   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT > 3
+|   |   |   |   |   |   |   |   |   |   HALSTEAD_ERROR_EST <= 0.16: Y (5.0)
+|   |   |   |   |   |   |   |   |   |   HALSTEAD_ERROR_EST > 0.16
+|   |   |   |   |   |   |   |   |   |   |   LOC_COMMENTS <= 12
+|   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS <= 44
+|   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_LEVEL <= 0.08
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY <= 7: N (54.0/19.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY > 7: Y (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_LEVEL > 0.08: Y (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS > 44: N (6.0)
+|   |   |   |   |   |   |   |   |   |   |   LOC_COMMENTS > 12: N (8.0)
+|   |   |   |   |   |   |   |   BRANCH_COUNT > 24
+|   |   |   |   |   |   |   |   |   HALSTEAD_LENGTH <= 190
+|   |   |   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT <= 1
+|   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY <= 13
+|   |   |   |   |   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY <= 9: N (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY > 9: Y (2.0)
+|   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY > 13: N (16.0)
+|   |   |   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT > 1
+|   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT <= 50.74: N (3.0)
+|   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT > 50.74: Y (2.0)
+|   |   |   |   |   |   |   |   |   HALSTEAD_LENGTH > 190
+|   |   |   |   |   |   |   |   |   |   HALSTEAD_LEVEL <= 0.04
+|   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY <= 11
+|   |   |   |   |   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   LOC_BLANK <= 15: Y (10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   LOC_BLANK > 15
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS <= 34: Y (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS > 34: N (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_LEVEL <= 0.03
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS <= 18: Y (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS > 18
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_LEVEL <= 0.02
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT <= 1: Y (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT > 1: N (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_LEVEL > 0.02
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT <= 1: N (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT > 1: Y (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT > 5: Y (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_LEVEL > 0.03
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT <= 34: N (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT > 34: Y (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY > 11
+|   |   |   |   |   |   |   |   |   |   |   |   LOC_BLANK <= 3: Y (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   LOC_BLANK > 3: N (16.0/2.0)
+|   |   |   |   |   |   |   |   |   |   HALSTEAD_LEVEL > 0.04
+|   |   |   |   |   |   |   |   |   |   |   LOC_TOTAL <= 92: Y (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   LOC_TOTAL > 92: N (2.0)
+|   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY > 11
+|   |   |   |   |   |   |   |   LOC_BLANK <= 12: N (76.0/6.0)
+|   |   |   |   |   |   |   |   LOC_BLANK > 12
+|   |   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT <= 1: Y (3.0)
+|   |   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT > 1
+|   |   |   |   |   |   |   |   |   |   LOC_BLANK <= 18: N (3.0)
+|   |   |   |   |   |   |   |   |   |   LOC_BLANK > 18: Y (2.0)
+|   |   |   |   |   |   CYCLOMATIC_COMPLEXITY > 20
+|   |   |   |   |   |   |   BRANCH_COUNT <= 48
+|   |   |   |   |   |   |   |   LOC_BLANK <= 5: Y (8.0)
+|   |   |   |   |   |   |   |   LOC_BLANK > 5
+|   |   |   |   |   |   |   |   |   LOC_BLANK <= 14
+|   |   |   |   |   |   |   |   |   |   HALSTEAD_EFFORT <= 33604.92: Y (3.0)
+|   |   |   |   |   |   |   |   |   |   HALSTEAD_EFFORT > 33604.92
+|   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT <= 43
+|   |   |   |   |   |   |   |   |   |   |   |   LOC_EXECUTABLE <= 60: N (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   LOC_EXECUTABLE > 60: Y (2.0)
+|   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT > 43: N (5.0)
+|   |   |   |   |   |   |   |   |   LOC_BLANK > 14: Y (4.0)
+|   |   |   |   |   |   |   BRANCH_COUNT > 48
+|   |   |   |   |   |   |   |   DESIGN_COMPLEXITY <= 14: N (8.0)
+|   |   |   |   |   |   |   |   DESIGN_COMPLEXITY > 14
+|   |   |   |   |   |   |   |   |   LOC_EXECUTABLE <= 62: Y (4.0)
+|   |   |   |   |   |   |   |   |   LOC_EXECUTABLE > 62
+|   |   |   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT <= 0
+|   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY <= 23: Y (2.0)
+|   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY > 23: N (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   LOC_CODE_AND_COMMENT > 0: N (4.0)
+|   |   |   |   |   HALSTEAD_DIFFICULTY > 51.89
+|   |   |   |   |   |   LOC_COMMENTS <= 5: N (35.0)
+|   |   |   |   |   |   LOC_COMMENTS > 5
+|   |   |   |   |   |   |   LOC_COMMENTS <= 8
+|   |   |   |   |   |   |   |   NUM_OPERANDS <= 150: Y (3.0)
+|   |   |   |   |   |   |   |   NUM_OPERANDS > 150: N (2.0)
+|   |   |   |   |   |   |   LOC_COMMENTS > 8: N (12.0)
+|   |   |   |   NUM_UNIQUE_OPERATORS > 22
+|   |   |   |   |   HALSTEAD_LEVEL <= 0.01
+|   |   |   |   |   |   LOC_COMMENTS <= 0
+|   |   |   |   |   |   |   NUM_OPERATORS <= 289: N (3.0)
+|   |   |   |   |   |   |   NUM_OPERATORS > 289: Y (2.0)
+|   |   |   |   |   |   LOC_COMMENTS > 0: N (11.0)
+|   |   |   |   |   HALSTEAD_LEVEL > 0.01
+|   |   |   |   |   |   LOC_TOTAL <= 76
+|   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY <= 11
+|   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY <= 1
+|   |   |   |   |   |   |   |   |   HALSTEAD_LEVEL <= 0.05
+|   |   |   |   |   |   |   |   |   |   LOC_EXECUTABLE <= 55: N (28.0/3.0)
+|   |   |   |   |   |   |   |   |   |   LOC_EXECUTABLE > 55: Y (2.0)
+|   |   |   |   |   |   |   |   |   HALSTEAD_LEVEL > 0.05: Y (2.0)
+|   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY > 1
+|   |   |   |   |   |   |   |   |   LOC_COMMENTS <= 7
+|   |   |   |   |   |   |   |   |   |   LOC_COMMENTS <= 2
+|   |   |   |   |   |   |   |   |   |   |   LOC_TOTAL <= 45: N (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   LOC_TOTAL > 45
+|   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS <= 35
+|   |   |   |   |   |   |   |   |   |   |   |   |   LOC_COMMENTS <= 0: Y (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   LOC_COMMENTS > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_OPERANDS <= 71: Y (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_OPERANDS > 71: N (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS > 35: N (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   LOC_COMMENTS > 2
+|   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS <= 23
+|   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS <= 24
+|   |   |   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY <= 5: Y (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY > 5: N (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS > 24: N (2.0)
+|   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS > 23: Y (12.0)
+|   |   |   |   |   |   |   |   |   LOC_COMMENTS > 7: N (7.0)
+|   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY > 11
+|   |   |   |   |   |   |   |   HALSTEAD_LEVEL <= 0.02: N (20.0/1.0)
+|   |   |   |   |   |   |   |   HALSTEAD_LEVEL > 0.02
+|   |   |   |   |   |   |   |   |   LOC_EXECUTABLE <= 44: Y (2.0)
+|   |   |   |   |   |   |   |   |   LOC_EXECUTABLE > 44
+|   |   |   |   |   |   |   |   |   |   LOC_BLANK <= 8: N (9.0)
+|   |   |   |   |   |   |   |   |   |   LOC_BLANK > 8
+|   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT <= 41.56: N (4.0)
+|   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT > 41.56: Y (2.0)
+|   |   |   |   |   |   LOC_TOTAL > 76
+|   |   |   |   |   |   |   LOC_COMMENTS <= 3
+|   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS <= 39: Y (25.0/3.0)
+|   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS > 39
+|   |   |   |   |   |   |   |   |   LOC_COMMENTS <= 0
+|   |   |   |   |   |   |   |   |   |   HALSTEAD_DIFFICULTY <= 47.81
+|   |   |   |   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY <= 6: N (9.0)
+|   |   |   |   |   |   |   |   |   |   |   ESSENTIAL_COMPLEXITY > 6
+|   |   |   |   |   |   |   |   |   |   |   |   LOC_EXECUTABLE <= 76: Y (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   LOC_EXECUTABLE > 76: N (3.0)
+|   |   |   |   |   |   |   |   |   |   HALSTEAD_DIFFICULTY > 47.81: Y (2.0)
+|   |   |   |   |   |   |   |   |   LOC_COMMENTS > 0
+|   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS <= 23: N (2.0)
+|   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS > 23
+|   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY <= 8: N (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   DESIGN_COMPLEXITY > 8: Y (9.0)
+|   |   |   |   |   |   |   LOC_COMMENTS > 3
+|   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY <= 30
+|   |   |   |   |   |   |   |   |   LOC_BLANK <= 5: N (6.0)
+|   |   |   |   |   |   |   |   |   LOC_BLANK > 5: Y (90.0/43.0)
+|   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY > 30: N (7.0)
+|   |   |   NUM_OPERANDS > 225: N (40.0/1.0)
+|   |   LOC_COMMENTS > 17
+|   |   |   DESIGN_COMPLEXITY <= 1: N (19.0/1.0)
+|   |   |   DESIGN_COMPLEXITY > 1
+|   |   |   |   LOC_CODE_AND_COMMENT <= 2
+|   |   |   |   |   NUM_UNIQUE_OPERANDS <= 33: N (86.0/28.0)
+|   |   |   |   |   NUM_UNIQUE_OPERANDS > 33
+|   |   |   |   |   |   NUM_UNIQUE_OPERATORS <= 27: Y (76.0/32.0)
+|   |   |   |   |   |   NUM_UNIQUE_OPERATORS > 27: N (7.0)
+|   |   |   |   LOC_CODE_AND_COMMENT > 2: Y (38.0/12.0)
+|   NUM_UNIQUE_OPERANDS > 55
+|   |   NUM_UNIQUE_OPERANDS <= 165
+|   |   |   LOC_CODE_AND_COMMENT <= 0: N (271.0/131.0)
+|   |   |   LOC_CODE_AND_COMMENT > 0: Y (167.0/66.0)
+|   |   NUM_UNIQUE_OPERANDS > 165: Y (24.0/2.0)
+
+Number of Leaves  : 	280
+
+Size of the tree : 	559
+
+
+Time taken to build model: 1.23 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        7668               79.9333 %
+Incorrectly Classified Instances      1925               20.0667 %
+Kappa statistic                          0.2012
+Mean absolute error                      0.2573
+Root mean squared error                  0.4053
+Relative absolute error                 85.9021 %
+Root relative squared error            104.7491 %
+Total Number of Instances             9593     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.245    0.076    0.419      0.245    0.309      0.211    0.649     0.310     Y
+                 0.924    0.755    0.845      0.924    0.883      0.211    0.649     0.853     N
+Weighted Avg.    0.799    0.631    0.767      0.799    0.777      0.211    0.649     0.754     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  431 1328 |    a = Y
+  597 7237 |    b = N
+
+

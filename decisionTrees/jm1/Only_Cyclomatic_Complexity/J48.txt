@@ -1,0 +1,55 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     JM1-weka.filters.unsupervised.attribute.Remove-R1-4,6-21
+Instances:    9593
+Attributes:   2
+              CYCLOMATIC_COMPLEXITY
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+CYCLOMATIC_COMPLEXITY <= 8: N (8012.0/1180.0)
+CYCLOMATIC_COMPLEXITY > 8
+|   CYCLOMATIC_COMPLEXITY <= 15: N (939.0/278.0)
+|   CYCLOMATIC_COMPLEXITY > 15
+|   |   CYCLOMATIC_COMPLEXITY <= 67: N (597.0/263.0)
+|   |   CYCLOMATIC_COMPLEXITY > 67: Y (45.0/7.0)
+
+Number of Leaves  : 	4
+
+Size of the tree : 	7
+
+
+Time taken to build model: 0.03 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        7865               81.9869 %
+Incorrectly Classified Instances      1728               18.0131 %
+Kappa statistic                          0.0333
+Mean absolute error                      0.2835
+Root mean squared error                  0.377 
+Relative absolute error                 94.6589 %
+Root relative squared error             97.4381 %
+Total Number of Instances             9593     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.022    0.001    0.844      0.022    0.042      0.117    0.604     0.290     Y
+                 0.999    0.978    0.820      0.999    0.901      0.117    0.604     0.851     N
+Weighted Avg.    0.820    0.799    0.824      0.820    0.743      0.117    0.604     0.748     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+   38 1721 |    a = Y
+    7 7827 |    b = N
+
+
