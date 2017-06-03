@@ -1,0 +1,101 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.LMT -I -1 -M 15 -W 0.0
+Relation:     JM1
+Instances:    9593
+Attributes:   22
+              LOC_BLANK
+              BRANCH_COUNT
+              LOC_CODE_AND_COMMENT
+              LOC_COMMENTS
+              CYCLOMATIC_COMPLEXITY
+              DESIGN_COMPLEXITY
+              ESSENTIAL_COMPLEXITY
+              LOC_EXECUTABLE
+              HALSTEAD_CONTENT
+              HALSTEAD_DIFFICULTY
+              HALSTEAD_EFFORT
+              HALSTEAD_ERROR_EST
+              HALSTEAD_LENGTH
+              HALSTEAD_LEVEL
+              HALSTEAD_PROG_TIME
+              HALSTEAD_VOLUME
+              NUM_OPERANDS
+              NUM_OPERATORS
+              NUM_UNIQUE_OPERANDS
+              NUM_UNIQUE_OPERATORS
+              LOC_TOTAL
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic model tree 
+------------------
+: LM_1:49/49 (9593)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 0 :
+-1.12 + 
+[LOC_BLANK] * 0.01 +
+[BRANCH_COUNT] * 0.01 +
+[LOC_CODE_AND_COMMENT] * 0.02 +
+[LOC_COMMENTS] * 0    +
+[ESSENTIAL_COMPLEXITY] * -0.01 +
+[HALSTEAD_CONTENT] * 0    +
+[HALSTEAD_DIFFICULTY] * -0 +
+[HALSTEAD_LEVEL] * -0.59 +
+[HALSTEAD_VOLUME] * -0 +
+[NUM_OPERANDS] * -0 +
+[NUM_UNIQUE_OPERANDS] * 0.01 +
+[NUM_UNIQUE_OPERATORS] * 0.02 +
+[LOC_TOTAL] * 0   
+
+Class 1 :
+1.12 + 
+[LOC_BLANK] * -0.01 +
+[BRANCH_COUNT] * -0.01 +
+[LOC_CODE_AND_COMMENT] * -0.02 +
+[LOC_COMMENTS] * -0 +
+[ESSENTIAL_COMPLEXITY] * 0.01 +
+[HALSTEAD_CONTENT] * -0 +
+[HALSTEAD_DIFFICULTY] * 0    +
+[HALSTEAD_LEVEL] * 0.59 +
+[HALSTEAD_VOLUME] * 0    +
+[NUM_OPERANDS] * 0    +
+[NUM_UNIQUE_OPERANDS] * -0.01 +
+[NUM_UNIQUE_OPERATORS] * -0.02 +
+[LOC_TOTAL] * -0
+
+
+Time taken to build model: 15.17 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        7867               82.0077 %
+Incorrectly Classified Instances      1726               17.9923 %
+Kappa statistic                          0.1066
+Mean absolute error                      0.2719
+Root mean squared error                  0.3686
+Relative absolute error                 90.7789 %
+Root relative squared error             95.2489 %
+Total Number of Instances             9593     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.087    0.015    0.560      0.087    0.151      0.167    0.704     0.382     Y
+                 0.985    0.913    0.828      0.985    0.899      0.167    0.704     0.902     N
+Weighted Avg.    0.820    0.748    0.779      0.820    0.762      0.167    0.704     0.806     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  153 1606 |    a = Y
+  120 7714 |    b = N
+
+

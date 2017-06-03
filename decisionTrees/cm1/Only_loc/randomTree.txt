@@ -1,0 +1,171 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     CM1-weka.filters.unsupervised.attribute.Remove-R1-34,36-37
+Instances:    327
+Attributes:   2
+              NUMBER_OF_LINES
+              Defective
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+RandomTree
+==========
+
+NUMBER_OF_LINES < 46.5
+|   NUMBER_OF_LINES < 27.5
+|   |   NUMBER_OF_LINES < 16.5
+|   |   |   NUMBER_OF_LINES < 15.5 : N (19/0)
+|   |   |   NUMBER_OF_LINES >= 15.5 : N (5/1)
+|   |   NUMBER_OF_LINES >= 16.5 : N (57/0)
+|   NUMBER_OF_LINES >= 27.5
+|   |   NUMBER_OF_LINES < 38.5
+|   |   |   NUMBER_OF_LINES < 36.5
+|   |   |   |   NUMBER_OF_LINES < 32.5
+|   |   |   |   |   NUMBER_OF_LINES < 28.5 : N (3/1)
+|   |   |   |   |   NUMBER_OF_LINES >= 28.5
+|   |   |   |   |   |   NUMBER_OF_LINES < 31.5 : N (8/0)
+|   |   |   |   |   |   NUMBER_OF_LINES >= 31.5 : N (5/1)
+|   |   |   |   NUMBER_OF_LINES >= 32.5 : N (24/0)
+|   |   |   NUMBER_OF_LINES >= 36.5
+|   |   |   |   NUMBER_OF_LINES < 37.5 : N (3/1)
+|   |   |   |   NUMBER_OF_LINES >= 37.5 : N (4/1)
+|   |   NUMBER_OF_LINES >= 38.5 : N (18/0)
+NUMBER_OF_LINES >= 46.5
+|   NUMBER_OF_LINES < 135
+|   |   NUMBER_OF_LINES < 119
+|   |   |   NUMBER_OF_LINES < 117.5
+|   |   |   |   NUMBER_OF_LINES < 102.5
+|   |   |   |   |   NUMBER_OF_LINES < 100.5
+|   |   |   |   |   |   NUMBER_OF_LINES < 88.5
+|   |   |   |   |   |   |   NUMBER_OF_LINES < 62.5
+|   |   |   |   |   |   |   |   NUMBER_OF_LINES < 51
+|   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 47.5 : Y (2/1)
+|   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 47.5
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 48.5 : N (2/0)
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 48.5
+|   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 49.5 : N (8/2)
+|   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 49.5 : N (5/1)
+|   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 51
+|   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 56.5
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 55.5 : N (12/0)
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 55.5 : Y (1/0)
+|   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 56.5 : N (13/0)
+|   |   |   |   |   |   |   NUMBER_OF_LINES >= 62.5
+|   |   |   |   |   |   |   |   NUMBER_OF_LINES < 70.5
+|   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 69.5
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 68.5
+|   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 64 : N (4/1)
+|   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 64
+|   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 67.5 : N (6/2)
+|   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 67.5 : N (4/1)
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 68.5 : N (2/0)
+|   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 69.5 : Y (3/1)
+|   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 70.5
+|   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 81.5
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 72.5 : N (4/0)
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 72.5
+|   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 80.5
+|   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 73.5 : N (3/1)
+|   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 73.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 76 : N (5/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 76
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 77.5 : Y (2/1)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 77.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 79.5 : N (4/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 79.5 : N (4/1)
+|   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 80.5 : N (3/0)
+|   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 81.5
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 82.5 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 82.5
+|   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 83.5 : Y (2/1)
+|   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 83.5
+|   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 87 : N (4/0)
+|   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 87 : Y (2/1)
+|   |   |   |   |   |   NUMBER_OF_LINES >= 88.5 : N (10/0)
+|   |   |   |   |   NUMBER_OF_LINES >= 100.5 : Y (2/0)
+|   |   |   |   NUMBER_OF_LINES >= 102.5 : N (8/0)
+|   |   |   NUMBER_OF_LINES >= 117.5 : Y (1/0)
+|   |   NUMBER_OF_LINES >= 119 : N (8/0)
+|   NUMBER_OF_LINES >= 135
+|   |   NUMBER_OF_LINES < 142.5
+|   |   |   NUMBER_OF_LINES < 140.5
+|   |   |   |   NUMBER_OF_LINES < 139 : Y (2/1)
+|   |   |   |   NUMBER_OF_LINES >= 139 : N (1/0)
+|   |   |   NUMBER_OF_LINES >= 140.5 : Y (2/0)
+|   |   NUMBER_OF_LINES >= 142.5
+|   |   |   NUMBER_OF_LINES < 166.5
+|   |   |   |   NUMBER_OF_LINES < 154
+|   |   |   |   |   NUMBER_OF_LINES < 152 : N (3/0)
+|   |   |   |   |   NUMBER_OF_LINES >= 152 : Y (2/1)
+|   |   |   |   NUMBER_OF_LINES >= 154 : N (5/0)
+|   |   |   NUMBER_OF_LINES >= 166.5
+|   |   |   |   NUMBER_OF_LINES < 171 : Y (1/0)
+|   |   |   |   NUMBER_OF_LINES >= 171
+|   |   |   |   |   NUMBER_OF_LINES < 652.5
+|   |   |   |   |   |   NUMBER_OF_LINES < 471
+|   |   |   |   |   |   |   NUMBER_OF_LINES < 305.5
+|   |   |   |   |   |   |   |   NUMBER_OF_LINES < 271
+|   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 213.5
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 192.5
+|   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 185.5
+|   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 175.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 173 : N (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 173 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 175.5 : N (3/0)
+|   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 185.5 : Y (4/2)
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 192.5 : N (5/0)
+|   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 213.5
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 216.5 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 216.5
+|   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 220 : N (1/0)
+|   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 220
+|   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 224.5 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 224.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 229.5 : N (3/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 229.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 232 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 232
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 240.5 : N (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 240.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 247.5 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 247.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 256.5 : Y (2/1)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 256.5 : N (1/0)
+|   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 271 : Y (2/0)
+|   |   |   |   |   |   |   NUMBER_OF_LINES >= 305.5 : N (7/0)
+|   |   |   |   |   |   NUMBER_OF_LINES >= 471 : Y (2/0)
+|   |   |   |   |   NUMBER_OF_LINES >= 652.5 : N (2/0)
+
+Size of the tree : 125
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         256               78.2875 %
+Incorrectly Classified Instances        71               21.7125 %
+Kappa statistic                          0.0399
+Mean absolute error                      0.215 
+Root mean squared error                  0.4293
+Relative absolute error                 95.2161 %
+Root relative squared error            128.2869 %
+Total Number of Instances              327     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.167    0.126    0.163      0.167    0.165      0.040    0.527     0.141     Y
+                 0.874    0.833    0.877      0.874    0.875      0.040    0.527     0.878     N
+Weighted Avg.    0.783    0.743    0.785      0.783    0.784      0.040    0.527     0.783     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+   7  35 |   a = Y
+  36 249 |   b = N
+
+

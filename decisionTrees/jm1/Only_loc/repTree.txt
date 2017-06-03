@@ -1,0 +1,73 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     JM1-weka.filters.unsupervised.attribute.Remove-R1-20
+Instances:    9593
+Attributes:   2
+              LOC_TOTAL
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+REPTree
+============
+
+LOC_TOTAL < 38.5 : N (4667/563) [2270/275]
+LOC_TOTAL >= 38.5
+|   LOC_TOTAL < 93.5 : N (1179/343) [632/172]
+|   LOC_TOTAL >= 93.5
+|   |   LOC_TOTAL < 285
+|   |   |   LOC_TOTAL < 94.5 : Y (14/4) [1/1]
+|   |   |   LOC_TOTAL >= 94.5
+|   |   |   |   LOC_TOTAL < 150.5 : N (308/131) [164/69]
+|   |   |   |   LOC_TOTAL >= 150.5
+|   |   |   |   |   LOC_TOTAL < 202.5
+|   |   |   |   |   |   LOC_TOTAL < 157.5 : Y (16/4) [10/5]
+|   |   |   |   |   |   LOC_TOTAL >= 157.5
+|   |   |   |   |   |   |   LOC_TOTAL < 158.5 : N (3/0) [1/0]
+|   |   |   |   |   |   |   LOC_TOTAL >= 158.5 : Y (70/30) [53/24]
+|   |   |   |   |   LOC_TOTAL >= 202.5
+|   |   |   |   |   |   LOC_TOTAL < 213.5 : N (12/1) [9/3]
+|   |   |   |   |   |   LOC_TOTAL >= 213.5
+|   |   |   |   |   |   |   LOC_TOTAL < 220 : Y (2/0) [2/1]
+|   |   |   |   |   |   |   LOC_TOTAL >= 220
+|   |   |   |   |   |   |   |   LOC_TOTAL < 224.5
+|   |   |   |   |   |   |   |   |   LOC_TOTAL < 222.5
+|   |   |   |   |   |   |   |   |   |   LOC_TOTAL < 221.5 : N (3/1) [0/0]
+|   |   |   |   |   |   |   |   |   |   LOC_TOTAL >= 221.5 : Y (2/1) [2/0]
+|   |   |   |   |   |   |   |   |   LOC_TOTAL >= 222.5 : N (4/0) [0/0]
+|   |   |   |   |   |   |   |   LOC_TOTAL >= 224.5 : N (43/21) [29/13]
+|   |   LOC_TOTAL >= 285 : Y (72/24) [25/8]
+
+Size of the tree : 27
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        7833               81.6533 %
+Incorrectly Classified Instances      1760               18.3467 %
+Kappa statistic                          0.1042
+Mean absolute error                      0.2745
+Root mean squared error                  0.373 
+Relative absolute error                 91.6406 %
+Root relative squared error             96.3947 %
+Total Number of Instances             9593     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.092    0.021    0.498      0.092    0.155      0.152    0.658     0.331     Y
+                 0.979    0.908    0.828      0.979    0.897      0.152    0.658     0.871     N
+Weighted Avg.    0.817    0.745    0.767      0.817    0.761      0.152    0.658     0.772     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  162 1597 |    a = Y
+  163 7671 |    b = N
+
+
