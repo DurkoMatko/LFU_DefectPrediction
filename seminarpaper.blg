@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: seminarpaper.aux
 The style file: plain.bst
 Database file #1: seminarpaper.bib
-You've used 2 entries,
+You've used 3 entries,
             2118 wiz_defined-function locations,
-            509 strings with 4308 characters,
-and the built_in function-call counts, 565 in all, are:
-= -- 54
-> -- 20
+            513 strings with 4490 characters,
+and the built_in function-call counts, 868 in all, are:
+= -- 79
+> -- 38
 < -- 0
-+ -- 9
-- -- 6
-* -- 33
-:= -- 102
-add.period$ -- 6
-call.type$ -- 2
-change.case$ -- 8
++ -- 16
+- -- 12
+* -- 51
+:= -- 153
+add.period$ -- 9
+call.type$ -- 3
+change.case$ -- 14
 chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 23
-empty$ -- 49
-format.name$ -- 6
-if$ -- 114
+cite$ -- 3
+duplicate$ -- 37
+empty$ -- 77
+format.name$ -- 12
+if$ -- 178
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 3
-newline$ -- 13
-num.names$ -- 4
-pop$ -- 11
+int.to.str$ -- 3
+missing$ -- 4
+newline$ -- 18
+num.names$ -- 6
+pop$ -- 21
 preamble$ -- 1
-purify$ -- 7
+purify$ -- 12
 quote$ -- 0
-skip$ -- 14
+skip$ -- 21
 stack$ -- 0
-substring$ -- 36
-swap$ -- 2
+substring$ -- 41
+swap$ -- 4
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 6
+type$ -- 10
 warning$ -- 0
-while$ -- 6
-width$ -- 3
-write$ -- 23
+while$ -- 8
+width$ -- 4
+write$ -- 33
