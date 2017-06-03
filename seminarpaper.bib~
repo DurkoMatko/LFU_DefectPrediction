@@ -6,4 +6,16 @@
   pages={504--518},
   year={2015},
   publisher={Elsevier}
+},
+@book{japkowicz2011evaluating,
+  title={Evaluating learning algorithms: a classification perspective},
+  author={Japkowicz, Nathalie and Shah, Mohak},
+  year={2011},
+  publisher={Cambridge University Press}
+},
+@inproceedings{wang2011many,
+  title={How many software metrics should be selected for defect prediction?},
+  author={Wang, Huanjing and Khoshgoftaar, Taghi M and Seliya, Naeem},
+  booktitle={Twenty-Fourth International FLAIRS Conference},
+  year={2011}
 }

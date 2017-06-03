@@ -11,4 +11,9 @@ Ruchika Malhotra.
   prediction.
 \newblock {\em Applied Soft Computing}, 27:504--518, 2015.
 
+\bibitem{wang2011many}
+Huanjing Wang, Taghi~M Khoshgoftaar, and Naeem Seliya.
+\newblock How many software metrics should be selected for defect prediction?
+\newblock In {\em Twenty-Fourth International FLAIRS Conference}, 2011.
+
 \end{thebibliography}
