@@ -1,0 +1,52 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     JM1-weka.filters.unsupervised.attribute.Remove-R1-4,6-21
+Instances:    9593
+Attributes:   2
+              CYCLOMATIC_COMPLEXITY
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=2 #classindex=1
+Network structure (nodes followed by parents)
+CYCLOMATIC_COMPLEXITY(6): label
+label(2):
+LogScore Bayes: -18317.842335853646
+LogScore BDeu: -18340.523088748014
+LogScore MDL: -18341.38316459847
+LogScore ENTROPY: -18290.954825401972
+LogScore AIC: -18301.954825401972
+
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        7865               81.9869 %
+Incorrectly Classified Instances      1728               18.0131 %
+Kappa statistic                          0.0333
+Mean absolute error                      0.2799
+Root mean squared error                  0.3745
+Relative absolute error                 93.457  %
+Root relative squared error             96.7875 %
+Total Number of Instances             9593
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.022    0.001    0.844      0.022    0.042      0.117    0.647     0.308     Y
+                 0.999    0.978    0.820      0.999    0.901      0.117    0.647     0.876     N
+Weighted Avg.    0.820    0.799    0.824      0.820    0.743      0.117    0.647     0.772
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+   38 1721 |    a = Y
+    7 7827 |    b = N
+

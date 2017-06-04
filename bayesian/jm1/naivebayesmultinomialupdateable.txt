@@ -1,0 +1,92 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayesMultinomialUpdateable
+Relation:     JM1
+Instances:    9593
+Attributes:   22
+              LOC_BLANK
+              BRANCH_COUNT
+              LOC_CODE_AND_COMMENT
+              LOC_COMMENTS
+              CYCLOMATIC_COMPLEXITY
+              DESIGN_COMPLEXITY
+              ESSENTIAL_COMPLEXITY
+              LOC_EXECUTABLE
+              HALSTEAD_CONTENT
+              HALSTEAD_DIFFICULTY
+              HALSTEAD_EFFORT
+              HALSTEAD_ERROR_EST
+              HALSTEAD_LENGTH
+              HALSTEAD_LEVEL
+              HALSTEAD_PROG_TIME
+              HALSTEAD_VOLUME
+              NUM_OPERANDS
+              NUM_OPERATORS
+              NUM_UNIQUE_OPERANDS
+              NUM_UNIQUE_OPERATORS
+              LOC_TOTAL
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Dictionary size: 22
+
+The independent frequency of a class
+--------------------------------------
+Y	1760.0
+N	7835.0
+
+The frequency of a word given the class
+-----------------------------------------
+          Y	          N
+    17378.0	    31041.0	LOC_BLANK
+    35121.0	    63367.0	BRANCH_COUNT
+     1693.0	     2245.0	LOC_CODE_AND_COMMENT
+    11675.0	    17386.0	LOC_COMMENTS
+    19611.0	    36366.0	CYCLOMATIC_COMPLEXITY
+    12392.0	    23819.0	DESIGN_COMPLEXITY
+     8969.0	    20342.0	ESSENTIAL_COMPLEXITY
+    98763.0	   173609.0	LOC_EXECUTABLE
+87275.95000	225272.2899	HALSTEAD_CONTENT
+41256.12999	107798.5600	HALSTEAD_DIFFICULTY
+2.175182751	1.540778879	HALSTEAD_EFFORT
+932.8399999	1387.399999	HALSTEAD_ERROR_EST
+   431814.0	   756956.0	HALSTEAD_LENGTH
+169.2900000	1297.149999	HALSTEAD_LEVEL
+1.208434956	8559882.999	HALSTEAD_PROG_TIME
+2795417.549	4160396.659	HALSTEAD_VOLUME
+   174584.0	   306784.0	NUM_OPERANDS
+   257231.0	   450173.0	NUM_OPERATORS
+    56735.0	   119312.0	NUM_UNIQUE_OPERANDS
+    29199.0	    89368.0	NUM_UNIQUE_OPERATORS
+   133750.0	   243046.0	LOC_TOTAL
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        7766               80.9549 %
+Incorrectly Classified Instances      1827               19.0451 %
+Kappa statistic                          0.0793
+Mean absolute error                      0.1905
+Root mean squared error                  0.4364
+Relative absolute error                 63.5862 %
+Root relative squared error            112.7774 %
+Total Number of Instances             9593
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.082    0.027    0.404      0.082    0.136      0.112    0.380     0.175     Y
+                 0.973    0.918    0.825      0.973    0.893      0.112    0.522     0.823     N
+Weighted Avg.    0.810    0.755    0.748      0.810    0.754      0.112    0.496     0.704
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  144 1615 |    a = Y
+  212 7622 |    b = N
+

@@ -1,0 +1,90 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayesMultinomial
+Relation:     JM1
+Instances:    9593
+Attributes:   22
+              LOC_BLANK
+              BRANCH_COUNT
+              LOC_CODE_AND_COMMENT
+              LOC_COMMENTS
+              CYCLOMATIC_COMPLEXITY
+              DESIGN_COMPLEXITY
+              ESSENTIAL_COMPLEXITY
+              LOC_EXECUTABLE
+              HALSTEAD_CONTENT
+              HALSTEAD_DIFFICULTY
+              HALSTEAD_EFFORT
+              HALSTEAD_ERROR_EST
+              HALSTEAD_LENGTH
+              HALSTEAD_LEVEL
+              HALSTEAD_PROG_TIME
+              HALSTEAD_VOLUME
+              NUM_OPERANDS
+              NUM_OPERATORS
+              NUM_UNIQUE_OPERANDS
+              NUM_UNIQUE_OPERATORS
+              LOC_TOTAL
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+The independent probability of a class
+--------------------------------------
+Y	0.18342886920270973
+N	0.8165711307972903
+
+The probability of a word given the class
+-----------------------------------------
+	Y	N
+LOC_BLANK	7.432321157903352E-5	1.8316760784191393E-4
+BRANCH_COUNT	1.502074757663274E-4	3.7391777990781756E-4
+LOC_CODE_AND_COMMENT	7.240717988451134E-6	1.3247359286269683E-5
+LOC_COMMENTS	4.993229918202418E-5	1.0259179890916905E-4
+CYCLOMATIC_COMPLEXITY	8.38734320564177E-5	2.1458951795299915E-4
+DESIGN_COMPLEXITY	5.2998805264552E-5	1.4055182665463574E-4
+ESSENTIAL_COMPLEXITY	3.8359125598593154E-5	1.2003464703843986E-4
+LOC_EXECUTABLE	4.2239517465646756E-4	0.0010244368812160319
+HALSTEAD_CONTENT	3.7326671064628626E-4	0.0013292930792297125
+HALSTEAD_DIFFICULTY	1.7644654614582298E-4	6.361007816759479E-4
+HALSTEAD_EFFORT	0.9302944405008137	0.9091871448287974
+HALSTEAD_ERROR_EST	3.989622781067175E-6	8.18680903063238E-6
+HALSTEAD_LENGTH	0.0018468064958446773	0.004466667303295121
+HALSTEAD_LEVEL	7.240290302805072E-7	7.654259286496272E-6
+HALSTEAD_PROG_TIME	0.051683028535280964	0.05051039890843279
+HALSTEAD_VOLUME	0.011955599609874175	0.02454978589239005
+NUM_OPERANDS	7.466707083849694E-4	0.001810279675402652
+NUM_OPERATORS	0.0011001400643161686	0.0026563935287206575
+NUM_UNIQUE_OPERANDS	2.4264745131410208E-4	7.040396129903819E-4
+NUM_UNIQUE_OPERATORS	1.2487993180436183E-4	5.273452136727607E-4
+LOC_TOTAL	5.720295516570226E-4	0.0014341726882363915
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        7766               80.9549 %
+Incorrectly Classified Instances      1827               19.0451 %
+Kappa statistic                          0.0793
+Mean absolute error                      0.1905
+Root mean squared error                  0.4364
+Relative absolute error                 63.5849 %
+Root relative squared error            112.7773 %
+Total Number of Instances             9593
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.082    0.027    0.404      0.082    0.136      0.112    0.380     0.175     Y
+                 0.973    0.918    0.825      0.973    0.893      0.112    0.522     0.823     N
+Weighted Avg.    0.810    0.755    0.748      0.810    0.754      0.112    0.496     0.704
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  144 1615 |    a = Y
+  212 7622 |    b = N
+
