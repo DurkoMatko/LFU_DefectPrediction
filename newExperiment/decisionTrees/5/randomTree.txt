@@ -1,0 +1,217 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     PC1-weka.filters.unsupervised.attribute.Remove-R1,3-6,8-32,36-37
+Instances:    705
+Attributes:   6
+              BRANCH_COUNT
+              CYCLOMATIC_COMPLEXITY
+              NUM_UNIQUE_OPERANDS
+              NUM_UNIQUE_OPERATORS
+              NUMBER_OF_LINES
+              Defective
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+RandomTree
+==========
+
+NUMBER_OF_LINES < 34.5
+|   NUMBER_OF_LINES < 19.5 : N (259/0)
+|   NUMBER_OF_LINES >= 19.5
+|   |   BRANCH_COUNT < 9.5
+|   |   |   NUM_UNIQUE_OPERANDS < 11.5 : N (17/0)
+|   |   |   NUM_UNIQUE_OPERANDS >= 11.5
+|   |   |   |   NUMBER_OF_LINES < 26.5
+|   |   |   |   |   BRANCH_COUNT < 4
+|   |   |   |   |   |   NUM_UNIQUE_OPERATORS < 10.5
+|   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS < 15.5
+|   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS < 9.5 : N (1/0)
+|   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS >= 9.5 : Y (1/0)
+|   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS >= 15.5 : N (3/0)
+|   |   |   |   |   |   NUM_UNIQUE_OPERATORS >= 10.5 : N (17/0)
+|   |   |   |   |   BRANCH_COUNT >= 4
+|   |   |   |   |   |   NUMBER_OF_LINES < 23.5
+|   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS < 14.5
+|   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS < 10.5 : Y (1/0)
+|   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS >= 10.5
+|   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS < 14.5 : N (6/0)
+|   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS >= 14.5
+|   |   |   |   |   |   |   |   |   |   BRANCH_COUNT < 6 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   BRANCH_COUNT >= 6 : N (2/0)
+|   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS >= 14.5 : N (12/0)
+|   |   |   |   |   |   NUMBER_OF_LINES >= 23.5
+|   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS < 14.5 : N (5/0)
+|   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS >= 14.5
+|   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS < 14.5
+|   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS < 18.5
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 25.5
+|   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 4 : Y (2/0)
+|   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 4 : N (1/0)
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 25.5 : N (2/0)
+|   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS >= 18.5 : N (2/0)
+|   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS >= 14.5 : Y (2/0)
+|   |   |   |   NUMBER_OF_LINES >= 26.5
+|   |   |   |   |   NUM_UNIQUE_OPERATORS < 13.5
+|   |   |   |   |   |   BRANCH_COUNT < 6 : N (6/0)
+|   |   |   |   |   |   BRANCH_COUNT >= 6
+|   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS < 19 : Y (1/0)
+|   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS >= 19 : N (1/0)
+|   |   |   |   |   NUM_UNIQUE_OPERATORS >= 13.5 : N (19/0)
+|   |   BRANCH_COUNT >= 9.5 : N (53/0)
+NUMBER_OF_LINES >= 34.5
+|   NUMBER_OF_LINES < 157.5
+|   |   BRANCH_COUNT < 12.5
+|   |   |   NUM_UNIQUE_OPERATORS < 24.5
+|   |   |   |   NUM_UNIQUE_OPERANDS < 42.5
+|   |   |   |   |   CYCLOMATIC_COMPLEXITY < 4.5
+|   |   |   |   |   |   NUMBER_OF_LINES < 53.5
+|   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS < 15.5
+|   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS < 14
+|   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS < 23.5
+|   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS < 20.5 : N (4/0)
+|   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS >= 20.5
+|   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT < 6
+|   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 37.5 : N (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 37.5 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT >= 6 : Y (1/0)
+|   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS >= 23.5 : N (5/0)
+|   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS >= 14
+|   |   |   |   |   |   |   |   |   BRANCH_COUNT < 6
+|   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS < 35 : N (1/0)
+|   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS >= 35 : Y (1/0)
+|   |   |   |   |   |   |   |   |   BRANCH_COUNT >= 6 : Y (2/0)
+|   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS >= 15.5 : N (7/0)
+|   |   |   |   |   |   NUMBER_OF_LINES >= 53.5
+|   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS < 18.5 : Y (5/0)
+|   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS >= 18.5
+|   |   |   |   |   |   |   |   BRANCH_COUNT < 6
+|   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS < 30 : N (1/0)
+|   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS >= 30 : Y (2/0)
+|   |   |   |   |   |   |   |   BRANCH_COUNT >= 6 : N (2/0)
+|   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 4.5
+|   |   |   |   |   |   NUM_UNIQUE_OPERATORS < 16.5 : N (21/0)
+|   |   |   |   |   |   NUM_UNIQUE_OPERATORS >= 16.5
+|   |   |   |   |   |   |   NUMBER_OF_LINES < 65.5
+|   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS < 19.5
+|   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS < 18.5
+|   |   |   |   |   |   |   |   |   |   BRANCH_COUNT < 10
+|   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS < 20 : N (1/0)
+|   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS >= 20 : Y (4/0)
+|   |   |   |   |   |   |   |   |   |   BRANCH_COUNT >= 10 : N (3/0)
+|   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS >= 18.5 : Y (2/0)
+|   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS >= 19.5
+|   |   |   |   |   |   |   |   |   BRANCH_COUNT < 8.5 : Y (1/0)
+|   |   |   |   |   |   |   |   |   BRANCH_COUNT >= 8.5
+|   |   |   |   |   |   |   |   |   |   BRANCH_COUNT < 11.5 : N (9/0)
+|   |   |   |   |   |   |   |   |   |   BRANCH_COUNT >= 11.5
+|   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 7.5 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 7.5 : N (1/0)
+|   |   |   |   |   |   |   NUMBER_OF_LINES >= 65.5 : N (6/0)
+|   |   |   |   NUM_UNIQUE_OPERANDS >= 42.5
+|   |   |   |   |   NUM_UNIQUE_OPERANDS < 59.5 : N (15/0)
+|   |   |   |   |   NUM_UNIQUE_OPERANDS >= 59.5
+|   |   |   |   |   |   NUM_UNIQUE_OPERANDS < 64.5 : Y (1/0)
+|   |   |   |   |   |   NUM_UNIQUE_OPERANDS >= 64.5 : N (5/0)
+|   |   |   NUM_UNIQUE_OPERATORS >= 24.5
+|   |   |   |   NUM_UNIQUE_OPERATORS < 26.5 : Y (2/0)
+|   |   |   |   NUM_UNIQUE_OPERATORS >= 26.5
+|   |   |   |   |   NUM_UNIQUE_OPERANDS < 45 : Y (1/0)
+|   |   |   |   |   NUM_UNIQUE_OPERANDS >= 45 : N (1/0)
+|   |   BRANCH_COUNT >= 12.5
+|   |   |   NUM_UNIQUE_OPERANDS < 101.5
+|   |   |   |   NUM_UNIQUE_OPERATORS < 18.5
+|   |   |   |   |   NUM_UNIQUE_OPERANDS < 29.5 : N (16/0)
+|   |   |   |   |   NUM_UNIQUE_OPERANDS >= 29.5
+|   |   |   |   |   |   BRANCH_COUNT < 18
+|   |   |   |   |   |   |   NUMBER_OF_LINES < 39 : Y (1/0)
+|   |   |   |   |   |   |   NUMBER_OF_LINES >= 39
+|   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS < 41
+|   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 43
+|   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS < 30.5 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS >= 30.5 : N (2/0)
+|   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 43 : N (8/0)
+|   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS >= 41
+|   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS < 60 : Y (3/0)
+|   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS >= 60 : N (1/0)
+|   |   |   |   |   |   BRANCH_COUNT >= 18 : N (8/0)
+|   |   |   |   NUM_UNIQUE_OPERATORS >= 18.5
+|   |   |   |   |   NUM_UNIQUE_OPERANDS < 65.5
+|   |   |   |   |   |   BRANCH_COUNT < 16.5
+|   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 11.5 : N (23/0)
+|   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 11.5
+|   |   |   |   |   |   |   |   NUMBER_OF_LINES < 61 : N (1/0)
+|   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 61 : Y (1/0)
+|   |   |   |   |   |   BRANCH_COUNT >= 16.5 : N (62/0)
+|   |   |   |   |   NUM_UNIQUE_OPERANDS >= 65.5
+|   |   |   |   |   |   BRANCH_COUNT < 35
+|   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 16 : N (7/0)
+|   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 16 : Y (2/0)
+|   |   |   |   |   |   BRANCH_COUNT >= 35 : N (8/0)
+|   |   |   NUM_UNIQUE_OPERANDS >= 101.5
+|   |   |   |   NUM_UNIQUE_OPERANDS < 107 : Y (3/0)
+|   |   |   |   NUM_UNIQUE_OPERANDS >= 107
+|   |   |   |   |   BRANCH_COUNT < 42 : Y (1/0)
+|   |   |   |   |   BRANCH_COUNT >= 42 : N (3/0)
+|   NUMBER_OF_LINES >= 157.5
+|   |   CYCLOMATIC_COMPLEXITY < 26.5
+|   |   |   NUM_UNIQUE_OPERATORS < 19.5 : N (2/0)
+|   |   |   NUM_UNIQUE_OPERATORS >= 19.5
+|   |   |   |   CYCLOMATIC_COMPLEXITY < 12.5 : Y (5/0)
+|   |   |   |   CYCLOMATIC_COMPLEXITY >= 12.5
+|   |   |   |   |   BRANCH_COUNT < 31.5 : N (2/0)
+|   |   |   |   |   BRANCH_COUNT >= 31.5
+|   |   |   |   |   |   NUMBER_OF_LINES < 200 : Y (4/0)
+|   |   |   |   |   |   NUMBER_OF_LINES >= 200
+|   |   |   |   |   |   |   BRANCH_COUNT < 38 : Y (2/0)
+|   |   |   |   |   |   |   BRANCH_COUNT >= 38
+|   |   |   |   |   |   |   |   BRANCH_COUNT < 39.5 : N (1/0)
+|   |   |   |   |   |   |   |   BRANCH_COUNT >= 39.5
+|   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS < 66.5 : N (1/0)
+|   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS >= 66.5
+|   |   |   |   |   |   |   |   |   |   BRANCH_COUNT < 43.5 : Y (2/0)
+|   |   |   |   |   |   |   |   |   |   BRANCH_COUNT >= 43.5
+|   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT < 48.5 : N (1/0)
+|   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT >= 48.5 : Y (1/0)
+|   |   CYCLOMATIC_COMPLEXITY >= 26.5
+|   |   |   BRANCH_COUNT < 146.5
+|   |   |   |   BRANCH_COUNT < 59
+|   |   |   |   |   CYCLOMATIC_COMPLEXITY < 28 : N (2/0)
+|   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 28
+|   |   |   |   |   |   BRANCH_COUNT < 54 : N (1/0)
+|   |   |   |   |   |   BRANCH_COUNT >= 54 : Y (1/0)
+|   |   |   |   BRANCH_COUNT >= 59 : N (6/0)
+|   |   |   BRANCH_COUNT >= 146.5 : Y (2/0)
+
+Size of the tree : 167
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         622               88.227  %
+Incorrectly Classified Instances        83               11.773  %
+Kappa statistic                          0.2497
+Mean absolute error                      0.1177
+Root mean squared error                  0.3431
+Relative absolute error                 73.9727 %
+Root relative squared error            122.0423 %
+Total Number of Instances              705     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.311    0.064    0.317      0.311    0.314      0.250    0.624     0.158     Y
+                 0.936    0.689    0.935      0.936    0.936      0.250    0.624     0.934     N
+Weighted Avg.    0.882    0.634    0.881      0.882    0.882      0.250    0.624     0.866     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  19  42 |   a = Y
+  41 603 |   b = N
+
+

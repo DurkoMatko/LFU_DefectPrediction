@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.10.28)  3 JUN 2017 11:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.10.28)  12 JUN 2017 16:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -307,43 +307,46 @@ Package pdftex.def Info: img/UniWatermark.pdf used on input line 37.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./img/UniWatermark.pdf> <.
 /img/uni-logo-4c.pdf>]) (./abstract.tex)
-(./introduction.tex) (./selection.tex [1]) (./experiment.tex) [2]
+(./introduction.tex) (./selection.tex [1]) (./experiment.tex [2])
 (./results.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 12.
+(Font)              <10.95> on input line 10.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 12.
+(Font)              <8> on input line 10.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 12.
- [3]
+(Font)              <6> on input line 10.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [4] (./seminarpaper.bbl [5] [6
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./seminarpaper.bbl [3] [4]) [5
 
 
-]) [7] (./seminarpaper.aux) ) 
+] (./seminarpaper.aux) ) 
 Here is how much of TeX's memory you used:
- 3587 strings out of 494985
- 54475 string characters out of 6180355
- 178307 words of memory out of 5000000
- 6757 multiletter control sequences out of 15000+600000
+ 3585 strings out of 494985
+ 54387 string characters out of 6180355
+ 172287 words of memory out of 5000000
+ 6755 multiletter control sequences out of 15000+600000
  10032 words of font info for 35 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  47i,14n,63p,1398b,306s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on seminarpaper.pdf (8 pages, 235785 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on seminarpaper.pdf (6 pages, 231393 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 58 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

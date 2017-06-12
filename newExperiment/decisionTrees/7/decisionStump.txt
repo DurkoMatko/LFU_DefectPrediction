@@ -1,0 +1,67 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.DecisionStump 
+Relation:     PC1-weka.filters.unsupervised.attribute.Remove-R1,3-6,8-17,19-25,27-32,36-37
+Instances:    705
+Attributes:   8
+              BRANCH_COUNT
+              CYCLOMATIC_COMPLEXITY
+              HALSTEAD_CONTENT
+              MAINTENANCE_SEVERITY
+              NUM_UNIQUE_OPERANDS
+              NUM_UNIQUE_OPERATORS
+              NUMBER_OF_LINES
+              Defective
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Stump
+
+Classifications
+
+HALSTEAD_CONTENT <= 30.915 : N
+HALSTEAD_CONTENT > 30.915 : N
+HALSTEAD_CONTENT is missing : N
+
+Class distributions
+
+HALSTEAD_CONTENT <= 30.915
+Y	N	
+0.007936507936507936	0.9920634920634921	
+HALSTEAD_CONTENT > 30.915
+Y	N	
+0.17737003058103976	0.8226299694189603	
+HALSTEAD_CONTENT is missing
+Y	N	
+0.08652482269503546	0.9134751773049645	
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         644               91.3475 %
+Incorrectly Classified Instances        61                8.6525 %
+Kappa statistic                          0     
+Mean absolute error                      0.1443
+Root mean squared error                  0.2692
+Relative absolute error                 90.6387 %
+Root relative squared error             95.7368 %
+Total Number of Instances              705     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.729     0.153     Y
+                 1.000    1.000    0.913      1.000    0.955      0.000    0.729     0.962     N
+Weighted Avg.    0.913    0.913    0.834      0.913    0.872      0.000    0.729     0.892     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+   0  61 |   a = Y
+   0 644 |   b = N
+
+

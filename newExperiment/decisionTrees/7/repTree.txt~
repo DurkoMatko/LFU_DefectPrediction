@@ -1,0 +1,53 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     PC1-weka.filters.unsupervised.attribute.Remove-R1,3-6,8-17,19-25,27-32,36-37
+Instances:    705
+Attributes:   8
+              BRANCH_COUNT
+              CYCLOMATIC_COMPLEXITY
+              HALSTEAD_CONTENT
+              MAINTENANCE_SEVERITY
+              NUM_UNIQUE_OPERANDS
+              NUM_UNIQUE_OPERATORS
+              NUMBER_OF_LINES
+              Defective
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+REPTree
+============
+ : N (470/41) [235/20]
+
+Size of the tree : 1
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         639               90.6383 %
+Incorrectly Classified Instances        66                9.3617 %
+Kappa statistic                          0.0357
+Mean absolute error                      0.1457
+Root mean squared error                  0.2755
+Relative absolute error                 91.5537 %
+Root relative squared error             97.9866 %
+Total Number of Instances              705     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.033    0.011    0.222      0.033    0.057      0.055    0.704     0.190     Y
+                 0.989    0.967    0.915      0.989    0.951      0.055    0.704     0.955     N
+Weighted Avg.    0.906    0.884    0.855      0.906    0.873      0.055    0.704     0.889     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+   2  59 |   a = Y
+   7 637 |   b = N
+
+
