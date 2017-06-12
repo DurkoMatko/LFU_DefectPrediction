@@ -1,0 +1,54 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayesUpdateable 
+Relation:     PC1-weka.filters.unsupervised.attribute.Remove-R1-6,8-37
+Instances:    705
+Attributes:   2
+              CYCLOMATIC_COMPLEXITY
+              Defective
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                          Class
+Attribute                     Y       N
+                         (0.09)  (0.91)
+========================================
+CYCLOMATIC_COMPLEXITY
+  mean                   13.1825  7.2595
+  std. dev.              21.3928  8.5645
+  weight sum                  61     644
+  precision               2.9348  2.9348
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         626               88.7943 %
+Incorrectly Classified Instances        79               11.2057 %
+Kappa statistic                          0.0024
+Mean absolute error                      0.1422
+Root mean squared error                  0.3134
+Relative absolute error                 89.3488 %
+Root relative squared error            111.455  %
+Total Number of Instances              705     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.033    0.031    0.091      0.033    0.048      0.003    0.524     0.150     Y
+                 0.969    0.967    0.914      0.969    0.940      0.003    0.524     0.911     N
+Weighted Avg.    0.888    0.886    0.842      0.888    0.863      0.003    0.524     0.845     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+   2  59 |   a = Y
+  20 624 |   b = N
+
+

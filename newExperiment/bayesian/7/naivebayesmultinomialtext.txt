@@ -1,0 +1,58 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayesMultinomialText -P 0 -M 3.0 -norm 1.0 -lnorm 2.0 -stopwords-handler weka.core.stopwords.Null -tokenizer "weka.core.tokenizers.WordTokenizer -delimiters \" \\r\\n\\t.,;:\\\'\\\"()?!\"" -stemmer weka.core.stemmers.NullStemmer
+Relation:     PC1-weka.filters.unsupervised.attribute.Remove-R1,3-6,8-17,19-25,27-30,33-36
+Instances:    705
+Attributes:   8
+              BRANCH_COUNT
+              CYCLOMATIC_COMPLEXITY
+              HALSTEAD_CONTENT
+              MAINTENANCE_SEVERITY
+              NUM_OPERANDS
+              NUM_OPERATORS
+              LOC_TOTAL
+              Defective
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Dictionary size: 0
+
+The independent frequency of a class
+--------------------------------------
+Y	62.0
+N	645.0
+
+The frequency of a word given the class
+-----------------------------------------
+          Y	          N	
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         644               91.3475 %
+Incorrectly Classified Instances        61                8.6525 %
+Kappa statistic                          0     
+Mean absolute error                      0.1592
+Root mean squared error                  0.2811
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances              705     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.491     0.085     Y
+                 1.000    1.000    0.913      1.000    0.955      0.000    0.491     0.912     N
+Weighted Avg.    0.913    0.913    0.834      0.913    0.872      0.000    0.491     0.840     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+   0  61 |   a = Y
+   0 644 |   b = N
+
+

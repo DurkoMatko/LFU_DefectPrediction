@@ -1,0 +1,68 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     PC1-weka.filters.unsupervised.attribute.Remove-R1,3-6,8-36
+Instances:    705
+Attributes:   4
+              BRANCH_COUNT
+              CYCLOMATIC_COMPLEXITY
+              LOC_TOTAL
+              Defective
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                          Class
+Attribute                     Y       N
+                         (0.09)  (0.91)
+========================================
+BRANCH_COUNT
+  mean                   23.4541 13.1772
+  std. dev.              37.3173 16.3428
+  weight sum                  61     644
+  precision               4.0877  4.0877
+
+CYCLOMATIC_COMPLEXITY
+  mean                   13.1825  7.2595
+  std. dev.              21.3928  8.5645
+  weight sum                  61     644
+  precision               2.9348  2.9348
+
+LOC_TOTAL
+  mean                   71.4578 27.2039
+  std. dev.               98.217 27.9514
+  weight sum                  61     644
+  precision               5.5741  5.5741
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         624               88.5106 %
+Incorrectly Classified Instances        81               11.4894 %
+Kappa statistic                          0.1821
+Mean absolute error                      0.1201
+Root mean squared error                  0.327 
+Relative absolute error                 75.4445 %
+Root relative squared error            116.3177 %
+Total Number of Instances              705     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.213    0.051    0.283      0.213    0.243      0.184    0.592     0.165     Y
+                 0.949    0.787    0.927      0.949    0.938      0.184    0.592     0.923     N
+Weighted Avg.    0.885    0.723    0.871      0.885    0.878      0.184    0.592     0.858     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  13  48 |   a = Y
+  33 611 |   b = N
+
+
