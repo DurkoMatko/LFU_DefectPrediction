@@ -1,3 +1,118 @@
 \subsection{Decision Trees}
-To compare the decision trees performance, we used the PC1 NASA dataset
+To compare the decision trees performance, we used the PC1 NASA dataset because of their popularity for SFP purposes.
 
+Results of models' performance can be seen in following tables. Tables \ref{table:DT_1},\ref{table:DT_3}, \ref{table:DT_5} and \ref{table:DT_7} document performance of decision trees.
+
+\definecolor{myRed}{RGB}{219, 48, 122}
+
+\begin{table}[h!]		
+\centering		
+\begin{tabular}{ |c|c|c|c| } 		
+ \hline		
+ \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\ 		
+ \hline		
+ Decision Stump & 91.347 & .872 & .551    \\ 		
+ \hline		
+ HoeffDing Tree &  91.205 & .871 & .620   \\ 		
+ \hline		
+  J48 & 91.347 & .872 & .491\\ 		
+ \hline		
+  LMT & 91.489 & .876 & .573  \\ 		
+ \hline		
+  Random Forest & 91.489 & .885 & .601 \\ 		
+ \hline		
+  Random Tree & 92.198 & .899 & .595 \\ 		
+ \hline		
+ REP tree  & 91.347 & .872 & .522 \\ 		
+ \hline		
+ \textbf{Mean}  & 91.488 & .878 & .565 \\ 		
+ \hline
+		
+\end{tabular}		
+\caption{Decision trees performance using 1 repository metric}		
+\label{table:DT_1}		
+\end{table}
+
+\begin{table}[h!]		
+\centering		
+\begin{tabular}{ |c|c|c|c| } 		
+ \hline		
+ \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\ 		
+ \hline		
+ Decision Stump & 91.347 & .872 & .714    \\ 		
+ \hline		
+ HoeffDing Tree &  91.205 & .872 & .491   \\ 		
+ \hline		
+  J48 & 90.780 & .874 & .605\\ 		
+ \hline		
+  LMT & 91.347 & .888 & 816  \\ 		
+ \hline		
+  Random Forest & 87.943 & .874 & .748 \\ 		
+ \hline		
+  Random Tree & 84.539 & .851 & .568 \\ 		
+ \hline		
+ REP tree  & 90.922 & .875 & .701 \\ 		
+ \hline		
+ \textbf{Mean}  & 89.726 & .872 & 663.2 \\ 		
+ \hline
+		
+\end{tabular}		
+\caption{Decision trees performance using 3 repository metric}		
+\label{table:DT_3}		
+\end{table}
+
+\begin{table}[h!]		
+\centering		
+\begin{tabular}{ |c|c|c|c| } 		
+ \hline		
+ \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\ 		
+ \hline		
+ Decision Stump & 91.347 & .872 & .714    \\ 		
+ \hline		
+ HoeffDing Tree &  91.347 & .872 & .491   \\ 		
+ \hline		
+  J48 & 90.354 & .872 & .616\\ 		
+ \hline		
+  LMT & 91.347 & .890 & 840  \\ 		
+ \hline		
+  Random Forest & 91.063 & .898 & .845 \\ 		
+ \hline		
+  Random Tree & 88.227 & .882 & .624 \\ 		
+ \hline		
+ REP tree  & 91.347 & .880 & .636 \\ 		
+ \hline	
+ \textbf{Mean}  & 90.719 & .880 & .681 \\ 		
+ \hline	
+		
+\end{tabular}		
+\caption{Decision trees performance using 5 repository metric}		
+\label{table:DT_5}		
+\end{table}
+
+\begin{table}[h!]		
+\centering		
+\begin{tabular}{ |c|c|c|c| } 		
+ \hline		
+ \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\ 		
+ \hline		
+ Decision Stump & 91.347 & .872 & .729    \\ 		
+ \hline		
+ HoeffDing Tree &  91.347 & .872 & .491   \\ 		
+ \hline		
+  J48 & 90.070 & .880 & .679\\ 		
+ \hline		
+  LMT & 91.489 & .889 & 827  \\ 		
+ \hline		
+  Random Forest & 91.773 & .903 & .851 \\ 		
+ \hline		
+  Random Tree & 89.503 & .895 & .668 \\ 		
+ \hline		
+ REP tree  & 90.638 & .873 & .704 \\ 		
+ \hline		
+ \textbf{Mean}  & 90.881 & .883 & .707 \\ 		
+ \hline
+		
+\end{tabular}		
+\caption{Decision trees performance using 7 repository metric}		
+\label{table:DT_7}		
+\end{table}
