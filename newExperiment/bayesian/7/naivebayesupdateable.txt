@@ -1,0 +1,96 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayesUpdateable 
+Relation:     PC1-weka.filters.unsupervised.attribute.Remove-R1,3-6,8-17,19-25,27-30,33-36
+Instances:    705
+Attributes:   8
+              BRANCH_COUNT
+              CYCLOMATIC_COMPLEXITY
+              HALSTEAD_CONTENT
+              MAINTENANCE_SEVERITY
+              NUM_OPERANDS
+              NUM_OPERATORS
+              LOC_TOTAL
+              Defective
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                           Class
+Attribute                      Y        N
+                          (0.09)   (0.91)
+==========================================
+BRANCH_COUNT
+  mean                    23.4541  13.1772
+  std. dev.               37.3173  16.3428
+  weight sum                   61      644
+  precision                4.0877   4.0877
+
+CYCLOMATIC_COMPLEXITY
+  mean                    13.1825   7.2595
+  std. dev.               21.3928   8.5645
+  weight sum                   61      644
+  precision                2.9348   2.9348
+
+HALSTEAD_CONTENT
+  mean                    70.8439  34.2319
+  std. dev.               51.2748  26.6103
+  weight sum                   61      644
+  precision                0.4105   0.4105
+
+MAINTENANCE_SEVERITY
+  mean                     0.4198   0.4994
+  std. dev.                0.2945   0.2731
+  weight sum                   61      644
+  precision                 0.014    0.014
+
+NUM_OPERANDS
+  mean                   147.8948  61.5335
+  std. dev.              195.2723  80.9347
+  weight sum                   61      644
+  precision                5.9119   5.9119
+
+NUM_OPERATORS
+  mean                   196.1127  79.8063
+  std. dev.                274.12 101.9528
+  weight sum                   61      644
+  precision                7.3982   7.3982
+
+LOC_TOTAL
+  mean                    71.4578  27.2039
+  std. dev.                98.217  27.9514
+  weight sum                   61      644
+  precision                5.5741   5.5741
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         616               87.3759 %
+Incorrectly Classified Instances        89               12.6241 %
+Kappa statistic                          0.1832
+Mean absolute error                      0.1245
+Root mean squared error                  0.3442
+Relative absolute error                 78.2289 %
+Root relative squared error            122.4303 %
+Total Number of Instances              705     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.246    0.067    0.259      0.246    0.252      0.183    0.656     0.190     Y
+                 0.933    0.754    0.929      0.933    0.931      0.183    0.656     0.937     N
+Weighted Avg.    0.874    0.695    0.871      0.874    0.872      0.183    0.656     0.872     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  15  46 |   a = Y
+  43 601 |   b = N
+
+

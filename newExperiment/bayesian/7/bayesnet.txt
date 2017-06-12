@@ -1,0 +1,65 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     PC1-weka.filters.unsupervised.attribute.Remove-R1,3-6,8-17,19-25,27-30,33-36
+Instances:    705
+Attributes:   8
+              BRANCH_COUNT
+              CYCLOMATIC_COMPLEXITY
+              HALSTEAD_CONTENT
+              MAINTENANCE_SEVERITY
+              NUM_OPERANDS
+              NUM_OPERATORS
+              LOC_TOTAL
+              Defective
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=8 #classindex=7
+Network structure (nodes followed by parents)
+BRANCH_COUNT(1): Defective 
+CYCLOMATIC_COMPLEXITY(1): Defective 
+HALSTEAD_CONTENT(2): Defective 
+MAINTENANCE_SEVERITY(1): Defective 
+NUM_OPERANDS(2): Defective 
+NUM_OPERATORS(2): Defective 
+LOC_TOTAL(3): Defective 
+Defective(2): 
+LogScore Bayes: -2170.5789844594797
+LogScore BDeu: -2181.2126023750134
+LogScore MDL: -2187.709716431235
+LogScore ENTROPY: -2151.639628515768
+LogScore AIC: -2162.639628515768
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         633               89.7872 %
+Incorrectly Classified Instances        72               10.2128 %
+Kappa statistic                          0.1002
+Mean absolute error                      0.2168
+Root mean squared error                  0.3387
+Relative absolute error                136.1932 %
+Root relative squared error            120.4702 %
+Total Number of Instances              705     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.098    0.026    0.261      0.098    0.143      0.114    0.732     0.164     Y
+                 0.974    0.902    0.919      0.974    0.946      0.114    0.732     0.967     N
+Weighted Avg.    0.898    0.826    0.862      0.898    0.876      0.114    0.732     0.897     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+   6  55 |   a = Y
+  17 627 |   b = N
+
+

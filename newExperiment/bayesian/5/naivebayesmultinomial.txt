@@ -1,0 +1,59 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayesMultinomial 
+Relation:     PC1-weka.filters.unsupervised.attribute.Remove-R1,3-6,8-32,35-36
+Instances:    705
+Attributes:   6
+              BRANCH_COUNT
+              CYCLOMATIC_COMPLEXITY
+              NUM_UNIQUE_OPERANDS
+              NUM_UNIQUE_OPERATORS
+              LOC_TOTAL
+              Defective
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+The independent probability of a class
+--------------------------------------
+Y	0.0876944837340877
+N	0.9123055162659123
+
+The probability of a word given the class
+-----------------------------------------
+	Y	N	
+BRANCH_COUNT	0.12113994045087197	0.14860714285714285	
+CYCLOMATIC_COMPLEXITY	0.06865163760102085	0.08280357142857143	
+NUM_UNIQUE_OPERANDS	0.32258613356018717	0.2727142857142857	
+NUM_UNIQUE_OPERATORS	0.11688643130582732	0.18282142857142858	
+LOC_TOTAL	0.3707358570820927	0.31305357142857143	
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         616               87.3759 %
+Incorrectly Classified Instances        89               12.6241 %
+Kappa statistic                          0.3264
+Mean absolute error                      0.1442
+Root mean squared error                  0.3352
+Relative absolute error                 90.5829 %
+Root relative squared error            119.2322 %
+Total Number of Instances              705     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.475    0.089    0.337      0.475    0.395      0.332    0.779     0.333     Y
+                 0.911    0.525    0.948      0.911    0.930      0.332    0.779     0.971     N
+Weighted Avg.    0.874    0.487    0.895      0.874    0.883      0.332    0.779     0.915     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  29  32 |   a = Y
+  57 587 |   b = N
+
+
