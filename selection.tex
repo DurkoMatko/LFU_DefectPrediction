@@ -4,18 +4,21 @@ A typical software defect prediction model is trained by using previously collec
 good metrics for SFP purposes\cite[p.~15]{malhotra2015systematic}.\\\\
 For our experiment, as mentioned above we decided to experiment with the number of metrics used in the fault prediction model. The metrics we decided to use are:\\
 \begin{itemize}
-\item Cyclomatic complexity: Is a quantitative measure of the number of linearly independent paths through a program's source code. \mytodo{Can we find better explanation?}
+\item Cyclomatic complexity: Is a count of linearly independent paths through a program's source code. 
 \item Lines of code: Measure the size of a program by counting the number of lines in the text of the source code.
-\item Branch count: Number of branches in project \mytodo{is this not the same as CC?}
+\item Branch count: Number of branches in project 
 \item Number of unique operands: The number of unique operands such as numerical, text and boolean values.
 \item Number of unique operators: The number of unique operators that evaluate the operands. Such could be plus, minus, multiply and divide. 
-\item Halstead content: \mytodo{what is this?}
-\item Maintenance severity: \mytodo{and what is this? I cant find good info on it :( }
+\item Halstead content: Rather complex metric representing algorithms complexity. It's affected by several other metrics\footnote{More on Halstead content: \url{https://maisqual.squoring.com/wiki/index.php/Halstead_Intelligent_Content}}
+
+\item Maintenance severity: Describes difficulty of maintaining a module
 \end{itemize}
-\mytodo{why did we decide on these? Should we explain? }
+
+We tried to use these measures from both McCabe and Halstead groups and generally tried to use more complex metrics so as many as possible repository features could make an impact. But despite this, metrics have been chosen randomly and it could be interesting to do some research in this field as well (to see which metrics lead to better performance).
+
 \subsection{Classifier}
 Choosing the right classifier is also not a straightforward process since there are many statistics and machine learning methods to be used and to combine. During the last ten years, many papers and articles have been published on the topic of classifier performance in the SFP field. According to Malhotra\cite{malhotra2015systematic},the most widely used classifiers are decision trees and Bayesian learners followed by neural networks and support vector machines\cite[p.~11]{malhotra2015systematic}.\\
 It is because of this, that we decided to use decision trees and bayesian learners, since we wish to get the best possible results in order to properly evaluate the difference between the number of metrics.
 \subsection{Datasets}
 Several dataset options are available for SFP studies, but NASAs Metrics Data Program data sets are definitely the most widely used. In her research, Malhotra\cite{malhotra2015systematic} claims that they are used in more than 60\% of the 64 examined studies. The data set called KC1 is the most widely used (both module and class level) which is applied in 43\% of studies and
-has 15.4\% faulty modules and 40.6\% faulty classes. Similarly, the PC1 data set is used in 40\% of studies and contains only 6.8\% of faulty modules.\cite[p.~17]{malhotra2015systematic}. For our experiment we decided to use the PC1 dataset due to the high number of SFP studies that also use this data set. 
+has 15.4\% faulty modules and 40.6\% faulty classes. Similarly, the PC1 data set is used in 40\% of studies and contains only 6.8\% of faulty modules.\cite[p.~17]{malhotra2015systematic}. For our experiment we decided to use the PC1 dataset due to its bigger size and therefore more training data. 
