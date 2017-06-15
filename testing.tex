@@ -1,11 +1,68 @@
-In previous experiment, we obtained specific values for each and every algorithm in 2 groups. To compare those groups generally, we will work with mean values of each group. We computed means from all values as well as while leaving out maximal and minimal values of each group (to prevent outliers from affecting our results). In both scenarios, values have been almost the same. Because of the limited scope of our report, we're offering the hypothesis testing done for means computed from all values.
+\subsection{Hypothesis Testing}
+After conducting the experiment, we obtained specific values for each algorithm in the two classifier groups that we decided to use. To compare those groups as a whole, we will work with the mean values of each group. We computed the mean value fror all evaluation metrics and we also left out the maximal and minimal values of each group in order to prevent outliers from affecting our results. In both scenarios, the mean values have been almost the same and because of the limited scope of our report, we decided to do the hypothesis testing for the mean value computed from all evaluation metrics, which can be seen in the tables \ref{table:means_correct}, \ref{table:means_F-measure} and \ref{table:means_AUC}.
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |l|c|c| }
+\hline
+\multicolumn{3}{|c|}{\textbf{Means of Correct [\%]}}\\
+ \hline
+ \textbf{\# of metrics} & \textbf{Decision tree} & \textbf{Bayesian Learners}  \\
+ \hline
+ 1 & 91.488 & 90.496\\
+ \hline
+ 3 &  89.726 & 89.361\\
+ \hline
+ 5 & 90.719 & 88.652\\
+ \hline
+ 7 & 90.881 &  88.179\\
+ \hline
+\end{tabular}
+\caption{Means of Correct [\%] evaluation metric}
+\label{table:means_correct}
+\end{table} 
 
-\textbf{[tables of means next to each other]} 
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |l|c|c| }
+ \hline
+ \multicolumn{3}{|c|}{\textbf{Means of F-measure}}\\ \hline
+ \textbf{\# of metrics} & \textbf{Decision tree} & \textbf{Bayesian Learners}  \\
+ \hline
+ 1 & .878 & .869\\
+ \hline
+ 3 &  .872 & .877\\
+ \hline
+ 5 & .880 & .878\\
+ \hline
+ 7 & .883 &  .871\\
+ \hline
+\end{tabular}
+\caption{Means of F-measure evaluation metric}
+\label{table:means_F-measure}
+\end{table} 
 
-At first sight, there are hints that decision trees perform better than the Bayesian learners. To confirm this, we executed paired t-tests for each metric. 
-
-For F-measure, we executed two-tailed t-test since mean values do not clearly display performance supremacy of any group. On the other side, correctness and ROC area have always showed slightly better performance of decision trees over bayesian learners so in their case we can perform one-tailed t-test. We measured performance for 4 different scenarios what results into 6 degrees of freedom (n1+n2-2). With confidence level set to standard default value 95\% the critical t-value found in statistical table for t-distribution is 2.447 and 2.015 (for 2-tailed and 1-tailed t-test respectively). 
-
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |l|c|c| }
+ \hline
+ \multicolumn{3}{|c|}{\textbf{Means of AUC}}\\ \hline
+ \textbf{\# of metrics} & \textbf{Decision tree} & \textbf{Bayesian Learners}  \\
+ \hline
+ 1 & .565 & .482\\
+ \hline
+ 3 &  .663 & .643\\
+ \hline
+ 5 & .681 & .675\\
+ \hline
+ 7 & .707 &  .636\\
+ \hline
+\end{tabular}
+\caption{Means of AUC evaluation metric}
+\label{table:means_AUC}
+\end{table} 
+At first sight, it looks like that decision trees perform better than the Bayesian learners. To confirm this, we executed a paired t-tests for each metric. \\ \mytodo{should we explain what a paired t-test is?}
+For the F-measure evaluation metric, we executed a two-tailed t-test since mean values do not clearly display performance supremacy of any group. On the other side, correctness and AUC have always showed slightly better performance of decision trees over bayesian learners so in their case we can perform one-tailed t-test. \\
+We measured performance for 4 different scenarios which results into 6 degrees of freedom $(n1+n2-2)$. With confidence level set to standard default value 95\% the critical t-value found in statistical table for t-distribution is 2.447 and 2.015 (for 2-tailed and 1-tailed t-test respectively). 
 \begin{table}[h!]		
 \centering		
 \begin{tabular}{ |c|c|c|c|c|c|c| } 		
@@ -22,8 +79,6 @@ For F-measure, we executed two-tailed t-test since mean values do not clearly di
 \caption{Hypothetis testing results}		
 \label{table:hypothesisTesting}		
 \end{table}
-
-As can be seen in table \ref{table:hypothesisTesting}, according to t and p-values we can reject null hypothesis in favor of alternative hypothesis in cases of both one-tailed tests (correctness, AUC area). This can be in other words interpreted that when speaking in terms of correctness and AUC area, decision trees really performed better than bayesian learners. On the other side, experiment with F-measure as evaluation metric didn't show performance advantage in any of 2 groups.
+As can be seen in table \ref{table:hypothesisTesting}, according to t and p-values we can reject our null hypothesis \mytodo{what is our null hypothesis? we have not written this anywhere} in favor of an alternative hypothesis in both cases of the one-tailed tests (correctness, AUC). This can, in other words, be interpreted that when speaking in terms of correctness and AUC, decision trees really performed better than bayesian learners. On the other side, experiment with F-measure as evaluation metric didn't show performance advantage in any of 2 groups.
 
 Another area we concentrated on in our experiment was the effect of number of software metrics used to train the prediction models. Results can be seen in tables...
-
