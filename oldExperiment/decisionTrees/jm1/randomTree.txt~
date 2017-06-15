@@ -1,0 +1,169 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     CM1
+Instances:    327
+Attributes:   38
+              LOC_BLANK
+              BRANCH_COUNT
+              CALL_PAIRS
+              LOC_CODE_AND_COMMENT
+              LOC_COMMENTS
+              CONDITION_COUNT
+              CYCLOMATIC_COMPLEXITY
+              CYCLOMATIC_DENSITY
+              DECISION_COUNT
+              DECISION_DENSITY
+              DESIGN_COMPLEXITY
+              DESIGN_DENSITY
+              EDGE_COUNT
+              ESSENTIAL_COMPLEXITY
+              ESSENTIAL_DENSITY
+              LOC_EXECUTABLE
+              PARAMETER_COUNT
+              HALSTEAD_CONTENT
+              HALSTEAD_DIFFICULTY
+              HALSTEAD_EFFORT
+              HALSTEAD_ERROR_EST
+              HALSTEAD_LENGTH
+              HALSTEAD_LEVEL
+              HALSTEAD_PROG_TIME
+              HALSTEAD_VOLUME
+              MAINTENANCE_SEVERITY
+              MODIFIED_CONDITION_COUNT
+              MULTIPLE_CONDITION_COUNT
+              NODE_COUNT
+              NORMALIZED_CYLOMATIC_COMPLEXITY
+              NUM_OPERANDS
+              NUM_OPERATORS
+              NUM_UNIQUE_OPERANDS
+              NUM_UNIQUE_OPERATORS
+              NUMBER_OF_LINES
+              PERCENT_COMMENTS
+              LOC_TOTAL
+              Defective
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+RandomTree
+==========
+
+HALSTEAD_PROG_TIME < 437.1
+|   NORMALIZED_CYLOMATIC_COMPLEXITY < 0.08
+|   |   LOC_CODE_AND_COMMENT < 3.5
+|   |   |   PERCENT_COMMENTS < 55.69
+|   |   |   |   NODE_COUNT < 9.5
+|   |   |   |   |   NUM_UNIQUE_OPERATORS < 17.5 : N (6/0)
+|   |   |   |   |   NUM_UNIQUE_OPERATORS >= 17.5 : Y (3/0)
+|   |   |   |   NODE_COUNT >= 9.5 : N (7/0)
+|   |   |   PERCENT_COMMENTS >= 55.69
+|   |   |   |   LOC_BLANK < 15 : Y (3/0)
+|   |   |   |   LOC_BLANK >= 15 : N (1/0)
+|   |   LOC_CODE_AND_COMMENT >= 3.5 : N (11/0)
+|   NORMALIZED_CYLOMATIC_COMPLEXITY >= 0.08
+|   |   LOC_COMMENTS < 15.5
+|   |   |   LOC_BLANK < 0.5
+|   |   |   |   HALSTEAD_PROG_TIME < 72.85
+|   |   |   |   |   CALL_PAIRS < 1 : N (5/0)
+|   |   |   |   |   CALL_PAIRS >= 1 : Y (1/0)
+|   |   |   |   HALSTEAD_PROG_TIME >= 72.85 : N (9/0)
+|   |   |   LOC_BLANK >= 0.5 : N (99/0)
+|   |   LOC_COMMENTS >= 15.5
+|   |   |   CALL_PAIRS < 2 : Y (1/0)
+|   |   |   CALL_PAIRS >= 2 : N (4/0)
+HALSTEAD_PROG_TIME >= 437.1
+|   PERCENT_COMMENTS < 16.81 : N (29/0)
+|   PERCENT_COMMENTS >= 16.81
+|   |   HALSTEAD_LEVEL < 0.08
+|   |   |   HALSTEAD_EFFORT < 33232.79
+|   |   |   |   LOC_TOTAL < 83
+|   |   |   |   |   HALSTEAD_EFFORT < 9164.33
+|   |   |   |   |   |   HALSTEAD_ERROR_EST < 0.17 : N (2/0)
+|   |   |   |   |   |   HALSTEAD_ERROR_EST >= 0.17 : Y (3/0)
+|   |   |   |   |   HALSTEAD_EFFORT >= 9164.33
+|   |   |   |   |   |   HALSTEAD_LEVEL < 0.06
+|   |   |   |   |   |   |   LOC_CODE_AND_COMMENT < 3.5
+|   |   |   |   |   |   |   |   MODIFIED_CONDITION_COUNT < 3.5
+|   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 2.5 : N (2/0)
+|   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 2.5
+|   |   |   |   |   |   |   |   |   |   PARAMETER_COUNT < 0.5 : N (2/0)
+|   |   |   |   |   |   |   |   |   |   PARAMETER_COUNT >= 0.5 : Y (4/0)
+|   |   |   |   |   |   |   |   MODIFIED_CONDITION_COUNT >= 3.5 : N (7/0)
+|   |   |   |   |   |   |   LOC_CODE_AND_COMMENT >= 3.5
+|   |   |   |   |   |   |   |   HALSTEAD_DIFFICULTY < 18.5 : Y (1/0)
+|   |   |   |   |   |   |   |   HALSTEAD_DIFFICULTY >= 18.5 : N (25/0)
+|   |   |   |   |   |   HALSTEAD_LEVEL >= 0.06 : N (21/0)
+|   |   |   |   LOC_TOTAL >= 83 : Y (1/0)
+|   |   |   HALSTEAD_EFFORT >= 33232.79
+|   |   |   |   LOC_CODE_AND_COMMENT < 24
+|   |   |   |   |   LOC_EXECUTABLE < 42.5 : N (8/0)
+|   |   |   |   |   LOC_EXECUTABLE >= 42.5
+|   |   |   |   |   |   NUM_OPERATORS < 166.5 : Y (5/0)
+|   |   |   |   |   |   NUM_OPERATORS >= 166.5
+|   |   |   |   |   |   |   LOC_EXECUTABLE < 70.5
+|   |   |   |   |   |   |   |   CALL_PAIRS < 11 : N (11/0)
+|   |   |   |   |   |   |   |   CALL_PAIRS >= 11
+|   |   |   |   |   |   |   |   |   DECISION_DENSITY < 2.02 : Y (1/0)
+|   |   |   |   |   |   |   |   |   DECISION_DENSITY >= 2.02 : N (1/0)
+|   |   |   |   |   |   |   LOC_EXECUTABLE >= 70.5
+|   |   |   |   |   |   |   |   NODE_COUNT < 41 : Y (4/0)
+|   |   |   |   |   |   |   |   NODE_COUNT >= 41
+|   |   |   |   |   |   |   |   |   PARAMETER_COUNT < 3.5
+|   |   |   |   |   |   |   |   |   |   NUM_OPERATORS < 277.5 : N (4/0)
+|   |   |   |   |   |   |   |   |   |   NUM_OPERATORS >= 277.5
+|   |   |   |   |   |   |   |   |   |   |   DESIGN_DENSITY < 0.94
+|   |   |   |   |   |   |   |   |   |   |   |   LOC_BLANK < 19 : Y (4/0)
+|   |   |   |   |   |   |   |   |   |   |   |   LOC_BLANK >= 19
+|   |   |   |   |   |   |   |   |   |   |   |   |   DECISION_DENSITY < 2.29
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_BLANK < 42.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_DENSITY < 0.15 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_DENSITY >= 0.15 : N (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC_BLANK >= 42.5 : Y (5/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   DECISION_DENSITY >= 2.29 : N (2/0)
+|   |   |   |   |   |   |   |   |   |   |   DESIGN_DENSITY >= 0.94 : N (2/0)
+|   |   |   |   |   |   |   |   |   PARAMETER_COUNT >= 3.5 : N (4/0)
+|   |   |   |   LOC_CODE_AND_COMMENT >= 24
+|   |   |   |   |   CONDITION_COUNT < 183 : N (17/0)
+|   |   |   |   |   CONDITION_COUNT >= 183
+|   |   |   |   |   |   CONDITION_COUNT < 243 : Y (1/0)
+|   |   |   |   |   |   CONDITION_COUNT >= 243 : N (1/0)
+|   |   HALSTEAD_LEVEL >= 0.08
+|   |   |   ESSENTIAL_COMPLEXITY < 2
+|   |   |   |   CONDITION_COUNT < 18
+|   |   |   |   |   CALL_PAIRS < 3.5 : Y (2/0)
+|   |   |   |   |   CALL_PAIRS >= 3.5 : N (1/0)
+|   |   |   |   CONDITION_COUNT >= 18 : N (2/0)
+|   |   |   ESSENTIAL_COMPLEXITY >= 2 : Y (2/0)
+
+Size of the tree : 87
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         260               79.5107 %
+Incorrectly Classified Instances        67               20.4893 %
+Kappa statistic                          0.1614
+Mean absolute error                      0.2049
+Root mean squared error                  0.4527
+Relative absolute error                 90.7496 %
+Root relative squared error            135.2662 %
+Total Number of Instances              327     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.310    0.133    0.255      0.310    0.280      0.162    0.588     0.168     Y
+                 0.867    0.690    0.895      0.867    0.881      0.162    0.588     0.892     N
+Weighted Avg.    0.795    0.619    0.813      0.795    0.803      0.162    0.588     0.799     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  13  29 |   a = Y
+  38 247 |   b = N
+
+

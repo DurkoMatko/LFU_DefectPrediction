@@ -1,0 +1,69 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.HoeffdingTree -L 2 -S 1 -E 1.0E-7 -H 0.05 -M 0.01 -G 200.0 -N 0.0
+Relation:     JM1
+Instances:    9593
+Attributes:   22
+              LOC_BLANK
+              BRANCH_COUNT
+              LOC_CODE_AND_COMMENT
+              LOC_COMMENTS
+              CYCLOMATIC_COMPLEXITY
+              DESIGN_COMPLEXITY
+              ESSENTIAL_COMPLEXITY
+              LOC_EXECUTABLE
+              HALSTEAD_CONTENT
+              HALSTEAD_DIFFICULTY
+              HALSTEAD_EFFORT
+              HALSTEAD_ERROR_EST
+              HALSTEAD_LENGTH
+              HALSTEAD_LEVEL
+              HALSTEAD_PROG_TIME
+              HALSTEAD_VOLUME
+              NUM_OPERANDS
+              NUM_OPERATORS
+              NUM_UNIQUE_OPERANDS
+              NUM_UNIQUE_OPERATORS
+              LOC_TOTAL
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+ESSENTIAL_COMPLEXITY <= 13.636: 
+|   HALSTEAD_CONTENT <= 10.267: N (956.000) NB1 NB adaptive1
+|   HALSTEAD_CONTENT > 10.267: 
+|   |   NUM_UNIQUE_OPERATORS <= 40.000: 
+|   |   |   LOC_COMMENTS <= 11.455: N (1642.966) NB2 NB adaptive2
+|   |   |   LOC_COMMENTS > 11.455: N (48.034) NB3 NB adaptive3
+|   |   NUM_UNIQUE_OPERATORS > 40.000: Y (35.114) NB4 NB adaptive4
+ESSENTIAL_COMPLEXITY > 13.636: Y (368.688) NB5 NB adaptive5
+
+Time taken to build model: 0.49 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        7816               81.4761 %
+Incorrectly Classified Instances      1777               18.5239 %
+Kappa statistic                          0.1186
+Mean absolute error                      0.2778
+Root mean squared error                  0.3932
+Relative absolute error                 92.7379 %
+Root relative squared error            101.6059 %
+Total Number of Instances             9593     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.110    0.027    0.478      0.110    0.179      0.160    0.565     0.272     Y
+                 0.973    0.890    0.830      0.973    0.896      0.160    0.565     0.821     N
+Weighted Avg.    0.815    0.732    0.765      0.815    0.764      0.160    0.565     0.720     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  194 1565 |    a = Y
+  212 7622 |    b = N
+

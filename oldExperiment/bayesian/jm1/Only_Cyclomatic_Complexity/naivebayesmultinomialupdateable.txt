@@ -1,0 +1,52 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayesMultinomialUpdateable
+Relation:     JM1-weka.filters.unsupervised.attribute.Remove-R1-4,6-21
+Instances:    9593
+Attributes:   2
+              CYCLOMATIC_COMPLEXITY
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Dictionary size: 2
+
+The independent frequency of a class
+--------------------------------------
+Y	1760.0
+N	7835.0
+
+The frequency of a word given the class
+-----------------------------------------
+          Y	          N
+    19611.0	    36366.0	CYCLOMATIC_COMPLEXITY
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        7834               81.6637 %
+Incorrectly Classified Instances      1759               18.3363 %
+Kappa statistic                          0
+Mean absolute error                      0.2995
+Root mean squared error                  0.387
+Relative absolute error                 99.9978 %
+Root relative squared error            100.0026 %
+Total Number of Instances             9593
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.376     0.146     Y
+                 1.000    1.000    0.817      1.000    0.899      0.000    0.376     0.744     N
+Weighted Avg.    0.817    0.817    0.667      0.817    0.734      0.000    0.376     0.634
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+    0 1759 |    a = Y
+    0 7834 |    b = N
+

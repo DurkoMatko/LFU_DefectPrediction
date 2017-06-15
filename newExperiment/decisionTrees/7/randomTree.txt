@@ -1,0 +1,199 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     PC1-weka.filters.unsupervised.attribute.Remove-R1,3-6,8-17,19-25,27-32,36-37
+Instances:    705
+Attributes:   8
+              BRANCH_COUNT
+              CYCLOMATIC_COMPLEXITY
+              HALSTEAD_CONTENT
+              MAINTENANCE_SEVERITY
+              NUM_UNIQUE_OPERANDS
+              NUM_UNIQUE_OPERATORS
+              NUMBER_OF_LINES
+              Defective
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+RandomTree
+==========
+
+HALSTEAD_CONTENT < 30.91
+|   NUMBER_OF_LINES < 50
+|   |   NUMBER_OF_LINES < 19.5 : N (251/0)
+|   |   NUMBER_OF_LINES >= 19.5
+|   |   |   BRANCH_COUNT < 6
+|   |   |   |   NUMBER_OF_LINES < 20.5
+|   |   |   |   |   MAINTENANCE_SEVERITY < 0.42
+|   |   |   |   |   |   NUM_UNIQUE_OPERATORS < 13.5 : N (3/0)
+|   |   |   |   |   |   NUM_UNIQUE_OPERATORS >= 13.5 : Y (1/0)
+|   |   |   |   |   MAINTENANCE_SEVERITY >= 0.42 : N (2/0)
+|   |   |   |   NUMBER_OF_LINES >= 20.5 : N (31/0)
+|   |   |   BRANCH_COUNT >= 6 : N (77/0)
+|   NUMBER_OF_LINES >= 50
+|   |   CYCLOMATIC_COMPLEXITY < 2.5 : Y (1/0)
+|   |   CYCLOMATIC_COMPLEXITY >= 2.5
+|   |   |   NUMBER_OF_LINES < 52.5 : Y (1/0)
+|   |   |   NUMBER_OF_LINES >= 52.5 : N (11/0)
+HALSTEAD_CONTENT >= 30.91
+|   HALSTEAD_CONTENT < 31.09 : Y (3/0)
+|   HALSTEAD_CONTENT >= 31.09
+|   |   NUM_UNIQUE_OPERANDS < 72.5
+|   |   |   NUMBER_OF_LINES < 156
+|   |   |   |   BRANCH_COUNT < 16.5
+|   |   |   |   |   NUMBER_OF_LINES < 23.5
+|   |   |   |   |   |   HALSTEAD_CONTENT < 33.54
+|   |   |   |   |   |   |   HALSTEAD_CONTENT < 33.23 : N (6/0)
+|   |   |   |   |   |   |   HALSTEAD_CONTENT >= 33.23 : Y (1/0)
+|   |   |   |   |   |   HALSTEAD_CONTENT >= 33.54 : N (21/0)
+|   |   |   |   |   NUMBER_OF_LINES >= 23.5
+|   |   |   |   |   |   MAINTENANCE_SEVERITY < 0.94
+|   |   |   |   |   |   |   HALSTEAD_CONTENT < 32.56
+|   |   |   |   |   |   |   |   BRANCH_COUNT < 10
+|   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT < 31.73 : N (3/0)
+|   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT >= 31.73
+|   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 3.5
+|   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT < 32.38 : Y (2/0)
+|   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT >= 32.38 : N (1/0)
+|   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 3.5 : Y (3/0)
+|   |   |   |   |   |   |   |   BRANCH_COUNT >= 10 : N (3/0)
+|   |   |   |   |   |   |   HALSTEAD_CONTENT >= 32.56
+|   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS < 20.5 : N (15/0)
+|   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS >= 20.5
+|   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS < 9 : Y (1/0)
+|   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS >= 9
+|   |   |   |   |   |   |   |   |   |   BRANCH_COUNT < 4 : N (10/0)
+|   |   |   |   |   |   |   |   |   |   BRANCH_COUNT >= 4
+|   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 11.5
+|   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT < 34.66 : N (9/0)
+|   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT >= 34.66
+|   |   |   |   |   |   |   |   |   |   |   |   |   MAINTENANCE_SEVERITY < 0.35
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 39
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS < 23
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 37.5 : N (6/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 37.5 : Y (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS >= 23
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT < 46.81 : Y (4/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT >= 46.81
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 6.5 : N (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 6.5 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 39
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS < 24.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT < 43.48 : N (12/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT >= 43.48
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT < 43.95 : Y (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT >= 43.95
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT < 60.88 : N (13/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT >= 60.88
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 6.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS < 38
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT < 63.51 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT >= 63.51 : N (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERANDS >= 38
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 5.5 : N (10/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 5.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT < 85.13 : N (3/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT >= 85.13
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 76 : N (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 76 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 6.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT < 103.72 : Y (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT >= 103.72 : N (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS >= 24.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT < 12.5 : Y (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT >= 12.5 : N (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   MAINTENANCE_SEVERITY >= 0.35
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT < 43.27
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT < 42.49 : N (9/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT >= 42.49 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT >= 43.27 : N (21/0)
+|   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 11.5 : Y (1/0)
+|   |   |   |   |   |   MAINTENANCE_SEVERITY >= 0.94
+|   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS < 18.5
+|   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 5.5
+|   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT < 79.24
+|   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT < 41.91
+|   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 4
+|   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT < 32.23 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT >= 32.23 : N (3/0)
+|   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 4 : Y (2/0)
+|   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT >= 41.91 : Y (2/0)
+|   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT >= 79.24 : N (1/0)
+|   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 5.5 : N (3/0)
+|   |   |   |   |   |   |   NUM_UNIQUE_OPERATORS >= 18.5 : Y (2/0)
+|   |   |   |   BRANCH_COUNT >= 16.5
+|   |   |   |   |   NUMBER_OF_LINES < 149
+|   |   |   |   |   |   NUM_UNIQUE_OPERATORS < 14.5
+|   |   |   |   |   |   |   HALSTEAD_CONTENT < 72.48 : N (8/0)
+|   |   |   |   |   |   |   HALSTEAD_CONTENT >= 72.48 : Y (1/0)
+|   |   |   |   |   |   NUM_UNIQUE_OPERATORS >= 14.5 : N (76/0)
+|   |   |   |   |   NUMBER_OF_LINES >= 149
+|   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 16.5 : N (2/0)
+|   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 16.5
+|   |   |   |   |   |   |   BRANCH_COUNT < 31.5 : Y (1/0)
+|   |   |   |   |   |   |   BRANCH_COUNT >= 31.5 : N (1/0)
+|   |   |   NUMBER_OF_LINES >= 156
+|   |   |   |   MAINTENANCE_SEVERITY < 0.14 : Y (3/0)
+|   |   |   |   MAINTENANCE_SEVERITY >= 0.14
+|   |   |   |   |   NUM_UNIQUE_OPERANDS < 59.5 : Y (2/0)
+|   |   |   |   |   NUM_UNIQUE_OPERANDS >= 59.5
+|   |   |   |   |   |   BRANCH_COUNT < 22
+|   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 7.5 : N (1/0)
+|   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 7.5 : Y (1/0)
+|   |   |   |   |   |   BRANCH_COUNT >= 22 : N (3/0)
+|   |   NUM_UNIQUE_OPERANDS >= 72.5
+|   |   |   NUM_UNIQUE_OPERATORS < 19.5 : N (5/0)
+|   |   |   NUM_UNIQUE_OPERATORS >= 19.5
+|   |   |   |   HALSTEAD_CONTENT < 80.22 : N (4/0)
+|   |   |   |   HALSTEAD_CONTENT >= 80.22
+|   |   |   |   |   CYCLOMATIC_COMPLEXITY < 30
+|   |   |   |   |   |   NUM_UNIQUE_OPERANDS < 78.5 : Y (4/0)
+|   |   |   |   |   |   NUM_UNIQUE_OPERANDS >= 78.5
+|   |   |   |   |   |   |   BRANCH_COUNT < 50
+|   |   |   |   |   |   |   |   NUMBER_OF_LINES < 92.5 : N (2/0)
+|   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 92.5
+|   |   |   |   |   |   |   |   |   BRANCH_COUNT < 43
+|   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT < 105.89
+|   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT < 39.5
+|   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 239.5 : N (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 239.5 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT >= 39.5 : Y (2/0)
+|   |   |   |   |   |   |   |   |   |   HALSTEAD_CONTENT >= 105.89 : Y (4/0)
+|   |   |   |   |   |   |   |   |   BRANCH_COUNT >= 43 : N (2/0)
+|   |   |   |   |   |   |   BRANCH_COUNT >= 50 : Y (3/0)
+|   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 30
+|   |   |   |   |   |   BRANCH_COUNT < 160.5 : N (7/0)
+|   |   |   |   |   |   BRANCH_COUNT >= 160.5 : Y (2/0)
+
+Size of the tree : 147
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         631               89.5035 %
+Incorrectly Classified Instances        74               10.4965 %
+Kappa statistic                          0.336 
+Mean absolute error                      0.105 
+Root mean squared error                  0.324 
+Relative absolute error                 65.9515 %
+Root relative squared error            115.2357 %
+Total Number of Instances              705     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.393    0.057    0.393      0.393    0.393      0.336    0.668     0.207     Y
+                 0.943    0.607    0.943      0.943    0.943      0.336    0.668     0.941     N
+Weighted Avg.    0.895    0.559    0.895      0.895    0.895      0.336    0.668     0.877     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  24  37 |   a = Y
+  37 607 |   b = N
+
+

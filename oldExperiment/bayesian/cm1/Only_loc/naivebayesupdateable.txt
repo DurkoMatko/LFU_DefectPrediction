@@ -1,0 +1,53 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayesUpdateable
+Relation:     CM1-weka.filters.unsupervised.attribute.Remove-R1-36
+Instances:    327
+Attributes:   2
+              LOC_TOTAL
+              Defective
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                 Class
+Attribute            Y       N
+                (0.13)  (0.87)
+===============================
+LOC_TOTAL
+  mean          75.8357 42.4509
+  std. dev.     75.7511 51.1521
+  weight sum         42     285
+  precision      4.8627  4.8627
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         279               85.3211 %
+Incorrectly Classified Instances        48               14.6789 %
+Kappa statistic                         -0.0011
+Mean absolute error                      0.2062
+Root mean squared error                  0.3464
+Relative absolute error                 91.3312 %
+Root relative squared error            103.5232 %
+Total Number of Instances              327
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.024    0.025    0.125      0.024    0.040      -0.002   0.629     0.209     Y
+                 0.975    0.976    0.871      0.975    0.921      -0.002   0.629     0.902     N
+Weighted Avg.    0.853    0.854    0.776      0.853    0.807      -0.002   0.629     0.813
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+   1  41 |   a = Y
+   7 278 |   b = N
+

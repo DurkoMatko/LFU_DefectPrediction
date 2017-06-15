@@ -1,0 +1,57 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.LMT -I -1 -M 15 -W 0.0
+Relation:     JM1-weka.filters.unsupervised.attribute.Remove-R1-20
+Instances:    9593
+Attributes:   2
+              LOC_TOTAL
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic model tree 
+------------------
+: LM_1:1/1 (9593)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 0 :
+-0.73 + 
+[LOC_TOTAL] * 0   
+
+Class 1 :
+0.73 + 
+[LOC_TOTAL] * -0
+
+
+Time taken to build model: 1.06 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        7850               81.8305 %
+Incorrectly Classified Instances      1743               18.1695 %
+Kappa statistic                          0.0508
+Mean absolute error                      0.3054
+Root mean squared error                  0.3773
+Relative absolute error                101.9728 %
+Root relative squared error             97.4945 %
+Total Number of Instances             9593     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.039    0.007    0.566      0.039    0.073      0.112    0.683     0.362     Y
+                 0.993    0.961    0.822      0.993    0.899      0.112    0.683     0.887     N
+Weighted Avg.    0.818    0.786    0.775      0.818    0.748      0.112    0.683     0.791     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+   69 1690 |    a = Y
+   53 7781 |    b = N
+
+

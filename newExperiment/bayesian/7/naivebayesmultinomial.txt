@@ -1,0 +1,63 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayesMultinomial 
+Relation:     PC1-weka.filters.unsupervised.attribute.Remove-R1,3-6,8-17,19-25,27-30,33-36
+Instances:    705
+Attributes:   8
+              BRANCH_COUNT
+              CYCLOMATIC_COMPLEXITY
+              HALSTEAD_CONTENT
+              MAINTENANCE_SEVERITY
+              NUM_OPERANDS
+              NUM_OPERATORS
+              LOC_TOTAL
+              Defective
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+The independent probability of a class
+--------------------------------------
+Y	0.0876944837340877
+N	0.9123055162659123
+
+The probability of a word given the class
+-----------------------------------------
+	Y	N	
+BRANCH_COUNT	0.04462180357945828	0.057861003435783806	
+CYCLOMATIC_COMPLEXITY	0.025287777730774466	0.03224002318333687	
+HALSTEAD_CONTENT	0.1354036722114897	0.15329084630860437	
+MAINTENANCE_SEVERITY	8.322718420438289E-4	0.0022388634602687725	
+NUM_OPERANDS	0.2830852342252993	0.2749962037842011	
+NUM_OPERATORS	0.37420897355750765	0.35748394047756066	
+LOC_TOTAL	0.13656026685342643	0.12188911935024341	
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         605               85.8156 %
+Incorrectly Classified Instances       100               14.1844 %
+Kappa statistic                          0.1871
+Mean absolute error                      0.1635
+Root mean squared error                  0.3568
+Relative absolute error                102.7233 %
+Root relative squared error            126.9243 %
+Total Number of Instances              705     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.295    0.089    0.240      0.295    0.265      0.188    0.638     0.206     Y
+                 0.911    0.705    0.932      0.911    0.922      0.188    0.638     0.937     N
+Weighted Avg.    0.858    0.652    0.872      0.858    0.865      0.188    0.638     0.874     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  18  43 |   a = Y
+  57 587 |   b = N
+
+

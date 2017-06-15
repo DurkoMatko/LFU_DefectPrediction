@@ -1,0 +1,255 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     PC1-weka.filters.unsupervised.attribute.Remove-R1,3-6,8-34,36-37
+Instances:    705
+Attributes:   4
+              BRANCH_COUNT
+              CYCLOMATIC_COMPLEXITY
+              NUMBER_OF_LINES
+              Defective
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+RandomTree
+==========
+
+NUMBER_OF_LINES < 34.5
+|   NUMBER_OF_LINES < 19.5 : N (259/0)
+|   NUMBER_OF_LINES >= 19.5
+|   |   CYCLOMATIC_COMPLEXITY < 5.5
+|   |   |   CYCLOMATIC_COMPLEXITY < 2.5
+|   |   |   |   NUMBER_OF_LINES < 21.5
+|   |   |   |   |   NUMBER_OF_LINES < 20.5 : N (2/0)
+|   |   |   |   |   NUMBER_OF_LINES >= 20.5 : N (5/1)
+|   |   |   |   NUMBER_OF_LINES >= 21.5 : N (23/0)
+|   |   |   CYCLOMATIC_COMPLEXITY >= 2.5
+|   |   |   |   BRANCH_COUNT < 8
+|   |   |   |   |   NUMBER_OF_LINES < 32.5
+|   |   |   |   |   |   BRANCH_COUNT < 6
+|   |   |   |   |   |   |   NUMBER_OF_LINES < 25.5
+|   |   |   |   |   |   |   |   NUMBER_OF_LINES < 24.5
+|   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 22.5
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 21.5
+|   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 20.5 : N (6/1)
+|   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 20.5 : N (4/0)
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 21.5 : Y (2/1)
+|   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 22.5 : N (6/0)
+|   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 24.5 : N (5/2)
+|   |   |   |   |   |   |   NUMBER_OF_LINES >= 25.5 : N (11/0)
+|   |   |   |   |   |   BRANCH_COUNT >= 6
+|   |   |   |   |   |   |   NUMBER_OF_LINES < 24.5 : N (8/0)
+|   |   |   |   |   |   |   NUMBER_OF_LINES >= 24.5
+|   |   |   |   |   |   |   |   NUMBER_OF_LINES < 27 : Y (2/1)
+|   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 27
+|   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 31.5 : N (2/0)
+|   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 31.5 : Y (2/1)
+|   |   |   |   |   NUMBER_OF_LINES >= 32.5 : N (4/0)
+|   |   |   |   BRANCH_COUNT >= 8
+|   |   |   |   |   NUMBER_OF_LINES < 24.5
+|   |   |   |   |   |   NUMBER_OF_LINES < 23.5 : N (8/0)
+|   |   |   |   |   |   NUMBER_OF_LINES >= 23.5 : Y (2/1)
+|   |   |   |   |   NUMBER_OF_LINES >= 24.5 : N (9/0)
+|   |   CYCLOMATIC_COMPLEXITY >= 5.5 : N (54/0)
+NUMBER_OF_LINES >= 34.5
+|   BRANCH_COUNT < 160.5
+|   |   NUMBER_OF_LINES < 157.5
+|   |   |   BRANCH_COUNT < 12.5
+|   |   |   |   CYCLOMATIC_COMPLEXITY < 8.5
+|   |   |   |   |   NUMBER_OF_LINES < 36.5
+|   |   |   |   |   |   BRANCH_COUNT < 6 : N (3/0)
+|   |   |   |   |   |   BRANCH_COUNT >= 6
+|   |   |   |   |   |   |   BRANCH_COUNT < 8.5 : Y (3/0)
+|   |   |   |   |   |   |   BRANCH_COUNT >= 8.5
+|   |   |   |   |   |   |   |   NUMBER_OF_LINES < 35.5 : N (4/1)
+|   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 35.5 : Y (2/1)
+|   |   |   |   |   NUMBER_OF_LINES >= 36.5
+|   |   |   |   |   |   NUMBER_OF_LINES < 48.5
+|   |   |   |   |   |   |   BRANCH_COUNT < 10
+|   |   |   |   |   |   |   |   BRANCH_COUNT < 4 : N (3/0)
+|   |   |   |   |   |   |   |   BRANCH_COUNT >= 4
+|   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 37.5 : N (2/0)
+|   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 37.5
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 38.5
+|   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT < 8
+|   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 3.5 : N (3/1)
+|   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 3.5 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT >= 8 : N (1/0)
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 38.5
+|   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT < 8 : N (8/0)
+|   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT >= 8
+|   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 45.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 41.5 : N (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 41.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 42.5 : Y (2/1)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 42.5 : N (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 45.5 : Y (1/0)
+|   |   |   |   |   |   |   BRANCH_COUNT >= 10 : N (13/0)
+|   |   |   |   |   |   NUMBER_OF_LINES >= 48.5
+|   |   |   |   |   |   |   BRANCH_COUNT < 7.5
+|   |   |   |   |   |   |   |   NUMBER_OF_LINES < 117
+|   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 53.5
+|   |   |   |   |   |   |   |   |   |   BRANCH_COUNT < 4 : N (1/0)
+|   |   |   |   |   |   |   |   |   |   BRANCH_COUNT >= 4
+|   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT < 6
+|   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 50.5 : Y (2/1)
+|   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 50.5 : N (1/0)
+|   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT >= 6 : N (1/0)
+|   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 53.5
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 59 : Y (2/0)
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 59
+|   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 74
+|   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 3.5 : N (5/0)
+|   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 3.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 69.5 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 69.5 : N (1/0)
+|   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 74
+|   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT < 4 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT >= 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 78.5 : Y (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 78.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 100.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 90 : N (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 90 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 100.5 : N (3/0)
+|   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 117 : N (1/0)
+|   |   |   |   |   |   |   BRANCH_COUNT >= 7.5
+|   |   |   |   |   |   |   |   NUMBER_OF_LINES < 52.5
+|   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 6.5
+|   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 5.5 : N (1/0)
+|   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 5.5
+|   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 49.5 : N (1/0)
+|   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 49.5 : Y (2/1)
+|   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 6.5 : Y (1/0)
+|   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 52.5
+|   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 6.5
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 58.5 : N (5/0)
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 58.5
+|   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 97
+|   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 88.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 74.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 73.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT < 10 : N (4/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT >= 10
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 65.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 62 : Y (2/1)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 62 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 65.5 : N (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 73.5 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 74.5 : N (4/0)
+|   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 88.5 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 97 : N (3/0)
+|   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 6.5 : N (4/0)
+|   |   |   |   CYCLOMATIC_COMPLEXITY >= 8.5 : Y (1/0)
+|   |   |   BRANCH_COUNT >= 12.5
+|   |   |   |   CYCLOMATIC_COMPLEXITY < 31.5
+|   |   |   |   |   BRANCH_COUNT < 54.5
+|   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 17.5
+|   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 16.5
+|   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 12.5
+|   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 11.5
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 127
+|   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 104
+|   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 8.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 6 : N (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 6
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 38.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT < 14 : N (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT >= 14 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 38.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 7.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 41.5 : N (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 41.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 43 : Y (2/1)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 43
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 60.5 : N (5/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 60.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 62 : Y (2/1)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 62
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 72.5 : N (5/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 72.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 75 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 75 : N (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 7.5 : N (9/0)
+|   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 8.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 102.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 9.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 60.5 : N (12/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 60.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT < 15 : N (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT >= 15
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 64.5 : Y (2/1)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 64.5 : N (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 9.5 : N (16/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 102.5 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 104 : N (8/0)
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 127
+|   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 135 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 135 : N (2/0)
+|   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 11.5
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 66 : N (5/0)
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 66
+|   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT < 17.5 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT >= 17.5
+|   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT < 21.5 : N (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   BRANCH_COUNT >= 21.5 : Y (1/0)
+|   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 12.5 : N (27/0)
+|   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 16.5
+|   |   |   |   |   |   |   |   NUMBER_OF_LINES < 57 : N (1/0)
+|   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 57 : Y (2/0)
+|   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 17.5 : N (22/0)
+|   |   |   |   |   BRANCH_COUNT >= 54.5 : Y (1/0)
+|   |   |   |   CYCLOMATIC_COMPLEXITY >= 31.5 : N (13/0)
+|   |   NUMBER_OF_LINES >= 157.5
+|   |   |   CYCLOMATIC_COMPLEXITY < 30
+|   |   |   |   CYCLOMATIC_COMPLEXITY < 6.5 : N (1/0)
+|   |   |   |   CYCLOMATIC_COMPLEXITY >= 6.5
+|   |   |   |   |   CYCLOMATIC_COMPLEXITY < 12.5 : Y (5/0)
+|   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 12.5
+|   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 16.5 : N (2/0)
+|   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 16.5
+|   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 20.5 : Y (2/0)
+|   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 20.5
+|   |   |   |   |   |   |   |   BRANCH_COUNT < 48.5
+|   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 25.5
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 244
+|   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES < 182.5 : Y (2/0)
+|   |   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 182.5 : N (3/0)
+|   |   |   |   |   |   |   |   |   |   NUMBER_OF_LINES >= 244 : Y (3/0)
+|   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 25.5 : N (3/0)
+|   |   |   |   |   |   |   |   BRANCH_COUNT >= 48.5 : Y (3/0)
+|   |   |   CYCLOMATIC_COMPLEXITY >= 30 : N (7/0)
+|   BRANCH_COUNT >= 160.5 : Y (2/0)
+
+Size of the tree : 207
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         596               84.539  %
+Incorrectly Classified Instances       109               15.461  %
+Kappa statistic                          0.0957
+Mean absolute error                      0.15  
+Root mean squared error                  0.3768
+Relative absolute error                 94.2334 %
+Root relative squared error            134.0068 %
+Total Number of Instances              705     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.197    0.093    0.167      0.197    0.180      0.096    0.568     0.113     Y
+                 0.907    0.803    0.923      0.907    0.915      0.096    0.568     0.924     N
+Weighted Avg.    0.845    0.742    0.857      0.845    0.851      0.096    0.568     0.854     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  12  49 |   a = Y
+  60 584 |   b = N
+
+

@@ -1,0 +1,61 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayesMultinomialUpdateable 
+Relation:     PC1-weka.filters.unsupervised.attribute.Remove-R1,3-6,8-32,35-36
+Instances:    705
+Attributes:   6
+              BRANCH_COUNT
+              CYCLOMATIC_COMPLEXITY
+              NUM_UNIQUE_OPERANDS
+              NUM_UNIQUE_OPERATORS
+              LOC_TOTAL
+              Defective
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Dictionary size: 6
+
+The independent frequency of a class
+--------------------------------------
+Y	62.0
+N	645.0
+
+The frequency of a word given the class
+-----------------------------------------
+          Y	          N	
+     1424.0	     8322.0	BRANCH_COUNT
+      807.0	     4637.0	CYCLOMATIC_COMPLEXITY
+     3792.0	    15272.0	NUM_UNIQUE_OPERANDS
+     1374.0	    10238.0	NUM_UNIQUE_OPERATORS
+     4358.0	    17531.0	LOC_TOTAL
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         616               87.3759 %
+Incorrectly Classified Instances        89               12.6241 %
+Kappa statistic                          0.3264
+Mean absolute error                      0.144 
+Root mean squared error                  0.335 
+Relative absolute error                 90.4699 %
+Root relative squared error            119.16   %
+Total Number of Instances              705     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.475    0.089    0.337      0.475    0.395      0.332    0.779     0.333     Y
+                 0.911    0.525    0.948      0.911    0.930      0.332    0.779     0.971     N
+Weighted Avg.    0.874    0.487    0.895      0.874    0.883      0.332    0.779     0.915     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  29  32 |   a = Y
+  57 587 |   b = N
+
+

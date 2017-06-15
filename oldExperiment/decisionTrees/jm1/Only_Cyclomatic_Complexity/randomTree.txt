@@ -1,0 +1,185 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     JM1-weka.filters.unsupervised.attribute.Remove-R1-4,6-21
+Instances:    9593
+Attributes:   2
+              CYCLOMATIC_COMPLEXITY
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+RandomTree
+==========
+
+CYCLOMATIC_COMPLEXITY < 8.5
+|   CYCLOMATIC_COMPLEXITY < 1.5 : N (2635/229)
+|   CYCLOMATIC_COMPLEXITY >= 1.5
+|   |   CYCLOMATIC_COMPLEXITY < 4.5
+|   |   |   CYCLOMATIC_COMPLEXITY < 2.5 : N (1585/240)
+|   |   |   CYCLOMATIC_COMPLEXITY >= 2.5
+|   |   |   |   CYCLOMATIC_COMPLEXITY < 3.5 : N (1194/202)
+|   |   |   |   CYCLOMATIC_COMPLEXITY >= 3.5 : N (835/133)
+|   |   CYCLOMATIC_COMPLEXITY >= 4.5
+|   |   |   CYCLOMATIC_COMPLEXITY < 6.5
+|   |   |   |   CYCLOMATIC_COMPLEXITY < 5.5 : N (662/133)
+|   |   |   |   CYCLOMATIC_COMPLEXITY >= 5.5 : N (492/101)
+|   |   |   CYCLOMATIC_COMPLEXITY >= 6.5
+|   |   |   |   CYCLOMATIC_COMPLEXITY < 7.5 : N (350/85)
+|   |   |   |   CYCLOMATIC_COMPLEXITY >= 7.5 : N (259/57)
+CYCLOMATIC_COMPLEXITY >= 8.5
+|   CYCLOMATIC_COMPLEXITY < 15.5
+|   |   CYCLOMATIC_COMPLEXITY < 12.5
+|   |   |   CYCLOMATIC_COMPLEXITY < 9.5 : N (212/58)
+|   |   |   CYCLOMATIC_COMPLEXITY >= 9.5
+|   |   |   |   CYCLOMATIC_COMPLEXITY < 10.5 : N (190/55)
+|   |   |   |   CYCLOMATIC_COMPLEXITY >= 10.5
+|   |   |   |   |   CYCLOMATIC_COMPLEXITY < 11.5 : N (175/50)
+|   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 11.5 : N (113/32)
+|   |   CYCLOMATIC_COMPLEXITY >= 12.5
+|   |   |   CYCLOMATIC_COMPLEXITY < 14.5
+|   |   |   |   CYCLOMATIC_COMPLEXITY < 13.5 : N (100/34)
+|   |   |   |   CYCLOMATIC_COMPLEXITY >= 13.5 : N (77/26)
+|   |   |   CYCLOMATIC_COMPLEXITY >= 14.5 : N (72/23)
+|   CYCLOMATIC_COMPLEXITY >= 15.5
+|   |   CYCLOMATIC_COMPLEXITY < 67.5
+|   |   |   CYCLOMATIC_COMPLEXITY < 64.5
+|   |   |   |   CYCLOMATIC_COMPLEXITY < 20.5
+|   |   |   |   |   CYCLOMATIC_COMPLEXITY < 19.5
+|   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 16.5 : N (62/24)
+|   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 16.5
+|   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 17.5 : N (42/19)
+|   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 17.5
+|   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 18.5 : N (54/21)
+|   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 18.5 : N (44/19)
+|   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 19.5 : N (31/11)
+|   |   |   |   CYCLOMATIC_COMPLEXITY >= 20.5
+|   |   |   |   |   CYCLOMATIC_COMPLEXITY < 22.5
+|   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 21.5 : Y (19/9)
+|   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 21.5 : Y (32/13)
+|   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 22.5
+|   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 45.5
+|   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 37.5
+|   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 24.5
+|   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 23.5 : N (30/12)
+|   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 23.5 : N (21/7)
+|   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 24.5
+|   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 28.5
+|   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 26.5
+|   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 25.5 : Y (16/7)
+|   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 25.5 : N (11/5)
+|   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 26.5
+|   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 27.5 : Y (13/5)
+|   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 27.5 : Y (15/7)
+|   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 28.5
+|   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 30.5
+|   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 29.5 : N (13/6)
+|   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 29.5 : N (13/4)
+|   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 30.5
+|   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 33.5
+|   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 32.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 31.5 : N (18/8)
+|   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 31.5 : N (13/6)
+|   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 32.5 : Y (17/6)
+|   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 33.5
+|   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 35.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 34.5 : N (9/4)
+|   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 34.5 : N (10/4)
+|   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 35.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 36.5 : Y (6/3)
+|   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 36.5 : N (14/6)
+|   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 37.5
+|   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 40.5
+|   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 38.5 : N (7/1)
+|   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 38.5
+|   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 39.5 : N (9/3)
+|   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 39.5 : N (9/2)
+|   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 40.5
+|   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 43.5
+|   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 41.5 : Y (5/1)
+|   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 41.5
+|   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 42.5 : N (5/2)
+|   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 42.5 : Y (3/1)
+|   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 43.5
+|   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 44.5 : N (5/1)
+|   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 44.5 : N (7/2)
+|   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 45.5
+|   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 49.5
+|   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 48.5
+|   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 46.5 : Y (4/1)
+|   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 46.5 : Y (6/3)
+|   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 48.5 : Y (3/0)
+|   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 49.5
+|   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 50.5 : N (4/1)
+|   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 50.5
+|   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 51.5 : Y (2/0)
+|   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 51.5
+|   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 59
+|   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 57.5 : Y (14/7)
+|   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 57.5 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 59
+|   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 61.5 : N (2/0)
+|   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 61.5 : Y (4/2)
+|   |   |   CYCLOMATIC_COMPLEXITY >= 64.5 : N (4/0)
+|   |   CYCLOMATIC_COMPLEXITY >= 67.5
+|   |   |   CYCLOMATIC_COMPLEXITY < 169
+|   |   |   |   CYCLOMATIC_COMPLEXITY < 70.5 : Y (7/0)
+|   |   |   |   CYCLOMATIC_COMPLEXITY >= 70.5
+|   |   |   |   |   CYCLOMATIC_COMPLEXITY < 72 : N (1/0)
+|   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 72
+|   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 77.5 : Y (6/0)
+|   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 77.5
+|   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 79 : N (1/0)
+|   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 79
+|   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 85.5 : Y (5/0)
+|   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 85.5
+|   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 87 : N (1/0)
+|   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 87
+|   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 149
+|   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 114.5
+|   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 111.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 92 : Y (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 92
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 100.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 96
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 94.5 : Y (3/1)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 94.5 : Y (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 96 : N (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 100.5 : Y (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 111.5 : N (1/0)
+|   |   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 114.5 : Y (4/0)
+|   |   |   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 149 : N (1/0)
+|   |   |   CYCLOMATIC_COMPLEXITY >= 169 : Y (9/0)
+
+Size of the tree : 139
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        7831               81.6324 %
+Incorrectly Classified Instances      1762               18.3676 %
+Kappa statistic                          0.0703
+Mean absolute error                      0.2802
+Root mean squared error                  0.3783
+Relative absolute error                 93.5442 %
+Root relative squared error             97.7588 %
+Total Number of Instances             9593     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.060    0.014    0.493      0.060    0.107      0.121    0.647     0.308     Y
+                 0.986    0.940    0.824      0.986    0.898      0.121    0.647     0.872     N
+Weighted Avg.    0.816    0.770    0.763      0.816    0.753      0.121    0.647     0.769     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  106 1653 |    a = Y
+  109 7725 |    b = N
+
+

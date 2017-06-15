@@ -1,0 +1,92 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     JM1
+Instances:    9593
+Attributes:   22
+              LOC_BLANK
+              BRANCH_COUNT
+              LOC_CODE_AND_COMMENT
+              LOC_COMMENTS
+              CYCLOMATIC_COMPLEXITY
+              DESIGN_COMPLEXITY
+              ESSENTIAL_COMPLEXITY
+              LOC_EXECUTABLE
+              HALSTEAD_CONTENT
+              HALSTEAD_DIFFICULTY
+              HALSTEAD_EFFORT
+              HALSTEAD_ERROR_EST
+              HALSTEAD_LENGTH
+              HALSTEAD_LEVEL
+              HALSTEAD_PROG_TIME
+              HALSTEAD_VOLUME
+              NUM_OPERANDS
+              NUM_OPERATORS
+              NUM_UNIQUE_OPERANDS
+              NUM_UNIQUE_OPERATORS
+              LOC_TOTAL
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=22 #classindex=21
+Network structure (nodes followed by parents)
+LOC_BLANK(4): label
+BRANCH_COUNT(5): label
+LOC_CODE_AND_COMMENT(3): label
+LOC_COMMENTS(4): label
+CYCLOMATIC_COMPLEXITY(6): label
+DESIGN_COMPLEXITY(5): label
+ESSENTIAL_COMPLEXITY(4): label
+LOC_EXECUTABLE(5): label
+HALSTEAD_CONTENT(4): label
+HALSTEAD_DIFFICULTY(4): label
+HALSTEAD_EFFORT(4): label
+HALSTEAD_ERROR_EST(5): label
+HALSTEAD_LENGTH(5): label
+HALSTEAD_LEVEL(6): label
+HALSTEAD_PROG_TIME(4): label
+HALSTEAD_VOLUME(5): label
+NUM_OPERANDS(5): label
+NUM_OPERATORS(6): label
+NUM_UNIQUE_OPERANDS(6): label
+NUM_UNIQUE_OPERATORS(4): label
+LOC_TOTAL(5): label
+label(2):
+LogScore Bayes: -246841.05501242532
+LogScore BDeu: -247150.5364235895
+LogScore MDL: -247158.51194451202
+LogScore ENTROPY: -246438.76201234385
+LogScore AIC: -246595.76201234385
+
+
+Time taken to build model: 0.1 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        6782               70.6974 %
+Incorrectly Classified Instances      2811               29.3026 %
+Kappa statistic                          0.232
+Mean absolute error                      0.2948
+Root mean squared error                  0.5244
+Relative absolute error                 98.4134 %
+Root relative squared error            135.5205 %
+Total Number of Instances             9593
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.554    0.259    0.325      0.554    0.410      0.247    0.702     0.370     Y
+                 0.741    0.446    0.881      0.741    0.805      0.247    0.702     0.901     N
+Weighted Avg.    0.707    0.411    0.779      0.707    0.733      0.247    0.702     0.804
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  975  784 |    a = Y
+ 2027 5807 |    b = N
+

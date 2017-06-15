@@ -1,0 +1,53 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     JM1-weka.filters.unsupervised.attribute.Remove-R1-4,6-21
+Instances:    9593
+Attributes:   2
+              CYCLOMATIC_COMPLEXITY
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+REPTree
+============
+
+CYCLOMATIC_COMPLEXITY < 4.5 : N (4189/522) [2060/282]
+CYCLOMATIC_COMPLEXITY >= 4.5
+|   CYCLOMATIC_COMPLEXITY < 18.5 : N (1886/491) [974/227]
+|   CYCLOMATIC_COMPLEXITY >= 18.5
+|   |   CYCLOMATIC_COMPLEXITY < 67.5 : N (292/137) [147/62]
+|   |   CYCLOMATIC_COMPLEXITY >= 67.5 : Y (28/5) [17/2]
+
+Size of the tree : 7
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        7847               81.7992 %
+Incorrectly Classified Instances      1746               18.2008 %
+Kappa statistic                          0.0389
+Mean absolute error                      0.2845
+Root mean squared error                  0.3776
+Relative absolute error                 94.9991 %
+Root relative squared error             97.5836 %
+Total Number of Instances             9593     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.030    0.005    0.571      0.030    0.056      0.098    0.609     0.294     Y
+                 0.995    0.970    0.820      0.995    0.899      0.098    0.609     0.853     N
+Weighted Avg.    0.818    0.793    0.775      0.818    0.745      0.098    0.609     0.750     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+   52 1707 |    a = Y
+   39 7795 |    b = N
+
+

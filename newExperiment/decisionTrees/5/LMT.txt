@@ -1,0 +1,67 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.LMT -I -1 -M 15 -W 0.0
+Relation:     PC1-weka.filters.unsupervised.attribute.Remove-R1,3-6,8-32,36-37
+Instances:    705
+Attributes:   6
+              BRANCH_COUNT
+              CYCLOMATIC_COMPLEXITY
+              NUM_UNIQUE_OPERANDS
+              NUM_UNIQUE_OPERATORS
+              NUMBER_OF_LINES
+              Defective
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic model tree 
+------------------
+: LM_1:9/9 (705)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 0 :
+-1.69 + 
+[BRANCH_COUNT] * -0.01 +
+[CYCLOMATIC_COMPLEXITY] * -0.03 +
+[NUM_UNIQUE_OPERANDS] * 0.01 +
+[NUMBER_OF_LINES] * 0.01
+
+Class 1 :
+1.69 + 
+[BRANCH_COUNT] * 0.01 +
+[CYCLOMATIC_COMPLEXITY] * 0.03 +
+[NUM_UNIQUE_OPERANDS] * -0.01 +
+[NUMBER_OF_LINES] * -0.01
+
+
+Time taken to build model: 0.16 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         644               91.3475 %
+Incorrectly Classified Instances        61                8.6525 %
+Kappa statistic                          0.1782
+Mean absolute error                      0.1377
+Root mean squared error                  0.2624
+Relative absolute error                 86.5106 %
+Root relative squared error             93.3187 %
+Total Number of Instances              705     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.131    0.012    0.500      0.131    0.208      0.224    0.840     0.350     Y
+                 0.988    0.869    0.923      0.988    0.954      0.224    0.840     0.983     N
+Weighted Avg.    0.913    0.795    0.886      0.913    0.890      0.224    0.840     0.928     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+   8  53 |   a = Y
+   8 636 |   b = N
+
+

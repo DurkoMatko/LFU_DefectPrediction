@@ -1,0 +1,124 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayesMultinomialUpdateable
+Relation:     CM1
+Instances:    327
+Attributes:   38
+              LOC_BLANK
+              BRANCH_COUNT
+              CALL_PAIRS
+              LOC_CODE_AND_COMMENT
+              LOC_COMMENTS
+              CONDITION_COUNT
+              CYCLOMATIC_COMPLEXITY
+              CYCLOMATIC_DENSITY
+              DECISION_COUNT
+              DECISION_DENSITY
+              DESIGN_COMPLEXITY
+              DESIGN_DENSITY
+              EDGE_COUNT
+              ESSENTIAL_COMPLEXITY
+              ESSENTIAL_DENSITY
+              LOC_EXECUTABLE
+              PARAMETER_COUNT
+              HALSTEAD_CONTENT
+              HALSTEAD_DIFFICULTY
+              HALSTEAD_EFFORT
+              HALSTEAD_ERROR_EST
+              HALSTEAD_LENGTH
+              HALSTEAD_LEVEL
+              HALSTEAD_PROG_TIME
+              HALSTEAD_VOLUME
+              MAINTENANCE_SEVERITY
+              MODIFIED_CONDITION_COUNT
+              MULTIPLE_CONDITION_COUNT
+              NODE_COUNT
+              NORMALIZED_CYLOMATIC_COMPLEXITY
+              NUM_OPERANDS
+              NUM_OPERATORS
+              NUM_UNIQUE_OPERANDS
+              NUM_UNIQUE_OPERATORS
+              NUMBER_OF_LINES
+              PERCENT_COMMENTS
+              LOC_TOTAL
+              Defective
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Dictionary size: 38
+
+The independent frequency of a class
+--------------------------------------
+Y	43.0
+N	286.0
+
+The frequency of a word given the class
+-----------------------------------------
+          Y	          N
+     1031.0	     4454.0	LOC_BLANK
+      823.0	     3435.0	BRANCH_COUNT
+      254.0	      989.0	CALL_PAIRS
+      264.0	     1588.0	LOC_CODE_AND_COMMENT
+     1740.0	     3975.0	LOC_COMMENTS
+     1333.0	     5509.0	CONDITION_COUNT
+      459.0	     1938.0	CYCLOMATIC_COMPLEXITY
+6.899999999	49.52000000	CYCLOMATIC_DENSITY
+      625.0	     2605.0	DECISION_COUNT
+       90.8	     604.15	DECISION_DENSITY
+      328.0	     1293.0	DESIGN_COMPLEXITY
+33.81999999	200.5800000	DESIGN_DENSITY
+     1918.0	     8157.0	EDGE_COUNT
+      173.0	      838.0	ESSENTIAL_COMPLEXITY
+10.37000000	63.91000000	ESSENTIAL_DENSITY
+     2924.0	    10546.0	LOC_EXECUTABLE
+       87.0	      504.0	PARAMETER_COUNT
+3203.890000	13168.57999	HALSTEAD_CONTENT
+1092.610000	5468.560000	HALSTEAD_DIFFICULTY
+3625478.899	1.246562599	HALSTEAD_EFFORT
+      32.38	107.6600000	HALSTEAD_ERROR_EST
+    13678.0	    50793.0	HALSTEAD_LENGTH
+3.329999999	23.72999999	HALSTEAD_LEVEL
+201416.4499	692535.6399	HALSTEAD_PROG_TIME
+94053.65000	319948.3699	HALSTEAD_VOLUME
+17.22000000	     129.35	MAINTENANCE_SEVERITY
+      355.0	     1453.0	MODIFIED_CONDITION_COUNT
+      667.0	     2766.0	MULTIPLE_CONDITION_COUNT
+     1544.0	     6790.0	NODE_COUNT
+4.319999999	31.94000000	NORMALIZED_CYLOMATIC_COMPLEXITY
+     5298.0	    19871.0	NUM_OPERANDS
+     8381.0	    30923.0	NUM_OPERATORS
+     2493.0	     9099.0	NUM_UNIQUE_OPERANDS
+     1034.0	     5210.0	NUM_UNIQUE_OPERATORS
+     5742.0	    21214.0	NUMBER_OF_LINES
+1585.700000	8090.380000	PERCENT_COMMENTS
+     3187.0	    12133.0	LOC_TOTAL
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         253               77.37   %
+Incorrectly Classified Instances        74               22.63   %
+Kappa statistic                          0.0651
+Mean absolute error                      0.2262
+Root mean squared error                  0.4727
+Relative absolute error                100.1731 %
+Root relative squared error            141.2626 %
+Total Number of Instances              327
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.214    0.144    0.180      0.214    0.196      0.065    0.483     0.160     Y
+                 0.856    0.786    0.881      0.856    0.868      0.065    0.520     0.875     N
+Weighted Avg.    0.774    0.703    0.791      0.774    0.782      0.065    0.515     0.783
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+   9  33 |   a = Y
+  41 244 |   b = N
+

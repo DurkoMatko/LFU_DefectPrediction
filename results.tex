@@ -1,170 +1,230 @@
 \subsection{Decision Trees}
-To compare the decision trees performance, we used the CM1 NASA dataset
+To compare the decision trees performance, we used the PC1 NASA dataset because of their popularity for SFP purposes.
 
-CM1 is a spacecraft instrument used for data collection and processing written in C. We obtained from PROMISE repository and it contains 38 metrics including static code metrics like McCabe or Halstead metrics.
-
-After cross-validating 7 different decision trees, we obtained the results which can be seen in table \ref{table:DT_allMetrics_CM1}.
+Results of models' performance can be seen in following tables. Tables \ref{table:DT_1},\ref{table:DT_3}, \ref{table:DT_5} and \ref{table:DT_7} document performance of decision trees.
 
 \definecolor{myRed}{RGB}{219, 48, 122}
 
 \begin{table}[h!]
 \centering
-\begin{tabular}{ |c|c|c|c|c|c| } 
+\begin{tabular}{ |c|c|c|c| }
  \hline
- \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{Recall} & \textbf{Precision} & \textbf{F-Measure} & \textbf{AUC}  \\ 
+ \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\
  \hline
- Decision Stump & \textcolor{myRed}{87.156} & \textcolor{myRed}{.872} & .760 & .812 & .713   \\ 
+ Decision Stump & 91.347 & .872 & .551    \\
  \hline
- HoeffDing Tree & \textcolor{myRed}{87.156} & \textcolor{myRed}{.872} & .760 & .812 & .477   \\ 
+ HoeffDing Tree &  91.205 & .871 & .620   \\
  \hline
-  J48 & 83.792 & .838 & \textcolor{myRed}{.822} & \textcolor{myRed}{.829} & .622   \\ 
+  J48 & 91.347 & .872 & .491\\
  \hline
-  LMT & 86.8502 & .869 & .815 & .821 & .714    \\ 
+  LMT & 91.489 & .876 & .573  \\
  \hline
-  Random Forest & 85.6269 & .856 & .790 & .814 & \textcolor{myRed}{.770}   \\ 
+  Random Forest & 91.489 & .885 & .601 \\
  \hline
-  Random Tree & 79.5107 & .795 & .813 & .803 & .588   \\ 
+  Random Tree & 92.198 & .899 & .595 \\
  \hline
- REP tree  & 86.8502 & .869 & .759 & .810 & .554   \\ 
+ REP tree  & 91.347 & .872 & .522 \\
  \hline
-\end{tabular}
-\caption{Decision trees performance using all code metrics of CM1 dataset}
-\label{table:DT_allMetrics_CM1}
-\end{table}
-
-
-At this point, we've restricted the dataset only on chosen metrics and observed the changes  in classifiers' performance.
-
-Results for chosen code metric - McCabe's cyclomatic complexity / Lines of code (LOC) can be seen in tables \ref{table:DT_complexity_CM1} and \ref{table:DT_LOC_CM1} respectively.
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{ |c|c|c|c|c|c| } 
- \hline
- \textbf{Algorithm} & \textbf{Correct [\%]} &  \textbf{Recall} & \textbf{Precision} & \textbf{F-Measure} & \textbf{AUC}  \\ 
- \hline
- Decision Stump & \textcolor{myRed}{87.156} & \textcolor{myRed}{.872} & .760 & .812 & .513    \\ 
- \hline
- HoeffDing Tree & 86.8502 & .869 & \textcolor{myRed}{.804} & \textcolor{myRed}{.816} & .490   \\ 
- \hline
-  J48 & \textcolor{myRed}{87.156} & \textcolor{myRed}{.872} & .760 & .812 & .480\\ 
- \hline
-  LMT & 86.8502 & .869 & .759 & .810 & \textcolor{myRed}{.601}  \\ 
- \hline
-  Random Forest & 85.0153 & .850 & .793 & .814 & .471 \\ 
- \hline
-  Random Tree & 84.4037 & .844 & .788 & .811 & .486 \\ 
- \hline
- REP tree  & \textcolor{myRed}{87.156} & \textcolor{myRed}{.872} & .760 & .812 & .477 \\ 
- \hline
-\end{tabular}
-\caption{Decision trees performance using only cyclomatic complexity of CM1 dataset}
-\label{table:DT_complexity_CM1}
-\end{table}
-
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{ |c|c|c|c|c|c| } 
- \hline
- \textbf{Algorithm} & \textbf{Correct [\%]} &  \textbf{Recall} & \textbf{Precision} & \textbf{F-Measure} & \textbf{AUC}  \\ 
- \hline
- Decision Stump & \textcolor{myRed}{87.156}& \textcolor{myRed}{.872} & .760 & .812 & .647    \\ 
- \hline
- HoeffDing Tree & 86.5443 & .865 & .759 & .809 & .483   \\ 
- \hline
-  J48 & \textcolor{myRed}{87.156} & \textcolor{myRed}{.872} & .760 & \textcolor{myRed}{.812} & .477\\ 
- \hline
-  LMT & 86.5443 & .865 & .759 & .809 & \textcolor{myRed}{.669}  \\ 
- \hline
-  Random Forest & 81.6514 & .817 & \textcolor{myRed}{.787} & .800 & .571 \\ 
- \hline
-  Random Tree & 78.2875 & .783 & .785 & .784 & .527 \\ 
- \hline
- REP tree  & \textcolor{myRed}{87.156} & \textcolor{myRed}{.872} & .760 & .812 & .477 \\ 
+ \textbf{Mean}  & 91.488 & .878 & .565 \\
  \hline
 
 \end{tabular}
-\caption{Decision trees performance using only LOC of CM1 dataset}
-\label{table:DT_LOC_CM1}
-\end{table}
-
-To check if some potential patterns found in results will be observed again we performed exactly same tests with the JM1 dataset as well. Results can be seen in table \ref{table:DT_allMetrics_JM1},table \ref{table:DT_complexity_JM1} and table \ref{table:DT_LOC_JM1}.
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{ |c|c|c|c|c|c| } 
- \hline
- \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{Recall} & \textbf{Precision} & \textbf{F-Measure} & \textbf{AUC}  \\ 
- \hline
- Decision Stump & 81.6637 & .817 & .667 & .734 & .641   \\ 
- \hline
- HoeffDing Tree & 81.4761 & .815 & .760 & .764 & .565   \\ 
- \hline
-  J48 & 79.9333 & .799 & .767 & .777 & .649   \\ 
- \hline
-  LMT & 82.0077 & .820 & .779 & .762 & .704    \\ 
- \hline
-  Random Forest & \textcolor{myRed}{82.6644} & \textcolor{myRed}{.827} & \textcolor{myRed}{.796} & \textcolor{myRed}{.796} & \textcolor{myRed}{.760}   \\ 
- \hline
-  Random Tree & 76.0555 & .761 & .762 & .761 & .591   \\ 
- \hline
- REP tree  & 81.4344 & .814 & .771 & .774 & .692   \\ 
- \hline
-\end{tabular}
-\caption{Decision trees performance using all code metrics of JM1 dataset}
-\label{table:DT_allMetrics_JM1}
+\caption{Decision trees performance using 1 repository metric}
+\label{table:DT_1}
 \end{table}
 
 \begin{table}[h!]
 \centering
-\begin{tabular}{ |c|c|c|c|c|c| } 
+\begin{tabular}{ |c|c|c|c| }
  \hline
- \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{Recall} & \textbf{Precision} & \textbf{F-Measure} & \textbf{AUC}  \\ 
+ \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\
  \hline
- Decision Stump & 81.6637 & .817 & .667 & .734 & \textcolor{myRed}{.699}   \\ 
+ Decision Stump & 91.347 & .872 & .714    \\
  \hline
- HoeffDing Tree & 81.6533 & .817 & .764 & .752 & .660   \\ 
+ HoeffDing Tree &  91.205 & .872 & .491   \\
  \hline
-  J48 & \textcolor{myRed}{81.9869} & \textcolor{myRed}{.820} & \textcolor{myRed}{.824} & .743 & .604   \\ 
+  J48 & 90.780 & .874 & .605\\
  \hline
-  LMT & 81.9243 & .819 & .804 & .743 & .660    \\ 
+  LMT & 91.347 & .888 & 816  \\
  \hline
-  Random Forest & 81.7263 & .817 & .767 & .752 & .654   \\ 
+  Random Forest & 87.943 & .874 & .748 \\
  \hline
- Random Tree  & 81.6324 & .816 & .763 & \textcolor{myRed}{.753} & .647   \\ 
+  Random Tree & 84.539 & .851 & .568 \\
  \hline
- REP tree & 81.7992 & .818 & .775 & .745 & .609   \\ 
+ REP tree  & 90.922 & .875 & .701 \\
  \hline
-\end{tabular}
-\caption{Decision trees performance using only cyclomatic complexity of JM1 dataset}
-\label{table:DT_complexity_JM1}
-\end{table}
+ \textbf{Mean}  & 89.726 & .872 & .663 \\
+ \hline
 
+\end{tabular}
+\caption{Decision trees performance using 3 repository metrics}
+\label{table:DT_3}
+\end{table}
 
 \begin{table}[h!]
 \centering
-\begin{tabular}{ |c|c|c|c|c|c| } 
+\begin{tabular}{ |c|c|c|c| }
  \hline
- \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{Recall} & \textbf{Precision} & \textbf{F-Measure} & \textbf{AUC}  \\ 
+ \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\
  \hline
- Decision Stump & 81.6637 & .817 & .667 & .734 & .643   \\ 
+ Decision Stump & 91.347 & .872 & .714    \\
  \hline
- HoeffDing Tree & 80.9027 & .809 & .747 & .754 & \textcolor{myRed}{.698}   \\ 
+ HoeffDing Tree &  91.347 & .872 & .491   \\
  \hline
-  J48 & \textcolor{myRed}{81.9347} & \textcolor{myRed}{.819} & \textcolor{myRed}{.790} & .747 & .655   \\ 
+  J48 & 90.354 & .872 & .616\\
  \hline
-  LMT & 81.8305 & .818 & .775 & .748 & .683    \\ 
+  LMT & 91.347 & .890 & 840  \\
  \hline
-  Random Forest & 81.4865 & .815 & .765 & .763 & .681   \\ 
+  Random Forest & 91.063 & .898 & .845 \\
  \hline
- Random Tree  & 81.3927 & .814 & .765 & \textcolor{myRed}{.766} & .665   \\ 
+  Random Tree & 88.227 & .882 & .624 \\
  \hline
- REP tree & 81.6533 & .817 & .767 & .761 & .658   \\ 
+ REP tree  & 91.347 & .880 & .636 \\
  \hline
+ \textbf{Mean}  & 90.719 & .880 & .681 \\
+ \hline
+
 \end{tabular}
-\caption{Decision trees performance using only LOC of JM1 dataset}
-\label{table:DT_LOC_JM1}
+\caption{Decision trees performance using 5 repository metrics}
+\label{table:DT_5}
 \end{table}
 
-Interestingly, models predict defects much better when applied on the smaller CM1 dataset then much bigger JM1 dataset. As we can see from the results, all decision tree classifiers perform under same circumstances very similar. With smaller CM1 dataset, Decision Stump performed best with whole dataset as well as with only restricted metrics. J48 and REP joined Decision Stump in tests with restricted metrics. With  much bigger JM1 dataset, Random Forest performed best in casre all metrics were available. If we restricted dataset only on cyclomatic complexity or LOC, J48 had a slight edge. But as already stated before, the differences in results are very small. That's why we decided to perform same test on Bayesian classifiers and compare the results of these 2 groups.
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |c|c|c|c| }
+ \hline
+ \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\
+ \hline
+ Decision Stump & 91.347 & .872 & .729    \\
+ \hline
+ HoeffDing Tree &  91.347 & .872 & .491   \\
+ \hline
+  J48 & 90.070 & .880 & .679\\
+ \hline
+  LMT & 91.489 & .889 & 827  \\
+ \hline
+  Random Forest & 91.773 & .903 & .851 \\
+ \hline
+  Random Tree & 89.503 & .895 & .668 \\
+ \hline
+ REP tree  & 90.638 & .873 & .704 \\
+ \hline
+ \textbf{Mean}  & 90.881 & .883 & .707 \\
+ \hline
+
+\end{tabular}
+\caption{Decision trees performance using 7 repository metrics}
+\label{table:DT_7}
+\end{table}
+
+
+\subsection{Bayesian Learners}
+To compare the bayesian performance, we used the PC1 NASA dataset because of their popularity for SFP purposes.
+
+Results of models' performance can be seen in following tables. Tables \ref{table:BL_1},\ref{table:BL_3}, \ref{table:BL_5} and \ref{table:BL_7} document performance of bayesian learners.
+
+\definecolor{myRed}{RGB}{219, 48, 122}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |c|c|c|c| }
+ \hline
+ \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\
+ \hline
+ Bayes Net & 91.347 & .872 & .491    \\
+ \hline
+ Naive Bayes &  88.794 & .863 & .524   \\
+ \hline
+  Naive Bayes Multinomial & 91.347 & .872 & .491\\
+ \hline
+  Naive Bayes Multinomial Text & 91.347 & .872 & .491  \\
+ \hline
+  Naive Bayes Multinomial Updatable & 91.347 & .872 & .375 \\
+ \hline
+  Naive Bayes Updatable & 88.794 & .863 & .524 \\
+ \hline
+ \textbf{Mean}  & 90.496 & .869 & .482 \\
+ \hline
+
+\end{tabular}
+\caption{Bayesian Learners performance using 1 repository metric}
+\label{table:BL_1}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |c|c|c|c| }
+ \hline
+ \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\
+ \hline
+ Bayes Net & 91.347 & .872 & .688    \\
+ \hline
+ Naive Bayes &  88.510 & .878 & .592   \\
+ \hline
+  Naive Bayes Multinomial & 88.227 & .882 & .749\\
+ \hline
+  Naive Bayes Multinomial Text & 91.347 & .872 & .491  \\
+ \hline
+  Naive Bayes Multinomial Updatable & 88.227 & .882 & .748 \\
+ \hline
+  Naive Bayes Updatable & 88.510 & .878 & .592 \\
+ \hline
+ \textbf{Mean}  & 89.361 & .877 & .643 \\
+ \hline
+
+\end{tabular}
+\caption{Bayesian Learners performance using 3 repository metrics}
+\label{table:BL_3}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |c|c|c|c| }
+ \hline
+ \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\
+ \hline
+ Bayes Net & 89.645 & .877 & .754    \\
+ \hline
+ Naive Bayes &  88.085 & .878 & .624   \\
+ \hline
+  Naive Bayes Multinomial & 87.375 & .883 & .779\\
+ \hline
+  Naive Bayes Multinomial Text & 91.347 & .872 & .491  \\
+ \hline
+  Naive Bayes Multinomial Updatable & 87.375 & .883 & .779 \\
+ \hline
+  Naive Bayes Updatable & 88.085 & .878 & .624 \\
+ \hline
+ \textbf{Mean}  & 88.652 & .878 & .675 \\
+ \hline
+
+\end{tabular}
+\caption{Bayesian Learners performance using 5 repository metrics}
+\label{table:BL_5}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |c|c|c|c| }
+ \hline
+ \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\
+ \hline
+ Bayes Net & 89.787 & .876 & .732    \\
+ \hline
+ Naive Bayes &  87.375 & .872 & .656   \\
+ \hline
+  Naive Bayes Multinomial & 85.815 & .865 & .638\\
+ \hline
+  Naive Bayes Multinomial Text & 91.347 & .872 & .491  \\
+ \hline
+  Naive Bayes Multinomial Updatable & 87.375 & .872 & .643 \\
+ \hline
+  Naive Bayes Updatable & 87.375 & .872 & .656 \\
+ \hline
+ \textbf{Mean}  & 88.179 & .871 & .636 \\
+ \hline
+
+\end{tabular}
+\caption{Bayesian Learners performance using 7 repository metrics}
+\label{table:BL_7}
+\end{table}

@@ -1,0 +1,81 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.DecisionStump 
+Relation:     JM1
+Instances:    9593
+Attributes:   22
+              LOC_BLANK
+              BRANCH_COUNT
+              LOC_CODE_AND_COMMENT
+              LOC_COMMENTS
+              CYCLOMATIC_COMPLEXITY
+              DESIGN_COMPLEXITY
+              ESSENTIAL_COMPLEXITY
+              LOC_EXECUTABLE
+              HALSTEAD_CONTENT
+              HALSTEAD_DIFFICULTY
+              HALSTEAD_EFFORT
+              HALSTEAD_ERROR_EST
+              HALSTEAD_LENGTH
+              HALSTEAD_LEVEL
+              HALSTEAD_PROG_TIME
+              HALSTEAD_VOLUME
+              NUM_OPERANDS
+              NUM_OPERATORS
+              NUM_UNIQUE_OPERANDS
+              NUM_UNIQUE_OPERATORS
+              LOC_TOTAL
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Stump
+
+Classifications
+
+LOC_TOTAL <= 38.5 : N
+LOC_TOTAL > 38.5 : N
+LOC_TOTAL is missing : N
+
+Class distributions
+
+LOC_TOTAL <= 38.5
+Y	N	
+0.12080149920715007	0.8791985007928499	
+LOC_TOTAL > 38.5
+Y	N	
+0.34676204819277107	0.6532379518072289	
+LOC_TOTAL is missing
+Y	N	
+0.18336286875846972	0.8166371312415303	
+
+
+Time taken to build model: 0.19 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        7834               81.6637 %
+Incorrectly Classified Instances      1759               18.3363 %
+Kappa statistic                          0     
+Mean absolute error                      0.2797
+Root mean squared error                  0.3745
+Relative absolute error                 93.3711 %
+Root relative squared error             96.7809 %
+Total Number of Instances             9593     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.641     0.276     Y
+                 1.000    1.000    0.817      1.000    0.899      0.000    0.641     0.867     N
+Weighted Avg.    0.817    0.817    0.667      0.817    0.734      0.000    0.641     0.759     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+    0 1759 |    a = Y
+    0 7834 |    b = N
+
+

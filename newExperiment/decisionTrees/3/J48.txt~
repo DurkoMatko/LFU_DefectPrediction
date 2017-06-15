@@ -1,0 +1,131 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     CM1
+Instances:    327
+Attributes:   38
+              LOC_BLANK
+              BRANCH_COUNT
+              CALL_PAIRS
+              LOC_CODE_AND_COMMENT
+              LOC_COMMENTS
+              CONDITION_COUNT
+              CYCLOMATIC_COMPLEXITY
+              CYCLOMATIC_DENSITY
+              DECISION_COUNT
+              DECISION_DENSITY
+              DESIGN_COMPLEXITY
+              DESIGN_DENSITY
+              EDGE_COUNT
+              ESSENTIAL_COMPLEXITY
+              ESSENTIAL_DENSITY
+              LOC_EXECUTABLE
+              PARAMETER_COUNT
+              HALSTEAD_CONTENT
+              HALSTEAD_DIFFICULTY
+              HALSTEAD_EFFORT
+              HALSTEAD_ERROR_EST
+              HALSTEAD_LENGTH
+              HALSTEAD_LEVEL
+              HALSTEAD_PROG_TIME
+              HALSTEAD_VOLUME
+              MAINTENANCE_SEVERITY
+              MODIFIED_CONDITION_COUNT
+              MULTIPLE_CONDITION_COUNT
+              NODE_COUNT
+              NORMALIZED_CYLOMATIC_COMPLEXITY
+              NUM_OPERANDS
+              NUM_OPERATORS
+              NUM_UNIQUE_OPERANDS
+              NUM_UNIQUE_OPERATORS
+              NUMBER_OF_LINES
+              PERCENT_COMMENTS
+              LOC_TOTAL
+              Defective
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+LOC_COMMENTS <= 6: N (145.0/3.0)
+LOC_COMMENTS > 6
+|   LOC_COMMENTS <= 58
+|   |   CYCLOMATIC_DENSITY <= 0.15
+|   |   |   LOC_CODE_AND_COMMENT <= 7
+|   |   |   |   LOC_CODE_AND_COMMENT <= 5
+|   |   |   |   |   PARAMETER_COUNT <= 2
+|   |   |   |   |   |   CALL_PAIRS <= 3
+|   |   |   |   |   |   |   DESIGN_COMPLEXITY <= 2
+|   |   |   |   |   |   |   |   CALL_PAIRS <= 1: N (4.0)
+|   |   |   |   |   |   |   |   CALL_PAIRS > 1
+|   |   |   |   |   |   |   |   |   CYCLOMATIC_DENSITY <= 0.07: N (2.0)
+|   |   |   |   |   |   |   |   |   CYCLOMATIC_DENSITY > 0.07
+|   |   |   |   |   |   |   |   |   |   NUM_OPERANDS <= 26: N (2.0)
+|   |   |   |   |   |   |   |   |   |   NUM_OPERANDS > 26: Y (4.0)
+|   |   |   |   |   |   |   DESIGN_COMPLEXITY > 2: Y (8.0/1.0)
+|   |   |   |   |   |   CALL_PAIRS > 3
+|   |   |   |   |   |   |   DESIGN_DENSITY <= 0.8
+|   |   |   |   |   |   |   |   PERCENT_COMMENTS <= 31.71: Y (3.0)
+|   |   |   |   |   |   |   |   PERCENT_COMMENTS > 31.71: N (4.0)
+|   |   |   |   |   |   |   DESIGN_DENSITY > 0.8: N (14.0)
+|   |   |   |   |   PARAMETER_COUNT > 2: N (8.0)
+|   |   |   |   LOC_CODE_AND_COMMENT > 5
+|   |   |   |   |   DESIGN_DENSITY <= 0.8: N (4.0/1.0)
+|   |   |   |   |   DESIGN_DENSITY > 0.8: Y (6.0)
+|   |   |   LOC_CODE_AND_COMMENT > 7
+|   |   |   |   CYCLOMATIC_DENSITY <= 0.09
+|   |   |   |   |   CONDITION_COUNT <= 20: N (3.0)
+|   |   |   |   |   CONDITION_COUNT > 20: Y (2.0)
+|   |   |   |   CYCLOMATIC_DENSITY > 0.09: N (21.0)
+|   |   CYCLOMATIC_DENSITY > 0.15
+|   |   |   LOC_BLANK <= 11
+|   |   |   |   DECISION_DENSITY <= 2.06: N (23.0/1.0)
+|   |   |   |   DECISION_DENSITY > 2.06
+|   |   |   |   |   PARAMETER_COUNT <= 0: N (5.0)
+|   |   |   |   |   PARAMETER_COUNT > 0
+|   |   |   |   |   |   PARAMETER_COUNT <= 3: Y (5.0)
+|   |   |   |   |   |   PARAMETER_COUNT > 3: N (2.0)
+|   |   |   LOC_BLANK > 11: N (44.0)
+|   LOC_COMMENTS > 58
+|   |   MAINTENANCE_SEVERITY <= 0.57
+|   |   |   DESIGN_COMPLEXITY <= 41
+|   |   |   |   NORMALIZED_CYLOMATIC_COMPLEXITY <= 0.06: N (3.0/1.0)
+|   |   |   |   NORMALIZED_CYLOMATIC_COMPLEXITY > 0.06: Y (9.0)
+|   |   |   DESIGN_COMPLEXITY > 41: N (2.0)
+|   |   MAINTENANCE_SEVERITY > 0.57: N (4.0)
+
+Number of Leaves  : 	24
+
+Size of the tree : 	47
+
+
+Time taken to build model: 0.06 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         274               83.792  %
+Incorrectly Classified Instances        53               16.208  %
+Kappa statistic                          0.2033
+Mean absolute error                      0.1956
+Root mean squared error                  0.3804
+Relative absolute error                 86.6226 %
+Root relative squared error            113.6615 %
+Total Number of Instances              327     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.262    0.077    0.333      0.262    0.293      0.205    0.622     0.227     Y
+                 0.923    0.738    0.895      0.923    0.908      0.205    0.622     0.895     N
+Weighted Avg.    0.838    0.653    0.822      0.838    0.829      0.205    0.622     0.809     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  11  31 |   a = Y
+  22 263 |   b = N
+
+

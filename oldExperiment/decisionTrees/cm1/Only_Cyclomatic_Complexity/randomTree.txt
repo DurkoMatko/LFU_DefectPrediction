@@ -1,0 +1,99 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     CM1-weka.filters.unsupervised.attribute.Remove-R1-6,8-37
+Instances:    327
+Attributes:   2
+              CYCLOMATIC_COMPLEXITY
+              Defective
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+RandomTree
+==========
+
+CYCLOMATIC_COMPLEXITY < 17.5
+|   CYCLOMATIC_COMPLEXITY < 2.5 : N (71/3)
+|   CYCLOMATIC_COMPLEXITY >= 2.5
+|   |   CYCLOMATIC_COMPLEXITY < 15.5
+|   |   |   CYCLOMATIC_COMPLEXITY < 6.5
+|   |   |   |   CYCLOMATIC_COMPLEXITY < 3.5 : N (51/8)
+|   |   |   |   CYCLOMATIC_COMPLEXITY >= 3.5
+|   |   |   |   |   CYCLOMATIC_COMPLEXITY < 5.5
+|   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 4.5 : N (52/5)
+|   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 4.5 : N (32/3)
+|   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 5.5 : N (23/2)
+|   |   |   CYCLOMATIC_COMPLEXITY >= 6.5
+|   |   |   |   CYCLOMATIC_COMPLEXITY < 12.5
+|   |   |   |   |   CYCLOMATIC_COMPLEXITY < 7.5 : N (12/2)
+|   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 7.5
+|   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 8.5 : N (5/2)
+|   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 8.5
+|   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 10.5
+|   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 9.5 : N (7/1)
+|   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 9.5 : N (12/2)
+|   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 10.5
+|   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 11.5 : N (6/2)
+|   |   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 11.5 : N (6/1)
+|   |   |   |   CYCLOMATIC_COMPLEXITY >= 12.5
+|   |   |   |   |   CYCLOMATIC_COMPLEXITY < 14.5
+|   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 13.5 : N (10/1)
+|   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 13.5 : N (1/0)
+|   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 14.5 : N (7/1)
+|   |   CYCLOMATIC_COMPLEXITY >= 15.5 : N (6/0)
+CYCLOMATIC_COMPLEXITY >= 17.5
+|   CYCLOMATIC_COMPLEXITY < 20.5
+|   |   CYCLOMATIC_COMPLEXITY < 19.5
+|   |   |   CYCLOMATIC_COMPLEXITY < 18.5 : Y (4/2)
+|   |   |   CYCLOMATIC_COMPLEXITY >= 18.5 : N (3/0)
+|   |   CYCLOMATIC_COMPLEXITY >= 19.5 : Y (3/0)
+|   CYCLOMATIC_COMPLEXITY >= 20.5
+|   |   CYCLOMATIC_COMPLEXITY < 29.5
+|   |   |   CYCLOMATIC_COMPLEXITY < 24.5
+|   |   |   |   CYCLOMATIC_COMPLEXITY < 23.5 : N (2/0)
+|   |   |   |   CYCLOMATIC_COMPLEXITY >= 23.5 : Y (1/0)
+|   |   |   CYCLOMATIC_COMPLEXITY >= 24.5 : N (5/0)
+|   |   CYCLOMATIC_COMPLEXITY >= 29.5
+|   |   |   CYCLOMATIC_COMPLEXITY < 31 : Y (1/0)
+|   |   |   CYCLOMATIC_COMPLEXITY >= 31
+|   |   |   |   CYCLOMATIC_COMPLEXITY < 34.5 : N (2/0)
+|   |   |   |   CYCLOMATIC_COMPLEXITY >= 34.5
+|   |   |   |   |   CYCLOMATIC_COMPLEXITY < 39 : Y (1/0)
+|   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 39
+|   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 71.5 : N (2/0)
+|   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 71.5
+|   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY < 84.5 : Y (1/0)
+|   |   |   |   |   |   |   CYCLOMATIC_COMPLEXITY >= 84.5 : N (1/0)
+
+Size of the tree : 53
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         276               84.4037 %
+Incorrectly Classified Instances        51               15.5963 %
+Kappa statistic                          0.0404
+Mean absolute error                      0.2189
+Root mean squared error                  0.3608
+Relative absolute error                 96.9694 %
+Root relative squared error            107.8107 %
+Total Number of Instances              327     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.071    0.042    0.200      0.071    0.105      0.047    0.486     0.169     Y
+                 0.958    0.929    0.875      0.958    0.915      0.047    0.486     0.848     N
+Weighted Avg.    0.844    0.815    0.788      0.844    0.811      0.047    0.486     0.761     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+   3  39 |   a = Y
+  12 273 |   b = N
+
+

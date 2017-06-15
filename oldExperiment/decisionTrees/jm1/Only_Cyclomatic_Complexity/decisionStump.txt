@@ -1,0 +1,61 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.DecisionStump 
+Relation:     JM1-weka.filters.unsupervised.attribute.Remove-R1-4,6-21
+Instances:    9593
+Attributes:   2
+              CYCLOMATIC_COMPLEXITY
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Stump
+
+Classifications
+
+CYCLOMATIC_COMPLEXITY <= 8.5 : N
+CYCLOMATIC_COMPLEXITY > 8.5 : N
+CYCLOMATIC_COMPLEXITY is missing : N
+
+Class distributions
+
+CYCLOMATIC_COMPLEXITY <= 8.5
+Y	N	
+0.1472790813779331	0.8527209186220669	
+CYCLOMATIC_COMPLEXITY > 8.5
+Y	N	
+0.36622390891840606	0.6337760910815939	
+CYCLOMATIC_COMPLEXITY is missing
+Y	N	
+0.18336286875846972	0.8166371312415303	
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        7834               81.6637 %
+Incorrectly Classified Instances      1759               18.3363 %
+Kappa statistic                          0     
+Mean absolute error                      0.2871
+Root mean squared error                  0.3793
+Relative absolute error                 95.8558 %
+Root relative squared error             98.0151 %
+Total Number of Instances             9593     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.599     0.258     Y
+                 1.000    1.000    0.817      1.000    0.899      0.000    0.599     0.850     N
+Weighted Avg.    0.817    0.817    0.667      0.817    0.734      0.000    0.599     0.742     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+    0 1759 |    a = Y
+    0 7834 |    b = N
+
+
