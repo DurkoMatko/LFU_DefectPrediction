@@ -1,0 +1,29 @@
+In previous experiment, we obtained specific values for each and every algorithm in 2 groups. To compare those groups generally, we will work with mean values of each group. We computed means from all values as well as while leaving out maximal and minimal values of each group (to prevent outliers from affecting our results). In both scenarios, values have been almost the same. Because of the limited scope of our report, we're offering the hypothesis testing done for means computed from all values.
+
+\textbf{[tables of means next to each other]} 
+
+At first sight, there are hints that decision trees perform better than the Bayesian learners. To confirm this, we executed paired t-tests for each metric. 
+
+For F-measure, we executed two-tailed t-test since mean values do not clearly display performance supremacy of any group. On the other side, correctness and ROC area have always showed slightly better performance of decision trees over bayesian learners so in their case we can perform one-tailed t-test. We measured performance for 4 different scenarios what results into 6 degrees of freedom (n1+n2-2). With confidence level set to standard default value 95\% the critical t-value found in statistical table for t-distribution is 2.447 and 2.015 (for 2-tailed and 1-tailed t-test respectively). 
+
+\begin{table}[h!]		
+\centering		
+\begin{tabular}{ |c|c|c|c|c|c|c| } 		
+ \hline		
+ \multicolumn{1}{|p{2cm}|}{\centering  \textbf{Metric}} & \multicolumn{1}{|p{1.3cm}|}{\centering  \textbf{T-test\\ tails}} & \multicolumn{1}{|p{2.2cm}|}{\centering  \textbf{Degrees of \\ freedom}} & \multicolumn{1}{|p{2.5cm}|}{\centering  \textbf{Confidence \\ level [\%]}} & \textbf{t-value} & \multicolumn{1}{|p{2cm}|}{\centering  \textbf{t-value \\ threshold}} & \textbf{p-value}  \\ 		
+ \hline		
+ Correctness & 1 & 6 & 95 & 2.8945 & 2.015 & 0.06278 \\ 		
+ \hline		
+ F-measure & 2 &  6 & 95 & 1.1852 & 2.447 & 0.3213 \\ 		
+ \hline		
+ AUC area & 1 & 6 & 95 & 2.3921 & 2.015 & 0.09656\\ 		
+ \hline	
+ \end{tabular}		
+\caption{Hypothetis testing results}		
+\label{table:hypothesisTesting}		
+\end{table}
+
+As can be seen in table \ref{table:hypothesisTesting}, according to t and p-values we can reject null hypothesis in favor of alternative hypothesis in cases of both one-tailed tests (correctness, AUC area). This can be in other words interpreted that when speaking in terms of correctness and AUC area, decision trees really performed better than bayesian learners. On the other side, experiment with F-measure as evaluation metric didn't show performance advantage in any of 2 groups.
+
+Another area we concentrated on in our experiment was the effect of number of software metrics used to train the prediction models. Results can be seen in tables...
+

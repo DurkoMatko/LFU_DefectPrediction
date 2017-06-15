@@ -1,8 +1,9 @@
 \documentclass[a4paper,11pt,pdftex,halfparskip,cleardoubleempty]{scrbook}
-
 \usepackage{wrapfig}
 \usepackage[pdftex]{graphicx}
 \usepackage{eso-pic}
+
+\usepackage[section]{placeins}
 
 \graphicspath{{img/}}
 \newcommand*{\xchapter}{\stepcounter{chapter}\setcounter{section}{0}\addchap}
@@ -41,6 +42,10 @@
 \section{Experiment results}
 \label{sec:results}
 \input{results}
+
+\section{Hypothesis testing}
+\label{sec:testing}
+\input{testing}
 
 \bibliography{seminarpaper}
 \bibliographystyle{plain}

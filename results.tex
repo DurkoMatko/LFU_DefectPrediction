@@ -1,230 +1,230 @@
 \subsection{Decision Trees}
 To compare the decision trees performance, we used the PC1 NASA dataset because of their popularity for SFP purposes.
 
-Results of models' performance can be seen in following tables. Tables \ref{table:DT_1},\ref{table:DT_3}, \ref{table:DT_5} and \ref{table:DT_7} document performance of decision trees.				
+Results of models' performance can be seen in following tables. Tables \ref{table:DT_1},\ref{table:DT_3}, \ref{table:DT_5} and \ref{table:DT_7} document performance of decision trees.
 
 \definecolor{myRed}{RGB}{219, 48, 122}
 
-\begin{table}[h!]		
-\centering		
-\begin{tabular}{ |c|c|c|c| } 		
- \hline		
- \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\ 		
- \hline		
- Decision Stump & 91.347 & .872 & .551    \\ 		
- \hline		
- HoeffDing Tree &  91.205 & .871 & .620   \\ 		
- \hline		
-  J48 & 91.347 & .872 & .491\\ 		
- \hline		
-  LMT & 91.489 & .876 & .573  \\ 		
- \hline		
-  Random Forest & 91.489 & .885 & .601 \\ 		
- \hline		
-  Random Tree & 92.198 & .899 & .595 \\ 		
- \hline		
- REP tree  & 91.347 & .872 & .522 \\ 		
- \hline		
- \textbf{Mean}  & 91.488 & .878 & .565 \\ 		
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |c|c|c|c| }
  \hline
-		
-\end{tabular}		
-\caption{Decision trees performance using 1 repository metric}		
-\label{table:DT_1}		
+ \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\
+ \hline
+ Decision Stump & 91.347 & .872 & .551    \\
+ \hline
+ HoeffDing Tree &  91.205 & .871 & .620   \\
+ \hline
+  J48 & 91.347 & .872 & .491\\
+ \hline
+  LMT & 91.489 & .876 & .573  \\
+ \hline
+  Random Forest & 91.489 & .885 & .601 \\
+ \hline
+  Random Tree & 92.198 & .899 & .595 \\
+ \hline
+ REP tree  & 91.347 & .872 & .522 \\
+ \hline
+ \textbf{Mean}  & 91.488 & .878 & .565 \\
+ \hline
+
+\end{tabular}
+\caption{Decision trees performance using 1 repository metric}
+\label{table:DT_1}
 \end{table}
 
-\begin{table}[h!]		
-\centering		
-\begin{tabular}{ |c|c|c|c| } 		
- \hline		
- \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\ 		
- \hline		
- Decision Stump & 91.347 & .872 & .714    \\ 		
- \hline		
- HoeffDing Tree &  91.205 & .872 & .491   \\ 		
- \hline		
-  J48 & 90.780 & .874 & .605\\ 		
- \hline		
-  LMT & 91.347 & .888 & 816  \\ 		
- \hline		
-  Random Forest & 87.943 & .874 & .748 \\ 		
- \hline		
-  Random Tree & 84.539 & .851 & .568 \\ 		
- \hline		
- REP tree  & 90.922 & .875 & .701 \\ 		
- \hline		
- \textbf{Mean}  & 89.726 & .872 & 663.2 \\ 		
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |c|c|c|c| }
  \hline
-		
-\end{tabular}		
-\caption{Decision trees performance using 3 repository metric}		
-\label{table:DT_3}		
+ \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\
+ \hline
+ Decision Stump & 91.347 & .872 & .714    \\
+ \hline
+ HoeffDing Tree &  91.205 & .872 & .491   \\
+ \hline
+  J48 & 90.780 & .874 & .605\\
+ \hline
+  LMT & 91.347 & .888 & 816  \\
+ \hline
+  Random Forest & 87.943 & .874 & .748 \\
+ \hline
+  Random Tree & 84.539 & .851 & .568 \\
+ \hline
+ REP tree  & 90.922 & .875 & .701 \\
+ \hline
+ \textbf{Mean}  & 89.726 & .872 & 663.2 \\
+ \hline
+
+\end{tabular}
+\caption{Decision trees performance using 3 repository metric}
+\label{table:DT_3}
 \end{table}
 
-\begin{table}[h!]		
-\centering		
-\begin{tabular}{ |c|c|c|c| } 		
- \hline		
- \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\ 		
- \hline		
- Decision Stump & 91.347 & .872 & .714    \\ 		
- \hline		
- HoeffDing Tree &  91.347 & .872 & .491   \\ 		
- \hline		
-  J48 & 90.354 & .872 & .616\\ 		
- \hline		
-  LMT & 91.347 & .890 & 840  \\ 		
- \hline		
-  Random Forest & 91.063 & .898 & .845 \\ 		
- \hline		
-  Random Tree & 88.227 & .882 & .624 \\ 		
- \hline		
- REP tree  & 91.347 & .880 & .636 \\ 		
- \hline	
- \textbf{Mean}  & 90.719 & .880 & .681 \\ 		
- \hline	
-		
-\end{tabular}		
-\caption{Decision trees performance using 5 repository metric}		
-\label{table:DT_5}		
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |c|c|c|c| }
+ \hline
+ \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\
+ \hline
+ Decision Stump & 91.347 & .872 & .714    \\
+ \hline
+ HoeffDing Tree &  91.347 & .872 & .491   \\
+ \hline
+  J48 & 90.354 & .872 & .616\\
+ \hline
+  LMT & 91.347 & .890 & 840  \\
+ \hline
+  Random Forest & 91.063 & .898 & .845 \\
+ \hline
+  Random Tree & 88.227 & .882 & .624 \\
+ \hline
+ REP tree  & 91.347 & .880 & .636 \\
+ \hline
+ \textbf{Mean}  & 90.719 & .880 & .681 \\
+ \hline
+
+\end{tabular}
+\caption{Decision trees performance using 5 repository metric}
+\label{table:DT_5}
 \end{table}
 
-\begin{table}[h!]		
-\centering		
-\begin{tabular}{ |c|c|c|c| } 		
- \hline		
- \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\ 		
- \hline		
- Decision Stump & 91.347 & .872 & .729    \\ 		
- \hline		
- HoeffDing Tree &  91.347 & .872 & .491   \\ 		
- \hline		
-  J48 & 90.070 & .880 & .679\\ 		
- \hline		
-  LMT & 91.489 & .889 & 827  \\ 		
- \hline		
-  Random Forest & 91.773 & .903 & .851 \\ 		
- \hline		
-  Random Tree & 89.503 & .895 & .668 \\ 		
- \hline		
- REP tree  & 90.638 & .873 & .704 \\ 		
- \hline		
- \textbf{Mean}  & 90.881 & .883 & .707 \\ 		
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |c|c|c|c| }
  \hline
-		
-\end{tabular}		
-\caption{Decision trees performance using 7 repository metric}		
-\label{table:DT_7}		
+ \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\
+ \hline
+ Decision Stump & 91.347 & .872 & .729    \\
+ \hline
+ HoeffDing Tree &  91.347 & .872 & .491   \\
+ \hline
+  J48 & 90.070 & .880 & .679\\
+ \hline
+  LMT & 91.489 & .889 & 827  \\
+ \hline
+  Random Forest & 91.773 & .903 & .851 \\
+ \hline
+  Random Tree & 89.503 & .895 & .668 \\
+ \hline
+ REP tree  & 90.638 & .873 & .704 \\
+ \hline
+ \textbf{Mean}  & 90.881 & .883 & .707 \\
+ \hline
+
+\end{tabular}
+\caption{Decision trees performance using 7 repository metric}
+\label{table:DT_7}
 \end{table}
 
 
 \subsection{Bayesian Learners}
 To compare the bayesian performance, we used the PC1 NASA dataset because of their popularity for SFP purposes.
 
-Results of models' performance can be seen in following tables. Tables \ref{table:BL_1},\ref{table:BL_3}, \ref{table:BL_5} and \ref{table:BL_7} document performance of bayesian learners.				
+Results of models' performance can be seen in following tables. Tables \ref{table:BL_1},\ref{table:BL_3}, \ref{table:BL_5} and \ref{table:BL_7} document performance of bayesian learners.
 
 \definecolor{myRed}{RGB}{219, 48, 122}
 
-\begin{table}[h!]		
-\centering		
-\begin{tabular}{ |c|c|c|c| } 		
- \hline		
- \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\ 		
- \hline		
- Bayes Net & 91.347 & .872 & .491    \\ 		
- \hline		
- Naive Bayes &  88.794 & .863 & .524   \\ 		
- \hline		
-  Naive Bayes Multinomial & 91.347 & .872 & .491\\ 		
- \hline		
-  Naive Bayes Multinomial Text & 91.347 & .872 & .491  \\ 		
- \hline		
-  Naive Bayes Multinomial Updatable & 91.347 & .872 & .375 \\ 		
- \hline		
-  Naive Bayes Updatable & 88.794 & .863 & .524 \\ 		
- \hline	
- \textbf{Mean}  & 90.496 & .869 & .482 \\ 		
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |c|c|c|c| }
  \hline
-		
-\end{tabular}		
-\caption{Bayesian Learners performance using 1 repository metric}		
-\label{table:BL_1}		
+ \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\
+ \hline
+ Bayes Net & 91.347 & .872 & .491    \\
+ \hline
+ Naive Bayes &  88.794 & .863 & .524   \\
+ \hline
+  Naive Bayes Multinomial & 91.347 & .872 & .491\\
+ \hline
+  Naive Bayes Multinomial Text & 91.347 & .872 & .491  \\
+ \hline
+  Naive Bayes Multinomial Updatable & 91.347 & .872 & .375 \\
+ \hline
+  Naive Bayes Updatable & 88.794 & .863 & .524 \\
+ \hline
+ \textbf{Mean}  & 90.496 & .869 & .482 \\
+ \hline
+
+\end{tabular}
+\caption{Bayesian Learners performance using 1 repository metric}
+\label{table:BL_1}
 \end{table}
 
-\begin{table}[h!]		
-\centering		
-\begin{tabular}{ |c|c|c|c| } 		
- \hline		
- \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\ 		
- \hline		
- Bayes Net & 91.347 & .872 & .688    \\ 		
- \hline		
- Naive Bayes &  88.510 & .878 & .592   \\ 		
- \hline		
-  Naive Bayes Multinomial & 88.227 & .882 & .749\\ 		
- \hline		
-  Naive Bayes Multinomial Text & 91.347 & .872 & .491  \\ 		
- \hline		
-  Naive Bayes Multinomial Updatable & 88.227 & .882 & .748 \\ 		
- \hline		
-  Naive Bayes Updatable & 88.510 & .878 & .592 \\ 		
- \hline	
- \textbf{Mean}  & 89.361 & .877 & .643 \\ 		
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |c|c|c|c| }
  \hline
-		
-\end{tabular}		
-\caption{Bayesian Learners performance using 3 repository metric}		
-\label{table:BL_3}		
+ \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\
+ \hline
+ Bayes Net & 91.347 & .872 & .688    \\
+ \hline
+ Naive Bayes &  88.510 & .878 & .592   \\
+ \hline
+  Naive Bayes Multinomial & 88.227 & .882 & .749\\
+ \hline
+  Naive Bayes Multinomial Text & 91.347 & .872 & .491  \\
+ \hline
+  Naive Bayes Multinomial Updatable & 88.227 & .882 & .748 \\
+ \hline
+  Naive Bayes Updatable & 88.510 & .878 & .592 \\
+ \hline
+ \textbf{Mean}  & 89.361 & .877 & .643 \\
+ \hline
+
+\end{tabular}
+\caption{Bayesian Learners performance using 3 repository metric}
+\label{table:BL_3}
 \end{table}
 
-\begin{table}[h!]		
-\centering		
-\begin{tabular}{ |c|c|c|c| } 		
- \hline		
- \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\ 		
- \hline		
- Bayes Net & 89.645 & .877 & .754    \\ 		
- \hline		
- Naive Bayes &  88.085 & .878 & .624   \\ 		
- \hline		
-  Naive Bayes Multinomial & 87.375 & .883 & .779\\ 		
- \hline		
-  Naive Bayes Multinomial Text & 91.347 & .872 & .491  \\ 		
- \hline		
-  Naive Bayes Multinomial Updatable & 87.375 & .883 & .779 \\ 		
- \hline		
-  Naive Bayes Updatable & 88.085 & .878 & .624 \\ 		
- \hline	
- \textbf{Mean}  & 88.652 & .878 & .675 \\ 		
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |c|c|c|c| }
  \hline
-		
-\end{tabular}		
-\caption{Bayesian Learners performance using 5 repository metric}		
-\label{table:BL_5}		
+ \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\
+ \hline
+ Bayes Net & 89.645 & .877 & .754    \\
+ \hline
+ Naive Bayes &  88.085 & .878 & .624   \\
+ \hline
+  Naive Bayes Multinomial & 87.375 & .883 & .779\\
+ \hline
+  Naive Bayes Multinomial Text & 91.347 & .872 & .491  \\
+ \hline
+  Naive Bayes Multinomial Updatable & 87.375 & .883 & .779 \\
+ \hline
+  Naive Bayes Updatable & 88.085 & .878 & .624 \\
+ \hline
+ \textbf{Mean}  & 88.652 & .878 & .675 \\
+ \hline
+
+\end{tabular}
+\caption{Bayesian Learners performance using 5 repository metric}
+\label{table:BL_5}
 \end{table}
 
-\begin{table}[h!]		
-\centering		
-\begin{tabular}{ |c|c|c|c| } 		
- \hline		
- \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\ 		
- \hline		
- Bayes Net & 89.787 & .876 & .732    \\ 		
- \hline		
- Naive Bayes &  87.375 & .872 & .656   \\ 		
- \hline		
-  Naive Bayes Multinomial & 85.815 & .865 & .638\\ 		
- \hline		
-  Naive Bayes Multinomial Text & 91.347 & .872 & .491  \\ 		
- \hline		
-  Naive Bayes Multinomial Updatable & 87.375 & .872 & .643 \\ 		
- \hline		
-  Naive Bayes Updatable & 87.375 & .872 & .656 \\ 		
- \hline	
- \textbf{Mean}  & 88.179 & .871 & .636 \\ 		
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |c|c|c|c| }
  \hline
-		
-\end{tabular}		
-\caption{Bayesian Learners performance using 7 repository metric}		
-\label{table:BL_7}		
+ \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\
+ \hline
+ Bayes Net & 89.787 & .876 & .732    \\
+ \hline
+ Naive Bayes &  87.375 & .872 & .656   \\
+ \hline
+  Naive Bayes Multinomial & 85.815 & .865 & .638\\
+ \hline
+  Naive Bayes Multinomial Text & 91.347 & .872 & .491  \\
+ \hline
+  Naive Bayes Multinomial Updatable & 87.375 & .872 & .643 \\
+ \hline
+  Naive Bayes Updatable & 87.375 & .872 & .656 \\
+ \hline
+ \textbf{Mean}  & 88.179 & .871 & .636 \\
+ \hline
+
+\end{tabular}
+\caption{Bayesian Learners performance using 7 repository metric}
+\label{table:BL_7}
 \end{table}

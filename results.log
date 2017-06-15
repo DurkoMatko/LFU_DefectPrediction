@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.28)  12 JUN 2017 22:25
 entering extended mode
  restricted \write18 enabled.
@@ -7,6 +8,18 @@ entering extended mode
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 5 language(s) loaded.
 ! Undefined control sequence.
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.19)  15 JUN 2017 12:15
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**results.tex
+(./results.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+./results.tex:1: Undefined control sequence.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 l.1 \subsection
                {Decision Trees}
 The control sequence at the end of the top line
@@ -16,7 +29,11 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
+<<<<<<< HEAD
 ! LaTeX Error: Missing \begin{document}.
+=======
+./results.tex:1: LaTeX Error: Missing \begin{document}.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -145,7 +162,11 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 1--3
  []
 
 
+<<<<<<< HEAD
 ! LaTeX Error: Missing \begin{document}.
+=======
+./results.tex:4: LaTeX Error: Missing \begin{document}.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -153,7 +174,10 @@ Type  H <return>  for immediate help.
                                                   
 l.4 R
      esults of models' performance can be seen in following tables. Tables \...
+<<<<<<< HEAD
 
+=======
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -217,7 +241,11 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
+<<<<<<< HEAD
 ! Undefined control sequence.
+=======
+./results.tex:4: Undefined control sequence.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 <write> ...eference `table:DT_1' on page \thepage 
                                                   \space undefined\on@line .
 l.4 ...n following tables. Tables \ref{table:DT_1}
@@ -232,7 +260,11 @@ and I'll forget about whatever was undefined.
 LaTeX Warning: Reference `table:DT_1' on page  undefined on input line 4.
 
 Missing character: There is no , in font nullfont!
+<<<<<<< HEAD
 ! Undefined control sequence.
+=======
+./results.tex:4: Undefined control sequence.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 <write> ...eference `table:DT_3' on page \thepage 
                                                   \space undefined\on@line .
 l.4 ...s. Tables \ref{table:DT_1},\ref{table:DT_3}
@@ -247,7 +279,11 @@ and I'll forget about whatever was undefined.
 LaTeX Warning: Reference `table:DT_3' on page  undefined on input line 4.
 
 Missing character: There is no , in font nullfont!
+<<<<<<< HEAD
 ! Undefined control sequence.
+=======
+./results.tex:4: Undefined control sequence.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 <write> ...eference `table:DT_5' on page \thepage 
                                                   \space undefined\on@line .
 l.4 ...le:DT_1},\ref{table:DT_3}, \ref{table:DT_5}
@@ -264,7 +300,11 @@ LaTeX Warning: Reference `table:DT_5' on page  undefined on input line 4.
 Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
+<<<<<<< HEAD
 ! Undefined control sequence.
+=======
+./results.tex:4: Undefined control sequence.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 <write> ...eference `table:DT_7' on page \thepage 
                                                   \space undefined\on@line .
 l.4 ...T_3}, \ref{table:DT_5} and \ref{table:DT_7}
@@ -333,7 +373,11 @@ Overfull \hbox (10.86105pt too wide) in paragraph at lines 4--5
 []
  []
 
+<<<<<<< HEAD
 ! Undefined control sequence.
+=======
+./results.tex:6: Undefined control sequence.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 l.6 \definecolor
                 {myRed}{RGB}{219, 48, 122}
 The control sequence at the end of the top line
@@ -343,7 +387,11 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
+<<<<<<< HEAD
 ! LaTeX Error: Missing \begin{document}.
+=======
+./results.tex:6: LaTeX Error: Missing \begin{document}.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -378,7 +426,11 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 6--7
  []
 
 
+<<<<<<< HEAD
 ! LaTeX Error: Environment table undefined.
+=======
+./results.tex:8: LaTeX Error: Environment table undefined.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -391,7 +443,11 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
+<<<<<<< HEAD
 ! LaTeX Error: Missing \begin{document}.
+=======
+./results.tex:8: LaTeX Error: Missing \begin{document}.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -584,7 +640,11 @@ Missing character: There is no 5 in font nullfont!
 Missing character: There is no 6 in font nullfont!
 Missing character: There is no 5 in font nullfont!
 
+<<<<<<< HEAD
 ! LaTeX Error: \caption outside float.
+=======
+./results.tex:32: LaTeX Error: \caption outside float.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -642,7 +702,11 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no c in font nullfont!
 
+<<<<<<< HEAD
 ! LaTeX Error: \begin{document} ended by \end{table}.
+=======
+./results.tex:34: LaTeX Error: \begin{document} ended by \end{table}.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -665,7 +729,11 @@ Overfull \hbox (189.25735pt too wide) in paragraph at lines 8--35
  []
 
 
+<<<<<<< HEAD
 ! LaTeX Error: Environment table undefined.
+=======
+./results.tex:36: LaTeX Error: Environment table undefined.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -678,7 +746,11 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
+<<<<<<< HEAD
 ! LaTeX Error: Missing \begin{document}.
+=======
+./results.tex:36: LaTeX Error: Missing \begin{document}.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -861,6 +933,7 @@ Missing character: There is no . in font nullfont!
 Missing character: There is no 8 in font nullfont!
 Missing character: There is no 7 in font nullfont!
 Missing character: There is no 2 in font nullfont!
+<<<<<<< HEAD
 Missing character: There is no 6 in font nullfont!
 Missing character: There is no 6 in font nullfont!
 Missing character: There is no 3 in font nullfont!
@@ -868,13 +941,25 @@ Missing character: There is no . in font nullfont!
 Missing character: There is no 2 in font nullfont!
 
 ! LaTeX Error: \caption outside float.
+=======
+Missing character: There is no . in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+
+./results.tex:60: LaTeX Error: \caption outside float.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.60 \caption
+<<<<<<< HEAD
              {Decision trees performance using 3 repository metric}
+=======
+             {Decision trees performance using 3 repository metrics}
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -924,8 +1009,14 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no c in font nullfont!
+<<<<<<< HEAD
 
 ! LaTeX Error: \begin{document} ended by \end{table}.
+=======
+Missing character: There is no s in font nullfont!
+
+./results.tex:62: LaTeX Error: \begin{document} ended by \end{table}.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -948,7 +1039,11 @@ Overfull \hbox (189.25735pt too wide) in paragraph at lines 36--63
  []
 
 
+<<<<<<< HEAD
 ! LaTeX Error: Environment table undefined.
+=======
+./results.tex:64: LaTeX Error: Environment table undefined.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -961,7 +1056,11 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
+<<<<<<< HEAD
 ! LaTeX Error: Missing \begin{document}.
+=======
+./results.tex:64: LaTeX Error: Missing \begin{document}.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1149,14 +1248,22 @@ Missing character: There is no 6 in font nullfont!
 Missing character: There is no 8 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 
+<<<<<<< HEAD
 ! LaTeX Error: \caption outside float.
+=======
+./results.tex:88: LaTeX Error: \caption outside float.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.88 \caption
+<<<<<<< HEAD
              {Decision trees performance using 5 repository metric}
+=======
+             {Decision trees performance using 5 repository metrics}
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1206,8 +1313,14 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no c in font nullfont!
+<<<<<<< HEAD
 
 ! LaTeX Error: \begin{document} ended by \end{table}.
+=======
+Missing character: There is no s in font nullfont!
+
+./results.tex:90: LaTeX Error: \begin{document} ended by \end{table}.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1230,7 +1343,11 @@ Overfull \hbox (189.25735pt too wide) in paragraph at lines 64--91
  []
 
 
+<<<<<<< HEAD
 ! LaTeX Error: Environment table undefined.
+=======
+./results.tex:92: LaTeX Error: Environment table undefined.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1243,7 +1360,11 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
+<<<<<<< HEAD
 ! LaTeX Error: Missing \begin{document}.
+=======
+./results.tex:92: LaTeX Error: Missing \begin{document}.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1431,14 +1552,22 @@ Missing character: There is no 7 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 7 in font nullfont!
 
+<<<<<<< HEAD
 ! LaTeX Error: \caption outside float.
+=======
+./results.tex:116: LaTeX Error: \caption outside float.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.116 \caption
+<<<<<<< HEAD
               {Decision trees performance using 7 repository metric}
+=======
+              {Decision trees performance using 7 repository metrics}
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1488,8 +1617,14 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no c in font nullfont!
+<<<<<<< HEAD
 
 ! LaTeX Error: \begin{document} ended by \end{table}.
+=======
+Missing character: There is no s in font nullfont!
+
+./results.tex:118: LaTeX Error: \begin{document} ended by \end{table}.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1511,7 +1646,11 @@ Overfull \hbox (189.25735pt too wide) in paragraph at lines 92--119
 []
  []
 
+<<<<<<< HEAD
 ! Undefined control sequence.
+=======
+./results.tex:121: Undefined control sequence.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 l.121 \subsection
                  {Bayesian Learners}
 The control sequence at the end of the top line
@@ -1521,7 +1660,11 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
+<<<<<<< HEAD
 ! LaTeX Error: Missing \begin{document}.
+=======
+./results.tex:121: LaTeX Error: Missing \begin{document}.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1648,7 +1791,11 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 121--123
  []
 
 
+<<<<<<< HEAD
 ! LaTeX Error: Missing \begin{document}.
+=======
+./results.tex:124: LaTeX Error: Missing \begin{document}.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1656,7 +1803,10 @@ Type  H <return>  for immediate help.
                                                   
 l.124 R
        esults of models' performance can be seen in following tables. Tables...
+<<<<<<< HEAD
 
+=======
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1720,7 +1870,11 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
+<<<<<<< HEAD
 ! Undefined control sequence.
+=======
+./results.tex:124: Undefined control sequence.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 <write> ...eference `table:BL_1' on page \thepage 
                                                   \space undefined\on@line .
 l.124 ...following tables. Tables \ref{table:BL_1}
@@ -1735,7 +1889,11 @@ and I'll forget about whatever was undefined.
 LaTeX Warning: Reference `table:BL_1' on page  undefined on input line 124.
 
 Missing character: There is no , in font nullfont!
+<<<<<<< HEAD
 ! Undefined control sequence.
+=======
+./results.tex:124: Undefined control sequence.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 <write> ...eference `table:BL_3' on page \thepage 
                                                   \space undefined\on@line .
 l.124 ... Tables \ref{table:BL_1},\ref{table:BL_3}
@@ -1750,7 +1908,11 @@ and I'll forget about whatever was undefined.
 LaTeX Warning: Reference `table:BL_3' on page  undefined on input line 124.
 
 Missing character: There is no , in font nullfont!
+<<<<<<< HEAD
 ! Undefined control sequence.
+=======
+./results.tex:124: Undefined control sequence.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 <write> ...eference `table:BL_5' on page \thepage 
                                                   \space undefined\on@line .
 l.124 ...:BL_1},\ref{table:BL_3}, \ref{table:BL_5}
@@ -1767,7 +1929,11 @@ LaTeX Warning: Reference `table:BL_5' on page  undefined on input line 124.
 Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
+<<<<<<< HEAD
 ! Undefined control sequence.
+=======
+./results.tex:124: Undefined control sequence.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 <write> ...eference `table:BL_7' on page \thepage 
                                                   \space undefined\on@line .
 l.124 ...3}, \ref{table:BL_5} and \ref{table:BL_7}
@@ -1839,7 +2005,11 @@ Overfull \hbox (10.86105pt too wide) in paragraph at lines 124--125
 []
  []
 
+<<<<<<< HEAD
 ! Undefined control sequence.
+=======
+./results.tex:126: Undefined control sequence.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 l.126 \definecolor
                   {myRed}{RGB}{219, 48, 122}
 The control sequence at the end of the top line
@@ -1849,7 +2019,11 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
+<<<<<<< HEAD
 ! LaTeX Error: Missing \begin{document}.
+=======
+./results.tex:126: LaTeX Error: Missing \begin{document}.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1884,7 +2058,11 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 126--127
  []
 
 
+<<<<<<< HEAD
 ! LaTeX Error: Environment table undefined.
+=======
+./results.tex:128: LaTeX Error: Environment table undefined.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1897,7 +2075,11 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
+<<<<<<< HEAD
 ! LaTeX Error: Missing \begin{document}.
+=======
+./results.tex:128: LaTeX Error: Missing \begin{document}.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -2124,7 +2306,11 @@ Missing character: There is no 4 in font nullfont!
 Missing character: There is no 8 in font nullfont!
 Missing character: There is no 2 in font nullfont!
 
+<<<<<<< HEAD
 ! LaTeX Error: \caption outside float.
+=======
+./results.tex:150: LaTeX Error: \caption outside float.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -2185,7 +2371,11 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no c in font nullfont!
 
+<<<<<<< HEAD
 ! LaTeX Error: \begin{document} ended by \end{table}.
+=======
+./results.tex:152: LaTeX Error: \begin{document} ended by \end{table}.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -2208,7 +2398,11 @@ Overfull \hbox (189.25735pt too wide) in paragraph at lines 128--153
  []
 
 
+<<<<<<< HEAD
 ! LaTeX Error: Environment table undefined.
+=======
+./results.tex:154: LaTeX Error: Environment table undefined.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -2221,7 +2415,11 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
+<<<<<<< HEAD
 ! LaTeX Error: Missing \begin{document}.
+=======
+./results.tex:154: LaTeX Error: Missing \begin{document}.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -2448,14 +2646,22 @@ Missing character: There is no 6 in font nullfont!
 Missing character: There is no 4 in font nullfont!
 Missing character: There is no 3 in font nullfont!
 
+<<<<<<< HEAD
 ! LaTeX Error: \caption outside float.
+=======
+./results.tex:176: LaTeX Error: \caption outside float.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.176 \caption
+<<<<<<< HEAD
               {Bayesian Learners performance using 3 repository metric}
+=======
+              {Bayesian Learners performance using 3 repository metrics}
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2508,8 +2714,14 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no c in font nullfont!
+<<<<<<< HEAD
 
 ! LaTeX Error: \begin{document} ended by \end{table}.
+=======
+Missing character: There is no s in font nullfont!
+
+./results.tex:178: LaTeX Error: \begin{document} ended by \end{table}.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -2532,7 +2744,11 @@ Overfull \hbox (189.25735pt too wide) in paragraph at lines 154--179
  []
 
 
+<<<<<<< HEAD
 ! LaTeX Error: Environment table undefined.
+=======
+./results.tex:180: LaTeX Error: Environment table undefined.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -2545,7 +2761,11 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
+<<<<<<< HEAD
 ! LaTeX Error: Missing \begin{document}.
+=======
+./results.tex:180: LaTeX Error: Missing \begin{document}.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -2772,14 +2992,22 @@ Missing character: There is no 6 in font nullfont!
 Missing character: There is no 7 in font nullfont!
 Missing character: There is no 5 in font nullfont!
 
+<<<<<<< HEAD
 ! LaTeX Error: \caption outside float.
+=======
+./results.tex:202: LaTeX Error: \caption outside float.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.202 \caption
+<<<<<<< HEAD
               {Bayesian Learners performance using 5 repository metric}
+=======
+              {Bayesian Learners performance using 5 repository metrics}
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2832,8 +3060,14 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no c in font nullfont!
+<<<<<<< HEAD
 
 ! LaTeX Error: \begin{document} ended by \end{table}.
+=======
+Missing character: There is no s in font nullfont!
+
+./results.tex:204: LaTeX Error: \begin{document} ended by \end{table}.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -2856,7 +3090,11 @@ Overfull \hbox (189.25735pt too wide) in paragraph at lines 180--205
  []
 
 
+<<<<<<< HEAD
 ! LaTeX Error: Environment table undefined.
+=======
+./results.tex:206: LaTeX Error: Environment table undefined.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -2869,7 +3107,11 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
+<<<<<<< HEAD
 ! LaTeX Error: Missing \begin{document}.
+=======
+./results.tex:206: LaTeX Error: Missing \begin{document}.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -3096,14 +3338,22 @@ Missing character: There is no 6 in font nullfont!
 Missing character: There is no 3 in font nullfont!
 Missing character: There is no 6 in font nullfont!
 
+<<<<<<< HEAD
 ! LaTeX Error: \caption outside float.
+=======
+./results.tex:228: LaTeX Error: \caption outside float.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.228 \caption
+<<<<<<< HEAD
               {Bayesian Learners performance using 7 repository metric}
+=======
+              {Bayesian Learners performance using 7 repository metrics}
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3156,8 +3406,14 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no c in font nullfont!
+<<<<<<< HEAD
 
 ! LaTeX Error: \begin{document} ended by \end{table}.
+=======
+Missing character: There is no s in font nullfont!
+
+./results.tex:230: LaTeX Error: \begin{document} ended by \end{table}.
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -3177,11 +3433,20 @@ or  <return>  to continue without it.
 
  
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  20 strings out of 494910
  296 string characters out of 6179835
  66442 words of memory out of 5000000
  3411 multiletter control sequences out of 15000+600000
  3948 words of font info for 15 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
+=======
+ 20 strings out of 493014
+ 289 string characters out of 6133351
+ 74601 words of memory out of 5000000
+ 3662 multiletter control sequences out of 15000+600000
+ 3948 words of font info for 15 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+>>>>>>> a66cf7374ab696e63ce441b4d76e37f44b075816
  19i,7n,19p,216b,149s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
