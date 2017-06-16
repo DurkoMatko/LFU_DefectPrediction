@@ -18,4 +18,24 @@
   author={Wang, Huanjing and Khoshgoftaar, Taghi M and Seliya, Naeem},
   booktitle={Twenty-Fourth International FLAIRS Conference},
   year={2011}
+},
+@article{dejaeger2013toward,
+  title={Toward comprehensible software fault prediction models using bayesian network classifiers},
+  author={Dejaeger, Karel and Verbraken, Thomas and Baesens, Bart},
+  journal={IEEE Transactions on Software Engineering},
+  volume={39},
+  number={2},
+  pages={237--257},
+  year={2013},
+  publisher={IEEE}
+},
+@article{hall2012systematic,
+  title={A systematic literature review on fault prediction performance in software engineering},
+  author={Hall, Tracy and Beecham, Sarah and Bowes, David and Gray, David and Counsell, Steve},
+  journal={IEEE Transactions on Software Engineering},
+  volume={38},
+  number={6},
+  pages={1276--1304},
+  year={2012},
+  publisher={IEEE}
 }

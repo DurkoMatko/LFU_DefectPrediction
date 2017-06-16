@@ -1,5 +1,19 @@
 \begin{thebibliography}{1}
 
+\bibitem{dejaeger2013toward}
+Karel Dejaeger, Thomas Verbraken, and Bart Baesens.
+\newblock Toward comprehensible software fault prediction models using bayesian
+  network classifiers.
+\newblock {\em IEEE Transactions on Software Engineering}, 39(2):237--257,
+  2013.
+
+\bibitem{hall2012systematic}
+Tracy Hall, Sarah Beecham, David Bowes, David Gray, and Steve Counsell.
+\newblock A systematic literature review on fault prediction performance in
+  software engineering.
+\newblock {\em IEEE Transactions on Software Engineering}, 38(6):1276--1304,
+  2012.
+
 \bibitem{japkowicz2011evaluating}
 Nathalie Japkowicz and Mohak Shah.
 \newblock {\em Evaluating learning algorithms: a classification perspective}.
@@ -10,6 +24,12 @@ Ruchika Malhotra.
 \newblock A systematic review of machine learning techniques for software fault
   prediction.
 \newblock {\em Applied Soft Computing}, 27:504--518, 2015.
+
+\bibitem{shivaji2009reducing}
+Shivkumar Shivaji, Jr~E~James Whitehead, Ram Akella, and Sunghun Kim.
+\newblock Reducing features to improve bug prediction.
+\newblock In {\em Proceedings of the 2009 IEEE/ACM International Conference on
+  Automated Software Engineering}, pages 600--604. IEEE Computer Society, 2009.
 
 \bibitem{wang2011many}
 Huanjing Wang, Taghi~M Khoshgoftaar, and Naeem Seliya.
