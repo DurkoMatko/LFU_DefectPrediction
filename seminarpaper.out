@@ -1,16 +1,16 @@
-\BOOKMARK [1][-]{section.0.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.0.2}{Experiment design}{}% 2
-\BOOKMARK [2][-]{subsection.0.2.1}{Experiment description}{section.0.2}% 3
-\BOOKMARK [2][-]{subsection.0.2.2}{Experimental Setup}{section.0.2}% 4
-\BOOKMARK [2][-]{subsection.0.2.3}{Evaluation metrics}{section.0.2}% 5
-\BOOKMARK [1][-]{section.0.3}{Metrics, classifier and dataset selection}{}% 6
-\BOOKMARK [2][-]{subsection.0.3.1}{Metrics}{section.0.3}% 7
-\BOOKMARK [2][-]{subsection.0.3.2}{Classifier}{section.0.3}% 8
-\BOOKMARK [2][-]{subsection.0.3.3}{Datasets}{section.0.3}% 9
-\BOOKMARK [1][-]{section.0.4}{Experiment results}{}% 10
-\BOOKMARK [2][-]{subsection.0.4.1}{Decision Trees}{section.0.4}% 11
-\BOOKMARK [2][-]{subsection.0.4.2}{Bayesian Learners}{section.0.4}% 12
-\BOOKMARK [1][-]{section.0.5}{Additional measurements}{}% 13
-\BOOKMARK [1][-]{section.0.6}{Result analysis}{}% 14
-\BOOKMARK [2][-]{subsection.0.6.1}{Hypothesis Testing}{section.0.6}% 15
-\BOOKMARK [1][-]{section.0.7}{Conclusion}{}% 16
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Experiment design}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Experiment description}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{Experimental Setup}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.3}{Evaluation metrics}{chapter.2}% 5
+\BOOKMARK [0][-]{chapter.3}{Metrics, classifier and dataset selection}{}% 6
+\BOOKMARK [1][-]{section.3.1}{Metrics}{chapter.3}% 7
+\BOOKMARK [1][-]{section.3.2}{Classifier}{chapter.3}% 8
+\BOOKMARK [1][-]{section.3.3}{Datasets}{chapter.3}% 9
+\BOOKMARK [0][-]{chapter.4}{Experiment results}{}% 10
+\BOOKMARK [1][-]{section.4.1}{Decision Trees}{chapter.4}% 11
+\BOOKMARK [1][-]{section.4.2}{Bayesian Learners}{chapter.4}% 12
+\BOOKMARK [0][-]{chapter.5}{Additional measurements}{}% 13
+\BOOKMARK [0][-]{chapter.6}{Result analysis}{}% 14
+\BOOKMARK [1][-]{section.6.1}{Hypothesis Testing}{chapter.6}% 15
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 16

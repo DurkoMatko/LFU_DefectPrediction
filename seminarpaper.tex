@@ -1,8 +1,13 @@
-\documentclass[a4paper,11pt,pdftex,halfparskip,cleardoubleempty]{scrbook}
+\documentclass[a4paper,11pt,pdftex,halfparskip,oneside,cleardoubleempty]{scrbook}
 \usepackage{wrapfig}
 \usepackage[pdftex]{graphicx}
 \usepackage{eso-pic}
 \usepackage{hyperref}
+
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\scr@startchapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
 
 \newcommand\mytodo[1]{\textcolor{red}{#1}}
 
@@ -11,6 +16,7 @@
 \graphicspath{{img/}}
 \newcommand*{\xchapter}{\stepcounter{chapter}\setcounter{section}{0}\addchap}
 \renewcommand*{\thesection}{\arabic{section}}
+
 
 % define medatata
 \def\MTitle{Comparison of Defect Prediction Models}
@@ -30,32 +36,32 @@
 
 \input{abstract}
 
-\section{Introduction}
+\chapter{Introduction}
 \label{sec:introduction}
 \input{introduction}
 
-\section{Experiment design}
+\chapter{Experiment design}
 \label{sec:experiment}
 \input{experiment}
 
-\section{Metrics, classifier and dataset selection}
+\chapter{Metrics, classifier and dataset selection}
 \label{sec:selection}
 \input{selection}
 
-\section{Experiment results}
+\chapter{Experiment results}
 \label{sec:results}
 \input{results}
 
-\section{Additional measurements}
+\chapter{Additional measurements}
 \label{sec:additional}
 \input{additional}
 
-\section{Result analysis}
+\chapter{Result analysis}
 \label{sec:testing}
 \input{testing}
 
 
-\section{Conclusion}
+\chapter{Conclusion}
 \label{sec:conclusion}
 \input{conclusion}
 

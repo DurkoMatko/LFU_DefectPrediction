@@ -1,4 +1,4 @@
-\subsection{Hypothesis Testing}
+\section{Hypothesis Testing}
 After conducting the experiment, we obtained specific values for each algorithm in the two classifier groups that we decided to use. To compare those groups as a whole, we will work with the mean values of each group. We computed the mean value from all evaluation metrics and we also left out the maximal and minimal values of each group in order to prevent outliers from affecting our results. In both scenarios, the mean values have been almost the same and because of the limited scope of our report, we decided to do the hypothesis testing for the mean value computed from all evaluation metrics, which can be seen in the tables \ref{table:means_correct}, \ref{table:means_F-measure} and \ref{table:means_AUC}.
 \begin{table}[h!]
 \centering
@@ -79,6 +79,5 @@ We measured performance for 4 different scenarios which results into 6 degrees o
 \caption{Hypothetis testing results}		
 \label{table:hypothesisTesting}		
 \end{table}
-As can be seen in table \ref{table:hypothesisTesting}, according to t and p-values we can reject null hypothesis in favor of an alternative hypothesis in both cases of the one-tailed tests (correctness, AUC). This can, in other words, be interpreted that when speaking in terms of correctness and AUC, decision trees really performed better than bayesian learners. On the other side, experiment with F-measure as evaluation metric didn't show performance advantage in any of 2 groups.
-
-Another area we concentrated on in our experiment was the effect of number of software metrics used to train the prediction models. Results can be seen in tables...
+As can be seen in table \ref{table:hypothesisTesting}, according to t and p-values we can reject null hypothesis in favor of an alternative hypothesis in both cases of the one-tailed tests (correctness, AUC). This can, in other words, be interpreted that when speaking in terms of correctness and AUC, decision trees really performed better than bayesian learners. On the other side, experiment with F-measure as evaluation metric didn't show performance advantage in any of 2 groups.\\\\
+Looking at the number of metrics and the results thereof, it does not look like there is any correlation between the number of metrics and the precision of the prediction model. What we for example can see in table \ref{table:means_correct} is that the precision on bayesian learners decreases when increasing the number of metrics. But this is not something we can see for the two other evaluation metrics and therefore it is hard to say that this is a true result. It is difficult to find structure or patterns in the rest of the results and therefore we cannot say that the number of metrics actually effects the performance of the prediction model. 
