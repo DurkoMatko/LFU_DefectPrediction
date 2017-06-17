@@ -1,45 +1,45 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.28)  17 JUN 2017 13:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.10.28)  17 JUN 2017 19:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **seminarpaper.tex
 (./seminarpaper.tex
-LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 5 language(s) loaded.
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 4 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbook.cls
-Document Class: scrbook 2015/10/03 v3.19a KOMA-Script document class (book)
+Document Class: scrbook 2013/12/19 v3.12 KOMA-Script document class (book)
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrkbase.sty
-Package: scrkbase 2015/10/03 v3.19a KOMA-Script package (KOMA-Script-dependent 
-basics and keyval usage)
+Package: scrkbase 2013/12/19 v3.12 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
 
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2015/10/03 v3.19a KOMA-Script package (KOMA-Script-independent
- basics and keyval usage)
+Package: scrbase 2013/12/19 v3.12 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2015/10/03 v3.19a KOMA-Script package (loading files)
+Package: scrlfile 2013/12/19 v3.12 KOMA-Script package (loading files)
 
-Package scrlfile, 2015/10/03 v3.19a KOMA-Script package (loading files)
+Package scrlfile, 2013/12/19 v3.12 KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
 ))) (/usr/share/texlive/texmf-dist/tex/latex/koma-script/tocbasic.sty
-Package: tocbasic 2015/10/03 v3.19a KOMA-Script package (handling toc-files)
+Package: tocbasic 2013/12/19 v3.12 KOMA-Script package (handling toc-files)
 )
 Package tocbasic Info: omitting babel extension for `toc'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `toc' on input line 125.
+(tocbasic)             for `toc' on input line 117.
 Package tocbasic Info: omitting babel extension for `lof'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lof' on input line 126.
+(tocbasic)             for `lof' on input line 118.
 Package tocbasic Info: omitting babel extension for `lot'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lot' on input line 127.
-Package tocbasic Info: defining new hook before heading of `' on input line 158
-4.
+(tocbasic)             for `lot' on input line 119.
+Package tocbasic Info: defining new hook before heading of `' on input line 111
+8.
 Package scrbook Info: You've used standard option `11pt'.
 (scrbook)             This is correct!
 (scrbook)             Internally I'm using `fontsize=11pt'.
@@ -49,11 +49,10 @@ Package scrbook Info: You've used standard option `11pt'.
 
 
 Class scrbook Warning: You've used obsolete option `halfparskip'.
-(scrbook)              Usage of this option indicates an old document
-(scrbook)              and changes compatibility level using
-(scrbook)              `parskip=half,version=first'.
-(scrbook)              If you don't want this, you should simply
-(scrbook)              replace option `halfparskip' by `parskip=half'.
+(scrbook)              Usage of this option indicates an old document and
+(scrbook)              is deprecated.
+(scrbook)              You should simply replace
+(scrbook)              usage of option `halfparskip' by `parskip=half'.
 
 Class scrbook Info: Switching compatibility level to `first'.
 Class scrbook Info: You've used standard option `oneside'.
@@ -62,26 +61,32 @@ Class scrbook Info: You've used standard option `oneside'.
 (scrbook)           If you'd like to set the option with \KOMAoptions,
 (scrbook)           you'd have to use `twoside=false' there
 (scrbook)           instead of `oneside', too.
+Package scrbase Info: Unknown processing state.
+(scrbase)             Processing option `twoside=false'
+(scrbase)             of member `.scrbook.cls'
+(scrbase)             of family `KOMA'
+(scrbase)             doesn't set a valid state.
+(scrbase)             This will be interpreted
+(scrbase)             as \FamilyKeyStateProcessed on input line 1269.
 
 Class scrbook Warning: You've used obsolete option `cleardoubleempty'.
-(scrbook)              Usage of this option indicates an old document
-(scrbook)              and changes compatibility level using
-(scrbook)              `cleardoublepage=empty,version=first'.
-(scrbook)              If you don't want this, you should simply
-(scrbook)              replace option `cleardoubleempty' by `cleardoublepage=em
-pty'.
+(scrbook)              Usage of this option indicates an old document and
+(scrbook)              is deprecated.
+(scrbook)              You should simply replace
+(scrbook)              usage of option `cleardoubleempty' by `cleardoublepage=e
+mpty'.
 
 Class scrbook Info: Switching compatibility level to `first'.
 Class scrbook Info: File `scrsize11pt.clo' used to setup font sizes on input li
-ne 2251.
+ne 1655.
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
-File: scrsize11pt.clo 2015/10/03 v3.19a KOMA-Script font size class option (11p
-t)
+File: scrsize11pt.clo 2013/12/19 v3.12 KOMA-Script font size class option (11pt
+)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/typearea.sty
-Package: typearea 2015/10/03 v3.19a KOMA-Script package (type area)
+Package: typearea 2013/12/19 v3.12 KOMA-Script package (type area)
 
-Package typearea, 2015/10/03 v3.19a KOMA-Script package (type area)
+Package typearea, 2013/12/19 v3.12 KOMA-Script package (type area)
                   Copyright (C) Frank Neukam, 1992-1994
                   Copyright (C) Markus Kohm, 1994-
 
@@ -125,7 +130,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 1509.
+(typearea)              on input line 1330.
 )
 \c@part=\count80
 \c@chapter=\count81
@@ -134,7 +139,6 @@ Package typearea Info: These are the values describing the layout:
 \c@subsubsection=\count84
 \c@paragraph=\count85
 \c@subparagraph=\count86
-LaTeX Info: Redefining \textsubscript on input line 4654.
 \abovecaptionskip=\skip46
 \belowcaptionskip=\skip47
 \c@pti@nb@sid@b@x=\box26
@@ -150,18 +154,18 @@ LaTeX Info: Redefining \textsubscript on input line 4654.
 Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 95.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
 (/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
@@ -178,7 +182,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@width=\dimen106
 )
 (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
 Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
@@ -187,7 +191,7 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
@@ -319,17 +323,18 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip48
 )
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count101
+Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count101
+)
+\etb@tempcnta=\count102
 )
 (/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
-(./seminarpaper.aux
-
-LaTeX Warning: Label `table:DT_1' multiply defined.
-
-)
+(./seminarpaper.aux)
 \openout1 = `seminarpaper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -346,18 +351,19 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
- (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count102
+\scratchcounter=\count103
 \scratchdimen=\dimen111
 \scratchbox=\box28
-\nofMPsegments=\count103
-\nofMParguments=\count104
+\nofMPsegments=\count104
+\nofMParguments=\count105
 \everyMPshowfont=\toks16
-\MPscratchCnt=\count105
+\MPscratchCnt=\count106
 \MPscratchDim=\dimen112
-\MPnumerator=\count106
-\makeMPintoPDFobject=\count107
+\MPnumerator=\count107
+\makeMPintoPDFobject=\count108
 \everyMPtoPDFconversion=\toks17
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -383,7 +389,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count108
+\c@section@level=\count109
 )
 LaTeX Info: Redefining \ref on input line 32.
 LaTeX Info: Redefining \pageref on input line 32.
@@ -434,12 +440,16 @@ Package pdftex.def Info: img/UniWatermark.pdf used on input line 37.
 
 
 
-
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./img/UniWatermark.pdf> <.
-/img/uni-logo-4c.pdf>]) (./abstract.tex)
-chapter 1.
-(./introduction.tex)
-chapter 2.
+/img/uni-logo-4c.pdf>]) (./abstract.tex) [1
+
+]
+Chapter 1.
+(./introduction.tex) [2
+
+
+]
+Chapter 2.
 (./experiment.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 3.
@@ -456,7 +466,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--7
 
  []
 
-[1
+[3
+
 
 ])
 Underfull \hbox (badness 10000) in paragraph at lines 10--46
@@ -473,8 +484,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--46
 
  []
 
-[2]
-chapter 3.
+[4]
+Chapter 3.
 (./selection.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
@@ -485,21 +496,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
  []
 
-[3]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 6.
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
+ [5
 
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 11--11
 [][][]\OT1/cmr/m/n/9 More on Hal-stead con-tent: []$\OT1/cmtt/m/n/9 https : / /
  maisqual . squoring . com / wiki / index . php / Halstead _
  []
 
-[4])
-chapter 4.
+) [6]
+Chapter 4.
 (./results.tex
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -507,29 +520,27 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[7
+
+
+]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[5] [6] [7]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-)
-chapter 5.
-(./additional.tex [8
+) [8] [9]
+Chapter 5.
+(./additional.tex) [10
 
-])
-chapter 6.
+
+]
+Chapter 6.
 (./testing.tex
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -543,20 +554,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--62
 
  []
 
-[9]
+[11
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[10]
-chapter 7.
+] [12]
+Chapter 7.
 (./conclusion.tex
 
-LaTeX Warning: Citation `sathyaraj2015approach' on page 11 undefined on input l
+LaTeX Warning: Citation `sathyaraj2015approach' on page 13 undefined on input l
 ine 3.
 
-) (./seminarpaper.bbl [11] [12])
+) (./seminarpaper.bbl [13
+
+
+] [14
+
+
+])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 70.
- [13]
+ [15]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
  (./seminarpaper.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 70.
@@ -567,19 +583,16 @@ Package rerunfilecheck Info: File `seminarpaper.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 70.
  ) 
 Here is how much of TeX's memory you used:
- 7884 strings out of 494910
- 120760 string characters out of 6179835
- 286810 words of memory out of 5000000
- 11018 multiletter control sequences out of 15000+600000
- 11116 words of font info for 39 fonts, out of 8000000 for 9000
+ 7645 strings out of 494985
+ 115215 string characters out of 6180355
+ 261309 words of memory out of 5000000
+ 10698 multiletter control sequences out of 15000+600000
+ 10817 words of font info for 38 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 43i,14n,66p,1647b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,14n,63p,1580b,427s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
@@ -592,10 +605,10 @@ onts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 ti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pf
 b>
-Output written on seminarpaper.pdf (14 pages, 311182 bytes).
+Output written on seminarpaper.pdf (16 pages, 312061 bytes).
 PDF statistics:
- 277 PDF objects out of 1000 (max. 8388607)
- 239 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 500000)
+ 286 PDF objects out of 1000 (max. 8388607)
+ 246 compressed objects within 3 object streams
+ 61 named destinations out of 1000 (max. 500000)
  139 words of extra memory for PDF output out of 10000 (max. 10000000)
 
