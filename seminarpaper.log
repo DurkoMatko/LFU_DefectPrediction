@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.10.28)  16 JUN 2017 19:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.10.28)  17 JUN 2017 09:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -306,7 +306,11 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
-(./seminarpaper.aux)
+(./seminarpaper.aux
+
+LaTeX Warning: Label `table:DT_1' multiply defined.
+
+)
 \openout1 = `seminarpaper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -323,8 +327,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count101
 \scratchdimen=\dimen111
@@ -372,7 +375,7 @@ LaTeX Info: Redefining \nameref on input line 26.
 \openout3 = `seminarpaper.out'.
 
  (./titlepage.tex
-<img/uni-logo-4c.pdf, id=64, 150.96701pt x 300.62312pt>
+<img/uni-logo-4c.pdf, id=68, 150.96701pt x 300.62312pt>
 File: img/uni-logo-4c.pdf Graphic file (type pdf)
 
 <use img/uni-logo-4c.pdf>
@@ -401,7 +404,7 @@ Class scrbook Warning: Usage of deprecated font command `\bf'!
 
 pdfTeX warning: pdflatex (file ./img/UniWatermark.pdf): PDF inclusion: found PD
 F version <1.6>, but at most version <1.5> allowed
-<img/UniWatermark.pdf, id=65, 424.09944pt x 421.67036pt>
+<img/UniWatermark.pdf, id=69, 424.09944pt x 421.67036pt>
 File: img/UniWatermark.pdf Graphic file (type pdf)
 
 <use img/UniWatermark.pdf>
@@ -427,17 +430,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--4
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2--4
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2--4
+Underfull \hbox (badness 10000) in paragraph at lines 2--5
 
  []
 
@@ -445,44 +438,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--4
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1]
-Underfull \hbox (badness 10000) in paragraph at lines 5--7
+Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--7
+Underfull \hbox (badness 10000) in paragraph at lines 12--16
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--15
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--15
+Underfull \hbox (badness 10000) in paragraph at lines 12--16
 
  []
 
 [2]) (./selection.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--6
+Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--6
+Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
  []
 
 [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 7.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 6.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--12
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
 [][][]\OT1/cmr/m/n/9 More on Hal-stead con-tent: []$\OT1/cmtt/m/n/9 https : / /
  maisqual . squoring . com / wiki / index . php / Halstead _
  []
@@ -510,35 +498,54 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [6] [7] (./testing.tex
+) [6] [7] (./additional.tex) (./testing.tex
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Overfull \hbox (27.22559pt too wide) in paragraph at lines 68--79
  [][] 
  []
 
 [8
 
-]) (./conclusion.tex) (./seminarpaper.bbl [9] [10
+]) (./conclusion.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9]
+
+LaTeX Warning: Citation `sathyaraj2015approach' on page 10 undefined on input l
+ine 3.
+
+) (./seminarpaper.bbl [10] [11
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 61.
- [11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
+ [12]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
  (./seminarpaper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 61.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 61.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
 Package rerunfilecheck Info: File `seminarpaper.out' has not changed.
-(rerunfilecheck)             Checksum: 04068AC3B29A3877CBC324D0638DA527;950.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 61.
+(rerunfilecheck)             Checksum: 5896460ECD2FD35296FF080C3305CF8E;1011.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 64.
  ) 
 Here is how much of TeX's memory you used:
- 7249 strings out of 494985
- 110456 string characters out of 6180355
- 256429 words of memory out of 5000000
- 10325 multiletter control sequences out of 15000+600000
+ 7275 strings out of 494985
+ 110913 string characters out of 6180355
+ 256763 words of memory out of 5000000
+ 10339 multiletter control sequences out of 15000+600000
  11111 words of font info for 39 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 40i,14n,63p,1752b,378s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,14n,63p,1752b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
@@ -551,10 +558,10 @@ onts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 ti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pf
 b>
-Output written on seminarpaper.pdf (12 pages, 304590 bytes).
+Output written on seminarpaper.pdf (13 pages, 310950 bytes).
 PDF statistics:
- 248 PDF objects out of 1000 (max. 8388607)
- 212 compressed objects within 3 object streams
- 49 named destinations out of 1000 (max. 500000)
- 131 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 272 PDF objects out of 1000 (max. 8388607)
+ 235 compressed objects within 3 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 139 words of extra memory for PDF output out of 10000 (max. 10000000)
 

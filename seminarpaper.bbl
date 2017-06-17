@@ -1,4 +1,9 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{catal2012performance}
+Cagatay Catal.
+\newblock Performance evaluation metrics for software fault prediction studies.
+\newblock {\em Acta Polytechnica Hungarica}, 9(4):193--206, 2012.
 
 \bibitem{dejaeger2013toward}
 Karel Dejaeger, Thomas Verbraken, and Bart Baesens.
@@ -24,6 +29,37 @@ Ruchika Malhotra.
 \newblock A systematic review of machine learning techniques for software fault
   prediction.
 \newblock {\em Applied Soft Computing}, 27:504--518, 2015.
+
+\bibitem{prasad2015study}
+MC~Prasad, Lilly Florence, and Arti Arya.
+\newblock A study on software metrics based software defect prediction using
+  data mining and machine learning techniques.
+\newblock {\em International Journal of Database Theory and Application},
+  8(3):179--190, 2015.
+
+\bibitem{radjenovic2013software}
+Danijel Radjenovi{\'c}, Marjan Heri{\v{c}}ko, Richard Torkar, and Ale{\v{s}}
+  {\v{Z}}ivkovi{\v{c}}.
+\newblock Software fault prediction metrics: A systematic literature review.
+\newblock {\em Information and Software Technology}, 55(8):1397--1418, 2013.
+
+\bibitem{sahana2013software}
+Dulal~Chandra Sahana.
+\newblock {\em Software Defect Prediction Based on Classication Rule Mining}.
+\newblock PhD thesis, 2013.
+
+\bibitem{sankar2014prediction}
+K~Sankar, S~Kannan, and P~Jennifer.
+\newblock Prediction of code fault using na{\"\i}ve bayes and svm classifiers.
+\newblock {\em Middle-East Journal Of Scientific Research}, 20(1):108--113,
+  2014.
+
+\bibitem{sharma2016software}
+Rupali Sharma and Parveen Kakkar.
+\newblock Software module fault prediction using convolutional neural network
+  with feature selection.
+\newblock {\em International Journal of Software Engineering and Its
+  Applications}, 10(12):307--318, 2016.
 
 \bibitem{shivaji2009reducing}
 Shivkumar Shivaji, Jr~E~James Whitehead, Ram Akella, and Sunghun Kim.
