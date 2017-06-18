@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.10.28)  18 JUN 2017 23:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.10.28)  19 JUN 2017 00:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -559,12 +559,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--62
 
 ] [12]
 Chapter 7.
-(./conclusion.tex
-
-LaTeX Warning: Citation `sathyaraj2015approach' on page 13 undefined on input l
-ine 3.
-
-) (./seminarpaper.bbl [13
+(./conclusion.tex) (./seminarpaper.bbl [13
 
 
 ] [14
@@ -579,16 +574,12 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 70.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 70.
 Package rerunfilecheck Info: File `seminarpaper.out' has not changed.
 (rerunfilecheck)             Checksum: DC65B51432FBF4CD1605E3987EE0396D;934.
-
-
-LaTeX Warning: There were undefined references.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 70.
  ) 
 Here is how much of TeX's memory you used:
- 7645 strings out of 494985
- 115215 string characters out of 6180355
- 261309 words of memory out of 5000000
+ 7646 strings out of 494985
+ 115241 string characters out of 6180355
+ 262357 words of memory out of 5000000
  10698 multiletter control sequences out of 15000+600000
  10817 words of font info for 38 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
@@ -605,10 +596,10 @@ onts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 ti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pf
 b>
-Output written on seminarpaper.pdf (16 pages, 312278 bytes).
+Output written on seminarpaper.pdf (16 pages, 313286 bytes).
 PDF statistics:
- 286 PDF objects out of 1000 (max. 8388607)
- 246 compressed objects within 3 object streams
- 61 named destinations out of 1000 (max. 500000)
+ 289 PDF objects out of 1000 (max. 8388607)
+ 249 compressed objects within 3 object streams
+ 62 named destinations out of 1000 (max. 500000)
  139 words of extra memory for PDF output out of 10000 (max. 10000000)
 

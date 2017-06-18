@@ -1,0 +1,65 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayesMultinomialUpdateable 
+Relation:     PC1-weka.filters.unsupervised.attribute.Remove-R1,3-6,8-17,19-25,27-30,33-36
+Instances:    705
+Attributes:   8
+              BRANCH_COUNT
+              CYCLOMATIC_COMPLEXITY
+              HALSTEAD_CONTENT
+              MAINTENANCE_SEVERITY
+              NUM_OPERANDS
+              NUM_OPERATORS
+              LOC_TOTAL
+              Defective
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Dictionary size: 8
+
+The independent frequency of a class
+--------------------------------------
+Y	62.0
+N	645.0
+
+The frequency of a word given the class
+-----------------------------------------
+          Y	          N	
+     1424.0	     8322.0	BRANCH_COUNT
+      807.0	     4637.0	CYCLOMATIC_COMPLEXITY
+4321.089999	22047.43000	HALSTEAD_CONTENT
+26.55999999	322.0099999	MAINTENANCE_SEVERITY
+     9034.0	    39552.0	NUM_OPERANDS
+    11942.0	    51416.0	NUM_OPERATORS
+     4358.0	    17531.0	LOC_TOTAL
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         616               87.3759 %
+Incorrectly Classified Instances        89               12.6241 %
+Kappa statistic                          0.1832
+Mean absolute error                      0.1367
+Root mean squared error                  0.3382
+Relative absolute error                 85.9088 %
+Root relative squared error            120.2775 %
+Total Number of Instances              705     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.246    0.067    0.259      0.246    0.252      0.183    0.643     0.202     Y
+                 0.933    0.754    0.929      0.933    0.931      0.183    0.643     0.939     N
+Weighted Avg.    0.874    0.695    0.871      0.874    0.872      0.183    0.643     0.875     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  15  46 |   a = Y
+  43 601 |   b = N
+
+

@@ -1,0 +1,306 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     PC1
+Instances:    705
+Attributes:   38
+              LOC_BLANK
+              BRANCH_COUNT
+              CALL_PAIRS
+              LOC_CODE_AND_COMMENT
+              LOC_COMMENTS
+              CONDITION_COUNT
+              CYCLOMATIC_COMPLEXITY
+              CYCLOMATIC_DENSITY
+              DECISION_COUNT
+              DECISION_DENSITY
+              DESIGN_COMPLEXITY
+              DESIGN_DENSITY
+              EDGE_COUNT
+              ESSENTIAL_COMPLEXITY
+              ESSENTIAL_DENSITY
+              LOC_EXECUTABLE
+              PARAMETER_COUNT
+              HALSTEAD_CONTENT
+              HALSTEAD_DIFFICULTY
+              HALSTEAD_EFFORT
+              HALSTEAD_ERROR_EST
+              HALSTEAD_LENGTH
+              HALSTEAD_LEVEL
+              HALSTEAD_PROG_TIME
+              HALSTEAD_VOLUME
+              MAINTENANCE_SEVERITY
+              MODIFIED_CONDITION_COUNT
+              MULTIPLE_CONDITION_COUNT
+              NODE_COUNT
+              NORMALIZED_CYLOMATIC_COMPLEXITY
+              NUM_OPERANDS
+              NUM_OPERATORS
+              NUM_UNIQUE_OPERANDS
+              NUM_UNIQUE_OPERATORS
+              NUMBER_OF_LINES
+              PERCENT_COMMENTS
+              LOC_TOTAL
+              Defective
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                                        Class
+Attribute                                   Y           N
+                                       (0.09)      (0.91)
+==========================================================
+LOC_BLANK
+  mean                                  23.216      6.7958
+  std. dev.                            30.2392     11.4105
+  weight sum                                61         644
+  precision                             4.4118      4.4118
+
+BRANCH_COUNT
+  mean                                 23.4541     13.1772
+  std. dev.                            37.3173     16.3428
+  weight sum                                61         644
+  precision                             4.0877      4.0877
+
+CALL_PAIRS
+  mean                                   5.079      3.1287
+  std. dev.                             4.3497      3.4652
+  weight sum                                61         644
+  precision                             1.0909      1.0909
+
+LOC_CODE_AND_COMMENT
+  mean                                  4.6187      0.8944
+  std. dev.                             8.2455      3.2954
+  weight sum                                61         644
+  precision                              2.087       2.087
+
+LOC_COMMENTS
+  mean                                 18.3963      4.4014
+  std. dev.                            21.0427     10.4907
+  weight sum                                61         644
+  precision                             3.0577      3.0577
+
+CONDITION_COUNT
+  mean                                 36.7213     21.0559
+  std. dev.                            58.7375     28.5125
+  weight sum                                61         644
+  precision                             6.6667      6.6667
+
+CYCLOMATIC_COMPLEXITY
+  mean                                 13.1825      7.2595
+  std. dev.                            21.3928      8.5645
+  weight sum                                61         644
+  precision                             2.9348      2.9348
+
+CYCLOMATIC_DENSITY
+  mean                                  0.1835      0.2981
+  std. dev.                             0.0628      0.1597
+  weight sum                                61         644
+  precision                             0.0179      0.0179
+
+DECISION_COUNT
+  mean                                 16.7293      9.3437
+  std. dev.                              27.56     13.9344
+  weight sum                                61         644
+  precision                              5.027       5.027
+
+DECISION_DENSITY
+  mean                                   2.178      2.1828
+  std. dev.                             0.2285      0.3824
+  weight sum                                61         644
+  precision                              0.119       0.119
+
+DESIGN_COMPLEXITY
+  mean                                   8.069      3.3773
+  std. dev.                            18.0792      6.0683
+  weight sum                                61         644
+  precision                             4.2069      4.2069
+
+DESIGN_DENSITY
+  mean                                  0.6526      0.6238
+  std. dev.                             0.2772      0.2871
+  weight sum                                61         644
+  precision                             0.0138      0.0138
+
+EDGE_COUNT
+  mean                                 52.3391     28.1697
+  std. dev.                            85.3294     36.8445
+  weight sum                                61         644
+  precision                             5.4857      5.4857
+
+ESSENTIAL_COMPLEXITY
+  mean                                    5.68      2.9932
+  std. dev.                            16.2737      5.2337
+  weight sum                                61         644
+  precision                               4.88        4.88
+
+ESSENTIAL_DENSITY
+  mean                                  0.2834      0.2902
+  std. dev.                             0.3643      0.3814
+  weight sum                                61         644
+  precision                             0.0179      0.0179
+
+LOC_EXECUTABLE
+  mean                                 66.6867     26.1297
+  std. dev.                            94.5475     26.4949
+  weight sum                                61         644
+  precision                             5.5046      5.5046
+
+PARAMETER_COUNT
+  mean                                  0.5574      0.9037
+  std. dev.                             0.9148      1.1743
+  weight sum                                61         644
+  precision                                  1           1
+
+HALSTEAD_CONTENT
+  mean                                 70.8439     34.2319
+  std. dev.                            51.2748     26.6103
+  weight sum                                61         644
+  precision                             0.4105      0.4105
+
+HALSTEAD_DIFFICULTY
+  mean                                 25.5631     20.1354
+  std. dev.                            18.1143      17.919
+  weight sum                                61         644
+  precision                             0.5108      0.5108
+
+HALSTEAD_EFFORT
+  mean                             128706.0161   35126.565
+  std. dev.                        397158.0802 183597.2295
+  weight sum                                61         644
+  precision                          6211.2872   6211.2872
+
+HALSTEAD_ERROR_EST
+  mean                                  0.8171      0.2784
+  std. dev.                             1.4033      0.4225
+  weight sum                                61         644
+  precision                             0.0714      0.0714
+
+HALSTEAD_LENGTH
+  mean                                344.0295    141.0568
+  std. dev.                           468.4709    182.0195
+  weight sum                                61         644
+  precision                             9.4744      9.4744
+
+HALSTEAD_LEVEL
+  mean                                  0.0574      0.0791
+  std. dev.                             0.0321      0.0587
+  weight sum                                61         644
+  precision                             0.0185      0.0185
+
+HALSTEAD_PROG_TIME
+  mean                               7148.4571   1951.7832
+  std. dev.                         22031.0903  10199.5257
+  weight sum                                61         644
+  precision                           346.0761    346.0761
+
+HALSTEAD_VOLUME
+  mean                               2449.5797    830.4678
+  std. dev.                          4208.3029   1267.6355
+  weight sum                                61         644
+  precision                            41.5298     41.5298
+
+MAINTENANCE_SEVERITY
+  mean                                  0.4198      0.4994
+  std. dev.                             0.2945      0.2731
+  weight sum                                61         644
+  precision                              0.014       0.014
+
+MODIFIED_CONDITION_COUNT
+  mean                                  9.6225      5.3413
+  std. dev.                            15.5518      7.6779
+  weight sum                                61         644
+  precision                             2.4872      2.4872
+
+MULTIPLE_CONDITION_COUNT
+  mean                                 18.7432      10.559
+  std. dev.                            29.7418     14.3022
+  weight sum                                61         644
+  precision                             3.3333      3.3333
+
+NODE_COUNT
+  mean                                 41.1434     23.1382
+  std. dev.                            64.1493     28.6578
+  weight sum                                61         644
+  precision                             5.0805      5.0805
+
+NORMALIZED_CYLOMATIC_COMPLEXITY
+  mean                                  0.1139      0.2302
+  std. dev.                             0.0505        0.17
+  weight sum                                61         644
+  precision                             0.0306      0.0306
+
+NUM_OPERANDS
+  mean                                147.8948     61.5335
+  std. dev.                           195.2723     80.9347
+  weight sum                                61         644
+  precision                             5.9119      5.9119
+
+NUM_OPERATORS
+  mean                                196.1127     79.8063
+  std. dev.                             274.12    101.9528
+  weight sum                                61         644
+  precision                             7.3982      7.3982
+
+NUM_UNIQUE_OPERANDS
+  mean                                 62.2111     23.6789
+  std. dev.                            81.6196     21.9404
+  weight sum                                61         644
+  precision                               5.36        5.36
+
+NUM_UNIQUE_OPERATORS
+  mean                                  22.411     15.8381
+  std. dev.                            13.2458       7.149
+  weight sum                                61         644
+  precision                             2.3171      2.3171
+
+NUMBER_OF_LINES
+  mean                                117.8852      40.221
+  std. dev.                           137.2515     42.2257
+  weight sum                                61         644
+  precision                             5.6667      5.6667
+
+PERCENT_COMMENTS
+  mean                                 23.5247     11.4147
+  std. dev.                             16.699     14.6609
+  weight sum                                61         644
+  precision                             0.2798      0.2798
+
+LOC_TOTAL
+  mean                                 71.4578     27.2039
+  std. dev.                             98.217     27.9514
+  weight sum                                61         644
+  precision                             5.5741      5.5741
+
+
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         621               88.0851 %
+Incorrectly Classified Instances        84               11.9149 %
+Kappa statistic                          0.2784
+Mean absolute error                      0.1191
+Root mean squared error                  0.341 
+Relative absolute error                 74.8349 %
+Root relative squared error            121.2789 %
+Total Number of Instances              705     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.361    0.070    0.328      0.361    0.344      0.279    0.771     0.260     Y
+                 0.930    0.639    0.939      0.930    0.934      0.279    0.769     0.973     N
+Weighted Avg.    0.881    0.590    0.886      0.881    0.883      0.279    0.770     0.911     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  22  39 |   a = Y
+  45 599 |   b = N
+
+

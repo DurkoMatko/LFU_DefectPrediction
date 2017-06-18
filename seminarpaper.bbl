@@ -54,6 +54,12 @@ K~Sankar, S~Kannan, and P~Jennifer.
 \newblock {\em Middle-East Journal Of Scientific Research}, 20(1):108--113,
   2014.
 
+\bibitem{sathyaraj2015approach}
+R~Sathyaraj and S~Prabu.
+\newblock An approach for software fault prediction to measure the quality of
+  different prediction methodologies using software metrics.
+\newblock {\em Indian Journal of Science and Technology}, 8(35), 2015.
+
 \bibitem{sharma2016software}
 Rupali Sharma and Parveen Kakkar.
 \newblock Software module fault prediction using convolutional neural network

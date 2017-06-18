@@ -1,0 +1,125 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     PC1
+Instances:    705
+Attributes:   38
+              LOC_BLANK
+              BRANCH_COUNT
+              CALL_PAIRS
+              LOC_CODE_AND_COMMENT
+              LOC_COMMENTS
+              CONDITION_COUNT
+              CYCLOMATIC_COMPLEXITY
+              CYCLOMATIC_DENSITY
+              DECISION_COUNT
+              DECISION_DENSITY
+              DESIGN_COMPLEXITY
+              DESIGN_DENSITY
+              EDGE_COUNT
+              ESSENTIAL_COMPLEXITY
+              ESSENTIAL_DENSITY
+              LOC_EXECUTABLE
+              PARAMETER_COUNT
+              HALSTEAD_CONTENT
+              HALSTEAD_DIFFICULTY
+              HALSTEAD_EFFORT
+              HALSTEAD_ERROR_EST
+              HALSTEAD_LENGTH
+              HALSTEAD_LEVEL
+              HALSTEAD_PROG_TIME
+              HALSTEAD_VOLUME
+              MAINTENANCE_SEVERITY
+              MODIFIED_CONDITION_COUNT
+              MULTIPLE_CONDITION_COUNT
+              NODE_COUNT
+              NORMALIZED_CYLOMATIC_COMPLEXITY
+              NUM_OPERANDS
+              NUM_OPERATORS
+              NUM_UNIQUE_OPERANDS
+              NUM_UNIQUE_OPERATORS
+              NUMBER_OF_LINES
+              PERCENT_COMMENTS
+              LOC_TOTAL
+              Defective
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=38 #classindex=37
+Network structure (nodes followed by parents)
+LOC_BLANK(2): Defective 
+BRANCH_COUNT(1): Defective 
+CALL_PAIRS(2): Defective 
+LOC_CODE_AND_COMMENT(2): Defective 
+LOC_COMMENTS(3): Defective 
+CONDITION_COUNT(1): Defective 
+CYCLOMATIC_COMPLEXITY(1): Defective 
+CYCLOMATIC_DENSITY(2): Defective 
+DECISION_COUNT(1): Defective 
+DECISION_DENSITY(1): Defective 
+DESIGN_COMPLEXITY(1): Defective 
+DESIGN_DENSITY(1): Defective 
+EDGE_COUNT(1): Defective 
+ESSENTIAL_COMPLEXITY(1): Defective 
+ESSENTIAL_DENSITY(1): Defective 
+LOC_EXECUTABLE(3): Defective 
+PARAMETER_COUNT(1): Defective 
+HALSTEAD_CONTENT(2): Defective 
+HALSTEAD_DIFFICULTY(1): Defective 
+HALSTEAD_EFFORT(2): Defective 
+HALSTEAD_ERROR_EST(2): Defective 
+HALSTEAD_LENGTH(2): Defective 
+HALSTEAD_LEVEL(1): Defective 
+HALSTEAD_PROG_TIME(2): Defective 
+HALSTEAD_VOLUME(2): Defective 
+MAINTENANCE_SEVERITY(1): Defective 
+MODIFIED_CONDITION_COUNT(1): Defective 
+MULTIPLE_CONDITION_COUNT(1): Defective 
+NODE_COUNT(1): Defective 
+NORMALIZED_CYLOMATIC_COMPLEXITY(2): Defective 
+NUM_OPERANDS(2): Defective 
+NUM_OPERATORS(2): Defective 
+NUM_UNIQUE_OPERANDS(3): Defective 
+NUM_UNIQUE_OPERATORS(2): Defective 
+NUMBER_OF_LINES(3): Defective 
+PERCENT_COMMENTS(2): Defective 
+LOC_TOTAL(3): Defective 
+Defective(2): 
+LogScore Bayes: -9427.391455911478
+LogScore BDeu: -9480.559545489146
+LogScore MDL: -9509.339437992901
+LogScore ENTROPY: -9342.105394021188
+LogScore AIC: -9393.10539402119
+
+
+Time taken to build model: 0.1 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         506               71.773  %
+Incorrectly Classified Instances       199               28.227  %
+Kappa statistic                          0.2078
+Mean absolute error                      0.2832
+Root mean squared error                  0.509 
+Relative absolute error                177.9336 %
+Root relative squared error            181.0392 %
+Total Number of Instances              705     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.754    0.286    0.200      0.754    0.316      0.281    0.814     0.310     Y
+                 0.714    0.246    0.968      0.714    0.822      0.281    0.814     0.979     N
+Weighted Avg.    0.718    0.249    0.902      0.718    0.778      0.281    0.814     0.921     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  46  15 |   a = Y
+ 184 460 |   b = N
+
+
