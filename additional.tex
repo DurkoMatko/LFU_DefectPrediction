@@ -4,12 +4,35 @@ Out of curiosity and to verify claims about Random Forest's better performance w
 \centering
 \begin{tabular}{ |c|c|c|c| }
  \hline
- \textbf{Algorithm} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\
+ \textbf{Dataset} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\
  \hline
- Random Forest & 85.626 & .814 & .770    \\
+  PC1 & 92.489 & .908 & .878    \\
+ \hline
+ CM1 & 85.626 & .814 & .770    \\
  \hline
 
 \end{tabular}
-\caption{Random forest performance on CM1 NASA MDP dataset}
+\caption{Random forest performance on whole PC1 and CM1 NASA MDP datasets}
+\label{table:RF_1}
+\end{table}
+
+In table \ref{table:RF_1}, we can clearly see that Random Forest performs much better with bigger PC1 dataset (in all 3 evaluation areas). In table \ref{table:RF_2}We can also see an increasing performance trend with using more metrics in training set.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |c|c|c|c| }
+ \hline
+ \textbf{Metrics} & \textbf{Correct [\%]} & \textbf{F-Measure} & \textbf{AUC}  \\
+ \hline
+  1 & 91.489 & .885 & .601    \\
+ \hline
+ 3 & 87.943 & .874 & .748    \\
+ \hline
+  5 & 91.063 & .898 & .845    \\
+ \hline
+ 7 & 91.773 & .903 & .851    \\
+ \hline
+\end{tabular}
+\caption{Random forest performance on with increasingn number of PC1 dataset metrics}
 \label{table:RF_1}
 \end{table}
