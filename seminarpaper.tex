@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt,pdftex,halfparskip,oneside,cleardoubleempty]{scrbook}
+\documentclass[a4paper,11pt,pdftex,oneside]{scrbook}
 \usepackage{wrapfig}
 \usepackage[pdftex]{graphicx}
 \usepackage{eso-pic}
@@ -8,8 +8,6 @@
 \makeatletter
 \patchcmd{\scr@startchapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
 \makeatother
-
-\newcommand\mytodo[1]{\textcolor{red}{#1}}
 
 \usepackage[section]{placeins}
 
@@ -48,6 +46,7 @@
 \label{sec:selection}
 \input{selection}
 
+\newpage
 \chapter{Experiment results}
 \label{sec:results}
 \input{results}
